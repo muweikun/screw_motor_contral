@@ -1,0 +1,88 @@
+{
+    "vehicle_name": "hero_test",
+    "dep_libs": [
+        {
+            "lib_name": "AHRS",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "CanDevice",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "DataStructure",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "Error",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "Flash",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "Helper",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "InertialSensor",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "Math",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "Motor",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "Offboard",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "PID",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "RCProtocol",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "RefereeSystem",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "Scheduler",
+            "version": ">=1.0.0"
+        },
+        {
+            "lib_name": "UART",
+            "version": ">=1.0.0"
+        }
+    ],
+    "dep_modules": [
+        {
+            "module_name": "AttitudeSolutionTask",
+            "version": ">=1.0.0"
+        },
+        {
+            "module_name": "CanTask",
+            "version": ">=1.0.0"
+        },
+        {
+            "module_name": "MotorTask",
+            "version": ">=1.0.0"
+        },
+        {
+            "module_name": "PIDTask",
+            "version": ">=1.0.0"
+        },
+        {
+            "module_name": "RoboBase",
+            "version": ">=1.0.0"
+        }
+    ],
+    "version": "1.0.0"
+}

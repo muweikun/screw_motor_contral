@@ -1,0 +1,10 @@
+{
+    "lib_name" : "RefereeSystem",
+	"dep_libs" : [
+		{
+		    "lib_name" : "Scheduler",
+			"version" : ">=1.0.0"
+		}
+	],
+	"version" : "1.0.1"
+}

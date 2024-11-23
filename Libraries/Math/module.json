@@ -1,0 +1,10 @@
+{
+    "lib_name" : "Math",
+	"dep_libs" : [
+	
+	],
+	"version" : "1.0.1",
+	"exclude_dir" : [
+		"del"
+	]
+}

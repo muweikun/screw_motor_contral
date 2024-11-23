@@ -1,0 +1,7 @@
+{
+    "lib_name" : "Helper",
+	"dep_libs" : [
+	
+	],
+	"version" : "1.0.0"
+}

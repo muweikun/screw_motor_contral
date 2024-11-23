@@ -1,0 +1,18 @@
+{
+    "lib_name" : "Offboard",
+	"dep_libs" : [
+	    {
+		    "lib_name" : "DataStructure",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "UART",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Scheduler",
+			"version" : ">=1.0.0"
+		}
+	],
+	"version" : "1.0.1"
+}

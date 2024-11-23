@@ -1,0 +1,60 @@
+[submodule "Libraries/AHRS"]
+	path = Libraries/AHRS
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-AHRS.git
+[submodule "Libraries/UART"]
+	path = Libraries/UART
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-UART.git
+[submodule "Libraries/RefereeSystem"]
+	path = Libraries/RefereeSystem
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-RefereeSystem.git
+[submodule "Libraries/Math"]
+	path = Libraries/Math
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-Math.git
+[submodule "Modules/CanTask"]
+	path = Modules/CanTask
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECMOD-CanTask.git
+[submodule "Libraries/Error"]
+	path = Libraries/Error
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-Error.git
+[submodule "Modules/RoboBase"]
+	path = Modules/RoboBase
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECMOD-RoboBase.git
+[submodule "Libraries/Helper"]
+	path = Libraries/Helper
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-Helper.git
+[submodule "Libraries/Scheduler"]
+	path = Libraries/Scheduler
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-Scheduler.git
+[submodule "Libraries/Motor"]
+	path = Libraries/Motor
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-Motor.git
+[submodule "Libraries/InertialSensor"]
+	path = Libraries/InertialSensor
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-InertialSensor.git
+[submodule "Libraries/DataStructure"]
+	path = Libraries/DataStructure
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-DataStructure.git
+[submodule "Modules/PIDTask"]
+	path = Modules/PIDTask
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECMOD-PIDTask.git
+[submodule "Libraries/RCProtocol"]
+	path = Libraries/RCProtocol
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-RCProtocol.git
+[submodule "Modules/AttitudeSolutionTask"]
+	path = Modules/AttitudeSolutionTask
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECMOD-AttitudeSolutionTask.git
+[submodule "Libraries/PID"]
+	path = Libraries/PID
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-PID.git
+[submodule "Modules/MotorTask"]
+	path = Modules/MotorTask
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECMOD-MotorTask.git
+[submodule "Libraries/Offboard"]
+	path = Libraries/Offboard
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-Offboard.git
+[submodule "Libraries/CanDevice"]
+	path = Libraries/CanDevice
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-CanDevice.git
+[submodule "Libraries/Flash"]
+	path = Libraries/Flash
+	url = https://bugit.pvhu.top/LingBug-embedded-group/ECLIB-Flash.git

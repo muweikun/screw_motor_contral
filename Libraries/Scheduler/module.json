@@ -1,0 +1,10 @@
+{
+    "lib_name" : "Scheduler",
+	"dep_libs" : [
+		{
+		    "lib_name" : "UART",
+			"version" : ">=1.0.0"
+		}
+	],
+	"version" : "1.0.0"
+}

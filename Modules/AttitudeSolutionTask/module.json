@@ -1,0 +1,28 @@
+{
+    "module_name" : "AttitudeSolutionTask",
+	"dep_libs" : [
+	    {
+		    "lib_name" : "Scheduler",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "InertialSensor",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "AHRS",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "PID",
+			"version" : ">=1.0.0"
+		}
+	],
+	"dep_modules" : [
+		{
+		    "module_name" : "RoboBase",
+			"version" : ">=1.0.0"
+		}
+	],
+	"version" : "1.0.0"
+}

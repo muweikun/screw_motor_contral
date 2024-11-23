@@ -1,0 +1,10 @@
+{
+    "lib_name" : "DataStructure",
+	"dep_libs" : [
+	
+	],
+	"version" : "1.0.0",
+	"bugit" : {
+		"repo_name" : "DataStructure"
+	}
+}

@@ -1,0 +1,21 @@
+{
+    "module_name" : "CanTask",
+	"dep_libs" : [
+	    {
+		    "lib_name" : "Scheduler",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "DataStructure",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Error",
+			"version" : ">=1.0.0"
+		}
+	],
+	"dep_modules" : [
+
+	],
+	"version" : "1.0.0"
+}

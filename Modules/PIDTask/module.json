@@ -1,0 +1,21 @@
+{
+    "module_name" : "PIDTask",
+	"dep_libs" : [
+	    {
+		    "lib_name" : "Math",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Error",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Scheduler",
+			"version" : ">=1.0.0"
+		}
+	],
+	"dep_modules" : [
+
+	],
+	"version" : "1.0.0"
+}

@@ -1,0 +1,33 @@
+{
+    "module_name" : "RoboBase",
+	"dep_libs" : [
+	    {
+		    "lib_name" : "Scheduler",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Motor",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Helper",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "CanDevice",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "RCProtocol",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "InertialSensor",
+			"version" : ">=1.0.0"
+		}
+	],
+	"dep_modules" : [
+
+	],
+	"version" : "1.0.0"
+}

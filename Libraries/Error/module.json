@@ -1,0 +1,7 @@
+{
+    "lib_name" : "Error",
+	"dep_libs" : [
+	
+	],
+	"version" : "1.0.0"
+}

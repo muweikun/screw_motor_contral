@@ -1,0 +1,7 @@
+{
+    "lib_name" : "UART",
+	"dep_libs" : [
+	
+	],
+	"version" : "1.0.0"
+}

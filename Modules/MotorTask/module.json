@@ -1,0 +1,39 @@
+{
+    "module_name" : "MotorTask",
+	"exclude_dir" : [
+		"to_be_test"
+	],
+	"dep_libs" : [
+	    {
+		    "lib_name" : "CanDevice",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Scheduler",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "PID",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "lib_name" : "Math",
+			"version" : ">=1.0.0"
+		}
+	],
+	"dep_modules" : [
+		{
+		    "module_name" : "CanTask",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "module_name" : "PIDTask",
+			"version" : ">=1.0.0"
+		},
+		{
+		    "module_name" : "RoboBase",
+			"version" : ">=1.0.0"
+		}
+	],
+	"version" : "1.0.1"
+}
