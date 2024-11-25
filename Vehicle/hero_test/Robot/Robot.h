@@ -25,9 +25,8 @@ class Robot : public RoboBase
   robo_lib::CAN_Tx_Data_Pack_t can2_queue_data[CAN2_TX_BUF_LEN];
 	uint8_t robot_id = 0;
 	Params params;
-	 CANSendTask *can1_send_task_p, *can2_send_task_p;
-  CANSyncTask   *can2_sync_task_0x200_p,
-                *can1_sync_task_0x200_p;
+	CANSendTask *can1_send_task_p, *can2_send_task_p;
+  CANSyncTask *can1_sync_task_0x200_p;
   
 	Srew_Motor_PIDControlTask *srew_motor1_p;
 	

@@ -30,6 +30,8 @@ void Robot::init()
         0x200,
         params.device_params.control_tasks_interval.can1_send_0x200_task_interval
     );
+	// 遥控器任务初始化
+	 rc_protocol.init();
  
 	
 	//注册任务
