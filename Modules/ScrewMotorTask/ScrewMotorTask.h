@@ -24,6 +24,9 @@ protected:
   int16_t motor_input[4];
   int16_t motor_rpm[4];
   int16_t motor_rpm_expect[4];
+  int16_t max_curent[4]={0x0FFF,0x0FFF,0x0FFF,0x0FFF};
+	int16_t current[4];
+	int8_t flag=0;
 	
 	
 };

@@ -3,6 +3,7 @@
 #include "Modules/RoboBase/RoboBase.h"
 #include "Vehicle/hero_test/Robot/Params.h"
 #define ABS(x) ((x) > 0 ? (x) : -(x))
+#define SYMBOL(x) ((x>0)-(x<0))
 using namespace robo_lib;
 
 /***********************************************************************
@@ -60,32 +61,50 @@ void Srew_Motor_PIDControlTask::init(){
 	 if(motor_1_pid_task->getAngularVelocityTaskPointer() != NULL)
         robot.getScheduler().registerTask(motor_1_pid_task->getAngularVelocityTaskPointer());
 
-}
+}//
 void Srew_Motor_PIDControlTask::update(timeus_t dT_us){
 	
 	 RC_Data rc_data = robot.getRCProtocol().getRCData();
+	 if(flag==0 || flag==-SYMBOL(rc_data.ch3))    //
+		 {
+			 flag =0;
 	 if(ABS(rc_data.ch3)<150){
 		  motor_rpm_expect[0] =0;
 		  motor_1_pid_task->setMotorInput(0);
 	
 	 }
-	 else {
+	 else 
+		 {
 	 if(rc_data.ch3>0){
-				motor_rpm_expect[0] =(int16_t)(rc_data.ch3*800.0f/660.0f);
+				motor_rpm_expect[0] =(int16_t)(rc_data.ch3*800.0f/660.0f*5);
 	 }
 	  else{
-				motor_rpm_expect[0] =(int16_t)(rc_data.ch3*800.0f/660.0f);
+				motor_rpm_expect[0] =(int16_t)(rc_data.ch3*800.0f/660.0f*5);
 	 }
+		
 	 motor_rpm[0] = motor_1_pid_task->get_motor_backend_p()->getMeasurement().speed_rpm;
-	 motor_1_pid_task->getAngularVelocityTaskPointer()->setPIDControllerExpect(motor_rpm_expect[0]);
-	 motor_1_pid_task->getAngularVelocityTaskPointer()->setPIDControllerFeedback(motor_rpm[0]);
-	 motor_input[0] = motor_1_pid_task->getAngularVelocityTaskPointer()->getOutput();
-	 motor_1_pid_task->setMotorInput((int16_t)(motor_input[0]/10.0f));
+	 current[0]=motor_1_pid_task->get_motor_backend_p()->getMeasurement().given_current;
+	 if(ABS(current[0])<=max_curent[0]){
+		 	motor_1_pid_task->getAngularVelocityTaskPointer()->setPIDControllerExpect(motor_rpm_expect[0]);
+			motor_1_pid_task->getAngularVelocityTaskPointer()->setPIDControllerFeedback(motor_rpm[0]);
+			motor_input[0] = motor_1_pid_task->getAngularVelocityTaskPointer()->getOutput();
+			motor_1_pid_task->setMotorInput((int16_t)(motor_input[0]/3.0));
+	 
 	 }
+	 else
+	 {
+		 flag = SYMBOL(current[0]);
+		 motor_1_pid_task->setMotorInput(0);
+	 }
+
+	 }
+ }
+ else{
+	 		 motor_1_pid_task->setMotorInput(0);
+ }
+	 
 	
 
-
-	 //motor_1_pid_task->setMotorInput(0);
 
 }
 

@@ -16,7 +16,7 @@ void Params::initMotorsParams(uint8_t ROBOT_ID)
 	
 	
   /************** RM 电机 CAN总线地址 **************/
-	 this->device_params.chassis_motor_1 ={.can_tx_id = 0x200, .can_rx_id = 0x202, .can_tx_data_start_pos = 2, .canx = 1};
+	 this->device_params.chassis_motor_1 ={.can_tx_id = 0x200, .can_rx_id = 0x203, .can_tx_data_start_pos = 4, .canx = 1};
 	
 
   /************** RM 电机 CAN总线地址 **************/
