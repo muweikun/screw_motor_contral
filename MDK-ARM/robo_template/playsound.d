@@ -1,11 +1,8 @@
-robo_template/params.o: ..\Vehicle\hero_test\Robot\Params.cpp \
-  ..\Vehicle\hero_test\Robot\.\Params.h \
+robo_template/playsound.o: ..\Modules\SoundManageTask\PlaySound.cpp \
+  ..\Modules\SoundManageTask\PlaySound.h ..\Libraries\Scheduler\Task.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  ..\Libraries\Motor\Motor_RM.h ..\Libraries\Motor\Motor_Backend.h \
-  ..\Libraries\Motor\Motor.h ..\Libraries\Motor\Motor_Data.h \
-  ..\Libraries\Scheduler\Task.h \
   ..\Libraries\Scheduler\Scheduler_Common.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h \
   ..\Core\Inc\stm32f4xx_hal_conf.h \
@@ -48,7 +45,17 @@ robo_template/params.o: ..\Vehicle\hero_test\Robot\Params.cpp \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h \
   ..\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h \
-  ..\Libraries\Math\Vector3.h \
+  ..\Libraries\Helper\Helper.h ..\Core\Inc\adc.h ..\Core\Inc\main.h \
+  ..\Vehicle\hero_test\Robot\Task_Robot.h \
+  ..\Vehicle\hero_test\Robot\Robot.h \
+  ..\Modules\ScrewMotorTask\ScrewMotorTask.h \
+  ..\Modules\MotorTask\Motor_RM_Tasks.h \
+  ..\Libraries\PID\PID_Controller.h \
+  D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math.h \
+  D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h \
+  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\math.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdlib.h \
@@ -58,14 +65,8 @@ robo_template/params.o: ..\Vehicle\hero_test\Robot\Params.cpp \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\version \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  ..\Libraries\Math\CommonMath.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\float.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\float.h \
-  D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math.h \
-  D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_types.h \
-  ..\Drivers\CMSIS\Include\cmsis_compiler.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\string.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\limits.h \
   D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\arm_math_memory.h \
@@ -95,21 +96,17 @@ robo_template/params.o: ..\Vehicle\hero_test\Robot\Params.cpp \
   D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\filtering_functions.h \
   D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\support_functions.h \
   D:\Keil_v5\pkgs\ARM\CMSIS\5.8.0\CMSIS\DSP\Include\dsp\quaternion_math_functions.h \
+  ..\Libraries\Math\CommonMath.h ..\Libraries\Math\AdvancedAdd.h \
+  ..\Libraries\Motor\Motor.h ..\Libraries\Motor\Motor_Data.h \
   ..\Libraries\CanDevice\CanDevice.h ..\Libraries\Error\Error.h \
-  ..\Libraries\DataStructure\Queue\Queue.h \
-  ..\Libraries\PID\PID_Controller.h ..\Libraries\Math\AdvancedAdd.h \
-  ..\Libraries\Motor\Motor_DM.h ..\Modules\MotorTask\Motor_RM_Tasks.h \
+  ..\Libraries\DataStructure\Queue\Queue.h ..\Libraries\Motor\Motor_RM.h \
+  ..\Libraries\Motor\Motor_Backend.h ..\Libraries\Math\Vector3.h \
   ..\Modules\CANTask\CANSendTask.h ..\Modules\PIDTask\PIDControlTask.h \
   ..\Modules\RoboBase\Task_RoboBase.h ..\Modules\RoboBase\RoboBase.h \
-  ..\Libraries\Scheduler\Scheduler.h ..\Libraries\Helper\Helper.h \
-  ..\Core\Inc\adc.h ..\Core\Inc\main.h \
+  ..\Libraries\Scheduler\Scheduler.h \
   ..\Libraries\RCProtocol\RCProtocol.h \
   ..\Libraries\InertialSensor\InertialSensor.h \
-  ..\Modules\RoboBase\ControlBase.h ..\Modules\MotorTask\Motor_DM_Task.h \
+  ..\Modules\RoboBase\ControlBase.h ..\Vehicle\hero_test\Robot\Params.h \
+  ..\Libraries\Motor\Motor_DM.h ..\Modules\MotorTask\Motor_DM_Task.h \
   ..\Modules\SoundManageTask\SoundManageTask.h \
-  ..\Vehicle\hero_test\Robot\Task_Robot.h \
-  ..\Modules\SoundManageTask\PlaySound.h \
-  ..\Vehicle\hero_test\Robot\.\Robot.h \
-  ..\Modules\ScrewMotorTask\ScrewMotorTask.h \
-  ..\Vehicle\hero_test\Robot\Params.h ..\Modules\CanTask\CanSendTask.h \
-  ..\Modules\CanTask\CANSyncTask.h
+  ..\Modules\CanTask\CanSendTask.h ..\Modules\CanTask\CANSyncTask.h

@@ -67,6 +67,7 @@ void Srew_Motor_PIDControlTask::update(timeus_t dT_us){
 	 RC_Data rc_data = robot.getRCProtocol().getRCData();
 	 if(flag==0 || flag==-SYMBOL(rc_data.ch3))    //
 		 {
+
 			 flag =0;
 	 if(ABS(rc_data.ch3)<150){
 		  motor_rpm_expect[0] =0;
@@ -85,15 +86,26 @@ void Srew_Motor_PIDControlTask::update(timeus_t dT_us){
 	 motor_rpm[0] = motor_1_pid_task->get_motor_backend_p()->getMeasurement().speed_rpm;
 	 current[0]=motor_1_pid_task->get_motor_backend_p()->getMeasurement().given_current;
 	 if(ABS(current[0])<=max_curent[0]){
+		  robot.getHelper().setLED(0,0,0);
 		 	motor_1_pid_task->getAngularVelocityTaskPointer()->setPIDControllerExpect(motor_rpm_expect[0]);
 			motor_1_pid_task->getAngularVelocityTaskPointer()->setPIDControllerFeedback(motor_rpm[0]);
 			motor_input[0] = motor_1_pid_task->getAngularVelocityTaskPointer()->getOutput();
+		 
 			motor_1_pid_task->setMotorInput((int16_t)(motor_input[0]/3.0));
 	 
 	 }
 	 else
 	 {
+		 // ¹ýÔØ±¨¾¯ ----ledºÍ·äÃùÆ÷ÏìÉù
+		 Sound sound;
+		 sound.song_buf =robot.get_Params().device_params.song_buffer;
+		 sound.is_loop =false;
+		 sound.song_length=8;
+		 sound.priority=1;
+		 robot.get_play_sound()->playSound(sound);
+		 robot.getHelper().setLED(1,0,0);
 		 flag = SYMBOL(current[0]);
+		 
 		 motor_1_pid_task->setMotorInput(0);
 	 }
 

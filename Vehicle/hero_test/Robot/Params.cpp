@@ -62,9 +62,8 @@ void Params::initMotorsParams(uint8_t ROBOT_ID)
    device_params.control_tasks_interval.can1_send_0x200_task_interval = 1e6f / 400.0f;
 	
 	
-
-
   /************** ÈÎÎñÆµÂÊ **************/
+
 
 
 }

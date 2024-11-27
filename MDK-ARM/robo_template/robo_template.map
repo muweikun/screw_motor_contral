@@ -1575,11 +1575,19 @@ Section Cross References
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN8robo_lib10RCProtocol9getRCDataEv) for robo_lib::RCProtocol::getRCData()
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask19get_motor_backend_pEv) for Motor_RM_PIDControlTask::get_motor_backend_p()
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN8robo_lib8Motor_RM14getMeasurementEv) for robo_lib::Motor_RM::getMeasurement()
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN5Robot10get_ParamsEv) for Robot::get_Params()
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN5Robot14get_play_soundEv) for Robot::get_play_sound()
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound) for PlaySoundManageTask::playSound(Sound)
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN8RoboBase9getHelperEv) for RoboBase::getHelper()
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to helper.o(.text._ZN8robo_lib6Helper6setLEDEhhh) for robo_lib::Helper::setLED(unsigned char, unsigned char, unsigned char)
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs) for Motor_RM_PIDControlTask::setMotorInput(short)
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask29getAngularVelocityTaskPointerEv) for Motor_RM_PIDControlTask::getAngularVelocityTaskPointer()
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerExpectEf) for PIDControlTask::setPIDControllerExpect(float)
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN14PIDControlTask24setPIDControllerFeedbackEf) for PIDControlTask::setPIDControllerFeedback(float)
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN14PIDControlTask9getOutputEv) for PIDControlTask::getOutput()
-    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs) for Motor_RM_PIDControlTask::setMotorInput(short)
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to dflt_clz.o(x$fpl$dflt) for __aeabi_i2d
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to ddiv.o(x$fpl$ddiv) for __aeabi_ddiv
+    screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to dfix.o(x$fpl$dfix) for __aeabi_d2iz
     screwmotortask.o(.ARM.exidx.text._ZN25Srew_Motor_PIDControlTask6updateEj) refers to screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj) for [Anonymous Symbol]
     screwmotortask.o(.ARM.exidx.text._ZN25Srew_Motor_PIDControlTask6uninitEv) refers to screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6uninitEv) for [Anonymous Symbol]
     screwmotortask.o(.rodata._ZTV25Srew_Motor_PIDControlTask) refers to screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev) for robo_lib::Task_Base::~Task_Base__sub_object()
@@ -2162,6 +2170,7 @@ Section Cross References
     robot.o(.text._ZN5Robot4initEv) refers to cansendtask.o(.text._ZN11CANSendTaskC2ER5RobotPN8robo_lib9CanDeviceEj) for CANSendTask::CANSendTask(Robot&, robo_lib::CanDevice*, unsigned int)
     robot.o(.text._ZN5Robot4initEv) refers to cansynctask.o(.text._ZN11CANSyncTaskC2ER5RobotPN8robo_lib9CanDeviceEtj) for CANSyncTask::CANSyncTask(Robot&, robo_lib::CanDevice*, unsigned short, unsigned int)
     robot.o(.text._ZN5Robot4initEv) refers to rcprotocol.o(.text._ZN8robo_lib10RCProtocol4initEv) for robo_lib::RCProtocol::init()
+    robot.o(.text._ZN5Robot4initEv) refers to robot.o(.text._ZN19PlaySoundManageTaskC2ER5Robotj) for PlaySoundManageTask::PlaySoundManageTask__sub_object(Robot&, unsigned int)
     robot.o(.text._ZN5Robot4initEv) refers to tim.o(.bss.htim2) for htim2
     robot.o(.text._ZN5Robot4initEv) refers to stm32f4xx_hal_tim.o(.text.HAL_TIM_Base_Start_IT) for HAL_TIM_Base_Start_IT
     robot.o(.text._ZN5Robot4initEv) refers to tim.o(.bss.htim5) for htim5
@@ -2177,6 +2186,39 @@ Section Cross References
     robot.o(.ARM.exidx.text._ZN5Robot3runEv) refers to robot.o(.text._ZN5Robot3runEv) for [Anonymous Symbol]
     robot.o(.rodata._ZTV5Robot) refers to robot.o(.text._ZN5Robot4initEv) for Robot::init()
     robot.o(.rodata._ZTV5Robot) refers to robot.o(.text._ZN5Robot3runEv) for Robot::run()
+    playsound.o(.text._ZN13PlaySoundTask4initEv) refers to screwmotortask.o(.text._ZN8RoboBase9getHelperEv) for RoboBase::getHelper()
+    playsound.o(.text._ZN13PlaySoundTask4initEv) refers to helper.o(.text._ZN8robo_lib6Helper12setBuzzerOffEv) for robo_lib::Helper::setBuzzerOff()
+    playsound.o(.ARM.exidx.text._ZN13PlaySoundTask4initEv) refers to playsound.o(.text._ZN13PlaySoundTask4initEv) for [Anonymous Symbol]
+    playsound.o(.ARM.exidx.text._ZN13PlaySoundTask6uninitEv) refers to playsound.o(.text._ZN13PlaySoundTask6uninitEv) for [Anonymous Symbol]
+    playsound.o(.text._ZN13PlaySoundTask8playsongEv) refers to screwmotortask.o(.text._ZN8RoboBase9getHelperEv) for RoboBase::getHelper()
+    playsound.o(.text._ZN13PlaySoundTask8playsongEv) refers to helper.o(.text._ZN8robo_lib6Helper18setBuzzerFrequenceEt) for robo_lib::Helper::setBuzzerFrequence(unsigned short)
+    playsound.o(.text._ZN13PlaySoundTask8playsongEv) refers to helper.o(.text._ZN8robo_lib6Helper12setBuzzerOffEv) for robo_lib::Helper::setBuzzerOff()
+    playsound.o(.ARM.exidx.text._ZN13PlaySoundTask8playsongEv) refers to playsound.o(.text._ZN13PlaySoundTask8playsongEv) for [Anonymous Symbol]
+    playsound.o(.text._ZN13PlaySoundTask6updateEj) refers to playsound.o(.text._ZN13PlaySoundTask8playsongEv) for PlaySoundTask::playsong()
+    playsound.o(.text._ZN13PlaySoundTask6updateEj) refers to screwmotortask.o(.text._ZN8RoboBase9getHelperEv) for RoboBase::getHelper()
+    playsound.o(.text._ZN13PlaySoundTask6updateEj) refers to helper.o(.text._ZN8robo_lib6Helper12setBuzzerOffEv) for robo_lib::Helper::setBuzzerOff()
+    playsound.o(.text._ZN13PlaySoundTask6updateEj) refers to playsound.o(.text._ZN8robo_lib9Task_Base8selfKillEv) for robo_lib::Task_Base::selfKill()
+    playsound.o(.ARM.exidx.text._ZN13PlaySoundTask6updateEj) refers to playsound.o(.text._ZN13PlaySoundTask6updateEj) for [Anonymous Symbol]
+    playsound.o(.rodata._ZTV13PlaySoundTask) refers to screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev) for robo_lib::Task_Base::~Task_Base__sub_object()
+    playsound.o(.rodata._ZTV13PlaySoundTask) refers to playsound.o(.text._ZN13PlaySoundTaskD0Ev) for PlaySoundTask::~PlaySoundTask__deallocating()
+    playsound.o(.rodata._ZTV13PlaySoundTask) refers to playsound.o(.text._ZN13PlaySoundTask6updateEj) for PlaySoundTask::update(unsigned int)
+    playsound.o(.rodata._ZTV13PlaySoundTask) refers to playsound.o(.text._ZN13PlaySoundTask4initEv) for PlaySoundTask::init()
+    playsound.o(.rodata._ZTV13PlaySoundTask) refers to playsound.o(.text._ZN13PlaySoundTask6uninitEv) for PlaySoundTask::uninit()
+    soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask4initEv) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask4initEv) for [Anonymous Symbol]
+    soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask6uninitEv) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask6uninitEv) for [Anonymous Symbol]
+    soundmanagetask.o(.text._ZN19PlaySoundManageTask8shutdownEv) refers to playsound.o(.text._ZN8robo_lib9Task_Base8selfKillEv) for robo_lib::Task_Base::selfKill()
+    soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask8shutdownEv) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask8shutdownEv) for [Anonymous Symbol]
+    soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask6updateEj) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask6updateEj) for [Anonymous Symbol]
+    soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound) refers to new.cpp.o(.text._Znwj) for operator new(unsigned int)
+    soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound) refers to soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej) for PlaySoundTask::PlaySoundTask__sub_object(Robot&, unsigned short*, unsigned short, Play_Type, unsigned int)
+    soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound) refers to screwmotortask.o(.text._ZN8RoboBase12getSchedulerEv) for RoboBase::getScheduler()
+    soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound) refers to scheduler.o(.text._ZN8robo_lib9Scheduler12registerTaskEPNS_9Task_BaseE) for robo_lib::Scheduler::registerTask(robo_lib::Task_Base*)
+    soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask9playSoundE5Sound) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound) for [Anonymous Symbol]
+    soundmanagetask.o(.rodata._ZTV19PlaySoundManageTask) refers to screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev) for robo_lib::Task_Base::~Task_Base__sub_object()
+    soundmanagetask.o(.rodata._ZTV19PlaySoundManageTask) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTaskD0Ev) for PlaySoundManageTask::~PlaySoundManageTask__deallocating()
+    soundmanagetask.o(.rodata._ZTV19PlaySoundManageTask) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask6updateEj) for PlaySoundManageTask::update(unsigned int)
+    soundmanagetask.o(.rodata._ZTV19PlaySoundManageTask) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask4initEv) for PlaySoundManageTask::init()
+    soundmanagetask.o(.rodata._ZTV19PlaySoundManageTask) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTask6uninitEv) for PlaySoundManageTask::uninit()
     basicmathfunctions.o(.ARM.exidx.text.arm_abs_f32) refers to basicmathfunctions.o(.text.arm_abs_f32) for [Anonymous Symbol]
     basicmathfunctions.o(.ARM.exidx.text.arm_abs_q15) refers to basicmathfunctions.o(.text.arm_abs_q15) for [Anonymous Symbol]
     basicmathfunctions.o(.ARM.exidx.text.arm_abs_q31) refers to basicmathfunctions.o(.text.arm_abs_q31) for [Anonymous Symbol]
@@ -4199,12 +4241,16 @@ Section Cross References
     screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs) refers to screwmotortask.o(.text._ZN8robo_lib8Motor_RM13setMotorInputEs) for robo_lib::Motor_RM::setMotorInput(short)
     screwmotortask.o(.ARM.exidx.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs) refers to screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs) for [Anonymous Symbol]
     screwmotortask.o(.ARM.exidx.text._ZN8robo_lib8Motor_RM14getMeasurementEv) refers to screwmotortask.o(.text._ZN8robo_lib8Motor_RM14getMeasurementEv) for [Anonymous Symbol]
+    screwmotortask.o(.ARM.exidx.text._ZN8RoboBase9getHelperEv) refers to screwmotortask.o(.text._ZN8RoboBase9getHelperEv) for [Anonymous Symbol]
     screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerExpectEf) refers to screwmotortask.o(.text._ZN8robo_lib14PID_Controller9setExpectEf) for robo_lib::PID_Controller::setExpect(float)
     screwmotortask.o(.ARM.exidx.text._ZN14PIDControlTask22setPIDControllerExpectEf) refers to screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerExpectEf) for [Anonymous Symbol]
     screwmotortask.o(.text._ZN14PIDControlTask24setPIDControllerFeedbackEf) refers to screwmotortask.o(.text._ZN8robo_lib14PID_Controller11setFeedbackEf) for robo_lib::PID_Controller::setFeedback(float)
     screwmotortask.o(.ARM.exidx.text._ZN14PIDControlTask24setPIDControllerFeedbackEf) refers to screwmotortask.o(.text._ZN14PIDControlTask24setPIDControllerFeedbackEf) for [Anonymous Symbol]
     screwmotortask.o(.text._ZN14PIDControlTask9getOutputEv) refers to screwmotortask.o(.text._ZN8robo_lib14PID_Controller9getOutputEv) for robo_lib::PID_Controller::getOutput()
     screwmotortask.o(.ARM.exidx.text._ZN14PIDControlTask9getOutputEv) refers to screwmotortask.o(.text._ZN14PIDControlTask9getOutputEv) for [Anonymous Symbol]
+    screwmotortask.o(.text._ZN5Robot10get_ParamsEv) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    screwmotortask.o(.ARM.exidx.text._ZN5Robot10get_ParamsEv) refers to screwmotortask.o(.text._ZN5Robot10get_ParamsEv) for [Anonymous Symbol]
+    screwmotortask.o(.ARM.exidx.text._ZN5Robot14get_play_soundEv) refers to screwmotortask.o(.text._ZN5Robot14get_play_soundEv) for [Anonymous Symbol]
     screwmotortask.o(.ARM.exidx.text._ZN8robo_lib9Task_BaseD2Ev) refers to screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev) for [Anonymous Symbol]
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskD0Ev) refers to screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev) for robo_lib::Task_Base::~Task_Base__sub_object()
     screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskD0Ev) refers to new.cpp.o(.text._ZdlPv) for operator delete(void*)
@@ -4375,6 +4421,21 @@ Section Cross References
     main_1.o(.ARM.exidx.text._ZN8robo_lib10RCProtocolD2Ev) refers to main_1.o(.text._ZN8robo_lib10RCProtocolD2Ev) for [Anonymous Symbol]
     main_1.o(.rodata._ZTV8RoboBase) refers to cxa_virtual.cpp.o(.text.__cxa_pure_virtual) for __cxa_pure_virtual
     main_1.o(.rodata._ZTV11ControlBase) refers to cxa_virtual.cpp.o(.text.__cxa_pure_virtual) for __cxa_pure_virtual
+    robot.o(.text._ZN19PlaySoundManageTaskC2ER5Robotj) refers to screwmotortask.o(.text._ZN10Task_RobotC2ER5Robot) for Task_Robot::Task_Robot__sub_object(Robot&)
+    robot.o(.text._ZN19PlaySoundManageTaskC2ER5Robotj) refers to soundmanagetask.o(.rodata._ZTV19PlaySoundManageTask) for vtable for PlaySoundManageTask
+    robot.o(.ARM.exidx.text._ZN19PlaySoundManageTaskC2ER5Robotj) refers to robot.o(.text._ZN19PlaySoundManageTaskC2ER5Robotj) for [Anonymous Symbol]
+    playsound.o(.ARM.exidx.text._ZN8robo_lib9Task_Base8selfKillEv) refers to playsound.o(.text._ZN8robo_lib9Task_Base8selfKillEv) for [Anonymous Symbol]
+    playsound.o(.text._ZN13PlaySoundTaskD0Ev) refers to screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev) for robo_lib::Task_Base::~Task_Base__sub_object()
+    playsound.o(.text._ZN13PlaySoundTaskD0Ev) refers to new.cpp.o(.text._ZdlPv) for operator delete(void*)
+    playsound.o(.ARM.exidx.text._ZN13PlaySoundTaskD0Ev) refers to playsound.o(.text._ZN13PlaySoundTaskD0Ev) for [Anonymous Symbol]
+    soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej) refers to screwmotortask.o(.text._ZN10Task_RobotC2ER5Robot) for Task_Robot::Task_Robot__sub_object(Robot&)
+    soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej) refers to playsound.o(.rodata._ZTV13PlaySoundTask) for vtable for PlaySoundTask
+    soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej) refers to soundmanagetask.o(.rodata..Lconstinit) for .Lconstinit
+    soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    soundmanagetask.o(.ARM.exidx.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej) refers to soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej) for [Anonymous Symbol]
+    soundmanagetask.o(.text._ZN19PlaySoundManageTaskD0Ev) refers to screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev) for robo_lib::Task_Base::~Task_Base__sub_object()
+    soundmanagetask.o(.text._ZN19PlaySoundManageTaskD0Ev) refers to new.cpp.o(.text._ZdlPv) for operator delete(void*)
+    soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTaskD0Ev) refers to soundmanagetask.o(.text._ZN19PlaySoundManageTaskD0Ev) for [Anonymous Symbol]
 
 
 ==============================================================================
@@ -5661,9 +5722,7 @@ Removing Unused input sections from the image.
     Removing flash.o(.text._ZN8robo_lib17flash_readAddressEjPjt), (16 bytes).
     Removing flash.o(.ARM.exidx.text._ZN8robo_lib17flash_readAddressEjPjt), (8 bytes).
     Removing helper.o(.text), (0 bytes).
-    Removing helper.o(.text._ZN8robo_lib6Helper12setBuzzerOffEv), (16 bytes).
     Removing helper.o(.ARM.exidx.text._ZN8robo_lib6Helper12setBuzzerOffEv), (8 bytes).
-    Removing helper.o(.text._ZN8robo_lib6Helper18setBuzzerFrequenceEt), (52 bytes).
     Removing helper.o(.ARM.exidx.text._ZN8robo_lib6Helper18setBuzzerFrequenceEt), (8 bytes).
     Removing helper.o(.text._ZN8robo_lib6Helper14setBuzzerStateEh), (42 bytes).
     Removing helper.o(.ARM.exidx.text._ZN8robo_lib6Helper14setBuzzerStateEh), (8 bytes).
@@ -5671,7 +5730,6 @@ Removing Unused input sections from the image.
     Removing helper.o(.ARM.exidx.text._ZN8robo_lib6Helper12playingSoundEPht), (8 bytes).
     Removing helper.o(.text._ZN8robo_lib6Helper11playingSongEPtt), (126 bytes).
     Removing helper.o(.ARM.exidx.text._ZN8robo_lib6Helper11playingSongEPtt), (8 bytes).
-    Removing helper.o(.text._ZN8robo_lib6Helper6setLEDEhhh), (66 bytes).
     Removing helper.o(.ARM.exidx.text._ZN8robo_lib6Helper6setLEDEhhh), (8 bytes).
     Removing helper.o(.text._ZN8robo_lib6Helper9toggleLEDEhhh), (60 bytes).
     Removing helper.o(.ARM.exidx.text._ZN8robo_lib6Helper9toggleLEDEhhh), (8 bytes).
@@ -5977,6 +6035,18 @@ Removing Unused input sections from the image.
     Removing robot.o(.text), (0 bytes).
     Removing robot.o(.ARM.exidx.text._ZN5Robot4initEv), (8 bytes).
     Removing robot.o(.ARM.exidx.text._ZN5Robot3runEv), (8 bytes).
+    Removing playsound.o(.text), (0 bytes).
+    Removing playsound.o(.ARM.exidx.text._ZN13PlaySoundTask4initEv), (8 bytes).
+    Removing playsound.o(.ARM.exidx.text._ZN13PlaySoundTask6uninitEv), (8 bytes).
+    Removing playsound.o(.ARM.exidx.text._ZN13PlaySoundTask8playsongEv), (8 bytes).
+    Removing playsound.o(.ARM.exidx.text._ZN13PlaySoundTask6updateEj), (8 bytes).
+    Removing soundmanagetask.o(.text), (0 bytes).
+    Removing soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask4initEv), (8 bytes).
+    Removing soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask6uninitEv), (8 bytes).
+    Removing soundmanagetask.o(.text._ZN19PlaySoundManageTask8shutdownEv), (26 bytes).
+    Removing soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask8shutdownEv), (8 bytes).
+    Removing soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask6updateEj), (8 bytes).
+    Removing soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTask9playSoundE5Sound), (8 bytes).
     Removing basicmathfunctions.o(.text), (0 bytes).
     Removing basicmathfunctions.o(.text.arm_abs_f32), (34 bytes).
     Removing basicmathfunctions.o(.ARM.exidx.text.arm_abs_f32), (8 bytes).
@@ -7424,9 +7494,12 @@ Removing Unused input sections from the image.
     Removing screwmotortask.o(.ARM.exidx.text._ZN8robo_lib10RCProtocol9getRCDataEv), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN8robo_lib8Motor_RM14getMeasurementEv), (8 bytes).
+    Removing screwmotortask.o(.ARM.exidx.text._ZN8RoboBase9getHelperEv), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN14PIDControlTask22setPIDControllerExpectEf), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN14PIDControlTask24setPIDControllerFeedbackEf), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN14PIDControlTask9getOutputEv), (8 bytes).
+    Removing screwmotortask.o(.ARM.exidx.text._ZN5Robot10get_ParamsEv), (8 bytes).
+    Removing screwmotortask.o(.ARM.exidx.text._ZN5Robot14get_play_soundEv), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN8robo_lib9Task_BaseD2Ev), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN25Srew_Motor_PIDControlTaskD0Ev), (8 bytes).
     Removing screwmotortask.o(.ARM.exidx.text._ZN8robo_lib9Task_BaseC2Ev), (8 bytes).
@@ -7548,8 +7621,13 @@ Removing Unused input sections from the image.
     Removing main_1.o(.ARM.exidx.text._ZN8robo_lib5MotorC2Ev), (8 bytes).
     Removing main_1.o(.ARM.exidx.text._ZN14_Init_Params_tC2Ev), (8 bytes).
     Removing main_1.o(.ARM.exidx.text._ZN8robo_lib10RCProtocolD2Ev), (8 bytes).
+    Removing robot.o(.ARM.exidx.text._ZN19PlaySoundManageTaskC2ER5Robotj), (8 bytes).
+    Removing playsound.o(.ARM.exidx.text._ZN8robo_lib9Task_Base8selfKillEv), (8 bytes).
+    Removing playsound.o(.ARM.exidx.text._ZN13PlaySoundTaskD0Ev), (8 bytes).
+    Removing soundmanagetask.o(.ARM.exidx.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej), (8 bytes).
+    Removing soundmanagetask.o(.ARM.exidx.text._ZN19PlaySoundManageTaskD0Ev), (8 bytes).
 
-3167 unused section(s) (total 1149035 bytes) removed from the image.
+3184 unused section(s) (total 1149063 bytes) removed from the image.
 
 ==============================================================================
 
@@ -7827,6 +7905,7 @@ Image Symbol Table
     PIDControlTask.cpp                       0x00000000   Number         0  pidcontroltask.o ABSOLUTE
     PID_Controller.cpp                       0x00000000   Number         0  pid_controller.o ABSOLUTE
     Params.cpp                               0x00000000   Number         0  params.o ABSOLUTE
+    PlaySound.cpp                            0x00000000   Number         0  playsound.o ABSOLUTE
     QuaternionMathFunctions.c                0x00000000   Number         0  quaternionmathfunctions.o ABSOLUTE
     RCProtocol.cpp                           0x00000000   Number         0  rcprotocol.o ABSOLUTE
     RCProtocol_Backend.cpp                   0x00000000   Number         0  rcprotocol_backend.o ABSOLUTE
@@ -7841,6 +7920,7 @@ Image Symbol Table
     Scheduler.cpp                            0x00000000   Number         0  scheduler.o ABSOLUTE
     Scheduler_Common.cpp                     0x00000000   Number         0  scheduler_common.o ABSOLUTE
     ScrewMotorTask.cpp                       0x00000000   Number         0  screwmotortask.o ABSOLUTE
+    SoundManageTask.cpp                      0x00000000   Number         0  soundmanagetask.o ABSOLUTE
     StatisticsFunctions.c                    0x00000000   Number         0  statisticsfunctions.o ABSOLUTE
     StatisticsFunctionsF16.c                 0x00000000   Number         0  statisticsfunctionsf16.o ABSOLUTE
     SupportFunctions.c                       0x00000000   Number         0  supportfunctions.o ABSOLUTE
@@ -8164,142 +8244,173 @@ Image Symbol Table
     [Anonymous Symbol]                       0x08004930   Section        0  cansynctask.o(.text._ZN11CANSyncTaskC2ER5RobotPN8robo_lib9CanDeviceEtj)
     [Anonymous Symbol]                       0x08004974   Section        0  cansynctask.o(.text._ZN11CANSyncTaskD0Ev)
     [Anonymous Symbol]                       0x08004980   Section        0  main_1.o(.text._ZN11ControlBaseC2Ev)
-    [Anonymous Symbol]                       0x08004990   Section        0  motor_dm_task.o(.text._ZN13Task_RoboBaseC2ER8RoboBase)
-    [Anonymous Symbol]                       0x080049a8   Section        0  motor_dm_task.o(.text._ZN13Task_RoboBaseD0Ev)
-    [Anonymous Symbol]                       0x080049ac   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask12calculatePIDEj)
-    [Anonymous Symbol]                       0x080049b8   Section        0  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerExpectEf)
-    [Anonymous Symbol]                       0x080049c4   Section        0  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerParamsERKN8robo_lib13_PID_Params_tE)
-    [Anonymous Symbol]                       0x080049d0   Section        0  screwmotortask.o(.text._ZN14PIDControlTask24setPIDControllerFeedbackEf)
-    [Anonymous Symbol]                       0x080049dc   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask4initEv)
-    [Anonymous Symbol]                       0x080049e0   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask6uninitEv)
-    [Anonymous Symbol]                       0x080049e4   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask6updateEj)
-    [Anonymous Symbol]                       0x080049ec   Section        0  screwmotortask.o(.text._ZN14PIDControlTask9getOutputEv)
-    [Anonymous Symbol]                       0x080049f8   Section        0  motor_dm_task.o(.text._ZN14PIDControlTaskC2ER8RoboBasej)
-    [Anonymous Symbol]                       0x08004a1c   Section        0  pidcontroltask.o(.text._ZN14PIDControlTaskD0Ev)
-    [Anonymous Symbol]                       0x08004a28   Section        0  main_1.o(.text._ZN14_Init_Params_tC2Ev)
-    [Anonymous Symbol]                       0x08004a34   Section        0  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs)
-    [Anonymous Symbol]                       0x08004a40   Section        0  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask19get_motor_backend_pEv)
-    [Anonymous Symbol]                       0x08004a44   Section        0  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask29getAngularVelocityTaskPointerEv)
-    [Anonymous Symbol]                       0x08004a48   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask4initEv)
-    [Anonymous Symbol]                       0x08004a4c   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6uninitEv)
-    [Anonymous Symbol]                       0x08004a50   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6updateEj)
-    [Anonymous Symbol]                       0x08004a64   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj)
-    [Anonymous Symbol]                       0x08004aec   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskD0Ev)
-    [Anonymous Symbol]                       0x08004af8   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask4initEv)
-    [Anonymous Symbol]                       0x08004b34   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6uninitEv)
-    [Anonymous Symbol]                       0x08004b38   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj)
-    [Anonymous Symbol]                       0x08004c08   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j)
-    [Anonymous Symbol]                       0x08004ccc   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskD0Ev)
-    [Anonymous Symbol]                       0x08004cd8   Section        0  robot.o(.text._ZN5Robot3runEv)
-    [Anonymous Symbol]                       0x08004ce4   Section        0  robot.o(.text._ZN5Robot4initEv)
-    [Anonymous Symbol]                       0x08004dec   Section        0  main_1.o(.text._ZN5RobotC2Ev)
-    [Anonymous Symbol]                       0x08004e18   Section        0  params.o(.text._ZN6Params16initMotorsParamsEh)
-    [Anonymous Symbol]                       0x08004eb4   Section        0  main_1.o(.text._ZN6ParamsC2Ev)
-    [Anonymous Symbol]                       0x08004ebc   Section        0  screwmotortask.o(.text._ZN8RoboBase12getSchedulerEv)
-    [Anonymous Symbol]                       0x08004ec0   Section        0  screwmotortask.o(.text._ZN8RoboBase13getCAN1DeviceEv)
-    [Anonymous Symbol]                       0x08004ec8   Section        0  screwmotortask.o(.text._ZN8RoboBase13getCAN2DeviceEv)
-    [Anonymous Symbol]                       0x08004ed0   Section        0  screwmotortask.o(.text._ZN8RoboBase13getRCProtocolEv)
-    [Anonymous Symbol]                       0x08004ed8   Section        0  main_1.o(.text._ZN8RoboBase20getCAN1DevicePointerEv)
-    [Anonymous Symbol]                       0x08004ee0   Section        0  main_1.o(.text._ZN8RoboBase20getCAN2DevicePointerEv)
-    [Anonymous Symbol]                       0x08004ee8   Section        0  main_1.o(.text._ZN8RoboBase20getRCProtocolPointerEv)
-    [Anonymous Symbol]                       0x08004ef0   Section        0  motor_dm_task.o(.text._ZN8RoboBase9getMotorsEv)
-    [Anonymous Symbol]                       0x08004ef8   Section        0  main_1.o(.text._ZN8RoboBaseC2Ev)
-    [Anonymous Symbol]                       0x08004f4c   Section        0  main_1.o(.text._ZN8RoboBaseD2Ev)
-    [Anonymous Symbol]                       0x08004f5c   Section        0  rcprotocol.o(.text._ZN8robo_lib10RCProtocol10addBackendEPNS_18RCProtocol_BackendE)
-    [Anonymous Symbol]                       0x08004f60   Section        0  rcprotocol.o(.text._ZN8robo_lib10RCProtocol11processByteEPVKh)
-    [Anonymous Symbol]                       0x08004f74   Section        0  rcprotocol.o(.text._ZN8robo_lib10RCProtocol4initEv)
-    [Anonymous Symbol]                       0x08005000   Section        0  screwmotortask.o(.text._ZN8robo_lib10RCProtocol9getRCDataEv)
-    [Anonymous Symbol]                       0x08005040   Section        0  main_1.o(.text._ZN8robo_lib10RCProtocolC2Ev)
-    [Anonymous Symbol]                       0x08005044   Section        0  main_1.o(.text._ZN8robo_lib10RCProtocolD2Ev)
-    [Anonymous Symbol]                       0x08005048   Section        0  motor_backend.o(.text._ZN8robo_lib13Motor_Backend18publishMeasurementEv)
-    [Anonymous Symbol]                       0x0800508c   Section        0  motor_backend.o(.text._ZN8robo_lib13Motor_BackendC2ERNS_5MotorE)
-    [Anonymous Symbol]                       0x0800509c   Section        0  inertialsensor.o(.text._ZN8robo_lib14InertialSensorC2Ev)
-    [Anonymous Symbol]                       0x080050c8   Section        0  screwmotortask.o(.text._ZN8robo_lib14PID_Controller11setFeedbackEf)
-    [Anonymous Symbol]                       0x080050d0   Section        0  pidcontroltask.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEj)
-    [Anonymous Symbol]                       0x080050e4   Section        0  pid_controller.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEjfff)
-    [Anonymous Symbol]                       0x080053d0   Section        0  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9getOutputEv)
-    [Anonymous Symbol]                       0x080053d8   Section        0  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9setExpectEf)
-    [Anonymous Symbol]                       0x080053e0   Section        0  pid_controller.o(.text._ZN8robo_lib14PID_Controller9setParamsERKNS_13_PID_Params_tE)
-    [Anonymous Symbol]                       0x08005424   Section        0  pid_controller.o(.text._ZN8robo_lib14PID_ControllerC2Ev)
-    [Anonymous Symbol]                       0x08005428   Section        0  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS11processByteEPVKh)
-    [Anonymous Symbol]                       0x08005534   Section        0  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS4initEv)
-    [Anonymous Symbol]                       0x08005538   Section        0  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS6uninitEv)
-    [Anonymous Symbol]                       0x0800553c   Section        0  rcprotocol.o(.text._ZN8robo_lib15RCProtocol_DBUSC2ERNS_10RCProtocolE)
-    [Anonymous Symbol]                       0x08005550   Section        0  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_Backend13publishRCDataENS_7RC_DataE)
-    [Anonymous Symbol]                       0x080055f4   Section        0  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_BackendC2ERNS_10RCProtocolE)
-    [Anonymous Symbol]                       0x08005604   Section        0  uartdriver.o(.text._ZN8robo_lib18USART1_DMA_Tx_InitEv)
-    [Anonymous Symbol]                       0x08005618   Section        0  error.o(.text._ZN8robo_lib5Error13Error_HandlerEv)
-    [Anonymous Symbol]                       0x0800561c   Section        0  motor.o(.text._ZN8robo_lib5Motor10addBackendEPNS_13Motor_BackendE)
-    [Anonymous Symbol]                       0x08005644   Section        0  main_1.o(.text._ZN8robo_lib5MotorC2Ev)
-    [Anonymous Symbol]                       0x08005648   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_InitEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_j)
-    [Anonymous Symbol]                       0x08005654   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_PushEPNS_19QUEUE_HandleTypeDefIS1_EES1_)
-    [Anonymous Symbol]                       0x080056a8   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE11Queue_ClearEPNS_19QUEUE_HandleTypeDefIS1_EE)
-    [Anonymous Symbol]                       0x080056b0   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE9Queue_PopEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_)
-    [Anonymous Symbol]                       0x08005700   Section        0  main_1.o(.text._ZN8robo_lib6HelperC2Ev)
-    [Anonymous Symbol]                       0x0800575c   Section        0  scheduler_common.o(.text._ZN8robo_lib6microsEv)
-    [Anonymous Symbol]                       0x08005764   Section        0  ahrs.o(.text._ZN8robo_lib7Vector3IfEC2Ev)
-    [Anonymous Symbol]                       0x08005770   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM11syncCANDataEv)
-    [Anonymous Symbol]                       0x08005784   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM13setMotorInputEs)
-    [Anonymous Symbol]                       0x08005798   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM14getMeasurementEv)
-    [Anonymous Symbol]                       0x080057b4   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM17updateMeasurementEv)
-    [Anonymous Symbol]                       0x080057bc   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM22updateMotorMeasurementEv)
-    [Anonymous Symbol]                       0x08005944   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM4initEv)
-    [Anonymous Symbol]                       0x08005958   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM6uninitEv)
-    [Anonymous Symbol]                       0x0800595c   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM6updateEj)
-    [Anonymous Symbol]                       0x08005970   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM9setParamsENS_18_Motor_RM_Params_tE)
-    [Anonymous Symbol]                       0x0800599c   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha)
-    [Anonymous Symbol]                       0x08005a00   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice3popEPNS_19_CAN_Tx_Data_Pack_tE)
-    [Anonymous Symbol]                       0x08005a1c   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice4initEP19__CAN_HandleTypeDefPNS_19_CAN_Tx_Data_Pack_tEt)
-    [Anonymous Symbol]                       0x08005a94   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice4pushENS_19_CAN_Tx_Data_Pack_tE)
-    [Anonymous Symbol]                       0x08005acc   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice6updateEj)
-    [Anonymous Symbol]                       0x08005b00   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice9addRxLinkEPNS_19_CAN_Rx_Data_Pack_tE)
-    [Anonymous Symbol]                       0x08005b30   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice9addTxLinkEthhPPhh)
-    [Anonymous Symbol]                       0x08005c14   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice9sendAsyncEPNS_19_CAN_Tx_Data_Pack_tE)
-    [Anonymous Symbol]                       0x08005c3c   Section        0  candevice.o(.text._ZN8robo_lib9CanDeviceC2Ev)
-    [Anonymous Symbol]                       0x08005c50   Section        0  scheduler.o(.text._ZN8robo_lib9Scheduler12registerTaskEPNS_9Task_BaseE)
-    [Anonymous Symbol]                       0x08005c94   Section        0  scheduler.o(.text._ZN8robo_lib9Scheduler14unregisterTaskEPPNS_9Task_BaseE)
-    [Anonymous Symbol]                       0x08005d1c   Section        0  scheduler.o(.text._ZN8robo_lib9Scheduler3runEv)
-    [Anonymous Symbol]                       0x08005ea8   Section        0  scheduler.o(.text._ZN8robo_lib9SchedulerC2Ev)
-    [Anonymous Symbol]                       0x08005ebc   Section        0  advancedadd.o(.text._ZN8robo_lib9SimpleAddIfEclEff)
-    [Anonymous Symbol]                       0x08005ec4   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_Base11setIntervalEj)
-    [Anonymous Symbol]                       0x08005ec8   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_BaseC2Ev)
-    [Anonymous Symbol]                       0x08005ed8   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD0Ev)
-    [Anonymous Symbol]                       0x08005edc   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev)
-    robo_lib::getCurrentMicrosTim5()         0x08005ee1   Thumb Code    12  scheduler_common.o(.text._ZN8robo_libL20getCurrentMicrosTim5Ev)
-    [Anonymous Symbol]                       0x08005ee0   Section        0  scheduler_common.o(.text._ZN8robo_libL20getCurrentMicrosTim5Ev)
-    [Anonymous Symbol]                       0x08005eec   Section        0  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
-    [Anonymous Symbol]                       0x08005ef8   Section        0  new.cpp.o(.text._ZdlPv)
-    [Anonymous Symbol]                       0x08005efc   Section        0  new.cpp.o(.text._Znwj)
-    __NVIC_EnableIRQ                         0x08005f25   Thumb Code    32  stm32f4xx_hal_cortex.o(.text.__NVIC_EnableIRQ)
-    [Anonymous Symbol]                       0x08005f24   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_EnableIRQ)
-    __NVIC_GetPriorityGrouping               0x08005f45   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
-    [Anonymous Symbol]                       0x08005f44   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
-    __NVIC_SetPriority                       0x08005f55   Thumb Code    34  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
-    [Anonymous Symbol]                       0x08005f54   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
-    __NVIC_SetPriorityGrouping               0x08005f79   Thumb Code    32  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
-    [Anonymous Symbol]                       0x08005f78   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
-    [Anonymous Symbol]                       0x08005f98   Section        0  cxa_virtual.cpp.o(.text.__cxa_pure_virtual)
-    __cxx_global_var_init                    0x08005fc1   Thumb Code    40  main_1.o(.text.__cxx_global_var_init)
-    [Anonymous Symbol]                       0x08005fc0   Section        0  main_1.o(.text.__cxx_global_var_init)
-    [Anonymous Symbol]                       0x08005fe8   Section        0  abort_message.cpp.o(.text.abort_message)
-    [Anonymous Symbol]                       0x08005fec   Section        0  main_1.o(.text.main)
-    $v0                                      0x08006068   Number         0  ffltll_clz.o(x$fpl$ffltll)
-    x$fpl$ffltll                             0x08006068   Section       96  ffltll_clz.o(x$fpl$ffltll)
-    $v0                                      0x080060c8   Number         0  fpinit.o(x$fpl$fpinit)
-    x$fpl$fpinit                             0x080060c8   Section       26  fpinit.o(x$fpl$fpinit)
-    x$fpl$usenofp                            0x080060e2   Section        0  usenofp.o(x$fpl$usenofp)
-    .Lconstinit                              0x080060e4   Data          96  main_1.o(.rodata..Lconstinit)
-    .init_array                              0x080062fc   Section        0  init_aeabi.o(.init_array)
+    [Anonymous Symbol]                       0x08004990   Section        0  playsound.o(.text._ZN13PlaySoundTask4initEv)
+    [Anonymous Symbol]                       0x080049ac   Section        0  playsound.o(.text._ZN13PlaySoundTask6uninitEv)
+    [Anonymous Symbol]                       0x080049b0   Section        0  playsound.o(.text._ZN13PlaySoundTask6updateEj)
+    [Anonymous Symbol]                       0x080049e4   Section        0  playsound.o(.text._ZN13PlaySoundTask8playsongEv)
+    [Anonymous Symbol]                       0x08004a58   Section        0  soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej)
+    [Anonymous Symbol]                       0x08004aa0   Section        0  playsound.o(.text._ZN13PlaySoundTaskD0Ev)
+    [Anonymous Symbol]                       0x08004aac   Section        0  motor_dm_task.o(.text._ZN13Task_RoboBaseC2ER8RoboBase)
+    [Anonymous Symbol]                       0x08004ac4   Section        0  motor_dm_task.o(.text._ZN13Task_RoboBaseD0Ev)
+    [Anonymous Symbol]                       0x08004ac8   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask12calculatePIDEj)
+    [Anonymous Symbol]                       0x08004ad4   Section        0  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerExpectEf)
+    [Anonymous Symbol]                       0x08004ae0   Section        0  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerParamsERKN8robo_lib13_PID_Params_tE)
+    [Anonymous Symbol]                       0x08004aec   Section        0  screwmotortask.o(.text._ZN14PIDControlTask24setPIDControllerFeedbackEf)
+    [Anonymous Symbol]                       0x08004af8   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask4initEv)
+    [Anonymous Symbol]                       0x08004afc   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask6uninitEv)
+    [Anonymous Symbol]                       0x08004b00   Section        0  pidcontroltask.o(.text._ZN14PIDControlTask6updateEj)
+    [Anonymous Symbol]                       0x08004b08   Section        0  screwmotortask.o(.text._ZN14PIDControlTask9getOutputEv)
+    [Anonymous Symbol]                       0x08004b14   Section        0  motor_dm_task.o(.text._ZN14PIDControlTaskC2ER8RoboBasej)
+    [Anonymous Symbol]                       0x08004b38   Section        0  pidcontroltask.o(.text._ZN14PIDControlTaskD0Ev)
+    [Anonymous Symbol]                       0x08004b44   Section        0  main_1.o(.text._ZN14_Init_Params_tC2Ev)
+    [Anonymous Symbol]                       0x08004b58   Section        0  soundmanagetask.o(.text._ZN19PlaySoundManageTask4initEv)
+    [Anonymous Symbol]                       0x08004b5c   Section        0  soundmanagetask.o(.text._ZN19PlaySoundManageTask6uninitEv)
+    [Anonymous Symbol]                       0x08004b60   Section        0  soundmanagetask.o(.text._ZN19PlaySoundManageTask6updateEj)
+    [Anonymous Symbol]                       0x08004b78   Section        0  soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound)
+    [Anonymous Symbol]                       0x08004bd4   Section        0  robot.o(.text._ZN19PlaySoundManageTaskC2ER5Robotj)
+    [Anonymous Symbol]                       0x08004bf4   Section        0  soundmanagetask.o(.text._ZN19PlaySoundManageTaskD0Ev)
+    [Anonymous Symbol]                       0x08004c00   Section        0  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs)
+    [Anonymous Symbol]                       0x08004c0c   Section        0  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask19get_motor_backend_pEv)
+    [Anonymous Symbol]                       0x08004c10   Section        0  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask29getAngularVelocityTaskPointerEv)
+    [Anonymous Symbol]                       0x08004c14   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask4initEv)
+    [Anonymous Symbol]                       0x08004c18   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6uninitEv)
+    [Anonymous Symbol]                       0x08004c1c   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6updateEj)
+    [Anonymous Symbol]                       0x08004c30   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj)
+    [Anonymous Symbol]                       0x08004cb8   Section        0  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskD0Ev)
+    [Anonymous Symbol]                       0x08004cc4   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask4initEv)
+    [Anonymous Symbol]                       0x08004d00   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6uninitEv)
+    [Anonymous Symbol]                       0x08004d08   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj)
+    [Anonymous Symbol]                       0x08004e90   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j)
+    [Anonymous Symbol]                       0x08004f64   Section        0  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskD0Ev)
+    [Anonymous Symbol]                       0x08004f70   Section        0  screwmotortask.o(.text._ZN5Robot10get_ParamsEv)
+    [Anonymous Symbol]                       0x08004f80   Section        0  screwmotortask.o(.text._ZN5Robot14get_play_soundEv)
+    [Anonymous Symbol]                       0x08004f88   Section        0  robot.o(.text._ZN5Robot3runEv)
+    [Anonymous Symbol]                       0x08004f94   Section        0  robot.o(.text._ZN5Robot4initEv)
+    [Anonymous Symbol]                       0x080050c4   Section        0  main_1.o(.text._ZN5RobotC2Ev)
+    [Anonymous Symbol]                       0x080050f0   Section        0  params.o(.text._ZN6Params16initMotorsParamsEh)
+    [Anonymous Symbol]                       0x0800518c   Section        0  main_1.o(.text._ZN6ParamsC2Ev)
+    [Anonymous Symbol]                       0x08005194   Section        0  screwmotortask.o(.text._ZN8RoboBase12getSchedulerEv)
+    [Anonymous Symbol]                       0x08005198   Section        0  screwmotortask.o(.text._ZN8RoboBase13getCAN1DeviceEv)
+    [Anonymous Symbol]                       0x080051a0   Section        0  screwmotortask.o(.text._ZN8RoboBase13getCAN2DeviceEv)
+    [Anonymous Symbol]                       0x080051a8   Section        0  screwmotortask.o(.text._ZN8RoboBase13getRCProtocolEv)
+    [Anonymous Symbol]                       0x080051b0   Section        0  main_1.o(.text._ZN8RoboBase20getCAN1DevicePointerEv)
+    [Anonymous Symbol]                       0x080051b8   Section        0  main_1.o(.text._ZN8RoboBase20getCAN2DevicePointerEv)
+    [Anonymous Symbol]                       0x080051c0   Section        0  main_1.o(.text._ZN8RoboBase20getRCProtocolPointerEv)
+    [Anonymous Symbol]                       0x080051c8   Section        0  screwmotortask.o(.text._ZN8RoboBase9getHelperEv)
+    [Anonymous Symbol]                       0x080051d0   Section        0  motor_dm_task.o(.text._ZN8RoboBase9getMotorsEv)
+    [Anonymous Symbol]                       0x080051d8   Section        0  main_1.o(.text._ZN8RoboBaseC2Ev)
+    [Anonymous Symbol]                       0x0800522c   Section        0  main_1.o(.text._ZN8RoboBaseD2Ev)
+    [Anonymous Symbol]                       0x0800523c   Section        0  rcprotocol.o(.text._ZN8robo_lib10RCProtocol10addBackendEPNS_18RCProtocol_BackendE)
+    [Anonymous Symbol]                       0x08005240   Section        0  rcprotocol.o(.text._ZN8robo_lib10RCProtocol11processByteEPVKh)
+    [Anonymous Symbol]                       0x08005254   Section        0  rcprotocol.o(.text._ZN8robo_lib10RCProtocol4initEv)
+    [Anonymous Symbol]                       0x080052e0   Section        0  screwmotortask.o(.text._ZN8robo_lib10RCProtocol9getRCDataEv)
+    [Anonymous Symbol]                       0x08005320   Section        0  main_1.o(.text._ZN8robo_lib10RCProtocolC2Ev)
+    [Anonymous Symbol]                       0x08005324   Section        0  main_1.o(.text._ZN8robo_lib10RCProtocolD2Ev)
+    [Anonymous Symbol]                       0x08005328   Section        0  motor_backend.o(.text._ZN8robo_lib13Motor_Backend18publishMeasurementEv)
+    [Anonymous Symbol]                       0x0800536c   Section        0  motor_backend.o(.text._ZN8robo_lib13Motor_BackendC2ERNS_5MotorE)
+    [Anonymous Symbol]                       0x0800537c   Section        0  inertialsensor.o(.text._ZN8robo_lib14InertialSensorC2Ev)
+    [Anonymous Symbol]                       0x080053a8   Section        0  screwmotortask.o(.text._ZN8robo_lib14PID_Controller11setFeedbackEf)
+    [Anonymous Symbol]                       0x080053b0   Section        0  pidcontroltask.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEj)
+    [Anonymous Symbol]                       0x080053c4   Section        0  pid_controller.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEjfff)
+    [Anonymous Symbol]                       0x080056b0   Section        0  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9getOutputEv)
+    [Anonymous Symbol]                       0x080056b8   Section        0  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9setExpectEf)
+    [Anonymous Symbol]                       0x080056c0   Section        0  pid_controller.o(.text._ZN8robo_lib14PID_Controller9setParamsERKNS_13_PID_Params_tE)
+    [Anonymous Symbol]                       0x08005704   Section        0  pid_controller.o(.text._ZN8robo_lib14PID_ControllerC2Ev)
+    [Anonymous Symbol]                       0x08005708   Section        0  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS11processByteEPVKh)
+    [Anonymous Symbol]                       0x08005814   Section        0  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS4initEv)
+    [Anonymous Symbol]                       0x08005818   Section        0  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS6uninitEv)
+    [Anonymous Symbol]                       0x0800581c   Section        0  rcprotocol.o(.text._ZN8robo_lib15RCProtocol_DBUSC2ERNS_10RCProtocolE)
+    [Anonymous Symbol]                       0x08005830   Section        0  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_Backend13publishRCDataENS_7RC_DataE)
+    [Anonymous Symbol]                       0x080058d4   Section        0  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_BackendC2ERNS_10RCProtocolE)
+    [Anonymous Symbol]                       0x080058e4   Section        0  uartdriver.o(.text._ZN8robo_lib18USART1_DMA_Tx_InitEv)
+    [Anonymous Symbol]                       0x080058f8   Section        0  error.o(.text._ZN8robo_lib5Error13Error_HandlerEv)
+    [Anonymous Symbol]                       0x080058fc   Section        0  motor.o(.text._ZN8robo_lib5Motor10addBackendEPNS_13Motor_BackendE)
+    [Anonymous Symbol]                       0x08005924   Section        0  main_1.o(.text._ZN8robo_lib5MotorC2Ev)
+    [Anonymous Symbol]                       0x08005928   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_InitEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_j)
+    [Anonymous Symbol]                       0x08005934   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_PushEPNS_19QUEUE_HandleTypeDefIS1_EES1_)
+    [Anonymous Symbol]                       0x08005988   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE11Queue_ClearEPNS_19QUEUE_HandleTypeDefIS1_EE)
+    [Anonymous Symbol]                       0x08005990   Section        0  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE9Queue_PopEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_)
+    [Anonymous Symbol]                       0x080059e0   Section        0  helper.o(.text._ZN8robo_lib6Helper12setBuzzerOffEv)
+    [Anonymous Symbol]                       0x080059f0   Section        0  helper.o(.text._ZN8robo_lib6Helper18setBuzzerFrequenceEt)
+    [Anonymous Symbol]                       0x08005a24   Section        0  helper.o(.text._ZN8robo_lib6Helper6setLEDEhhh)
+    [Anonymous Symbol]                       0x08005a68   Section        0  main_1.o(.text._ZN8robo_lib6HelperC2Ev)
+    [Anonymous Symbol]                       0x08005ac4   Section        0  scheduler_common.o(.text._ZN8robo_lib6microsEv)
+    [Anonymous Symbol]                       0x08005acc   Section        0  ahrs.o(.text._ZN8robo_lib7Vector3IfEC2Ev)
+    [Anonymous Symbol]                       0x08005ad8   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM11syncCANDataEv)
+    [Anonymous Symbol]                       0x08005aec   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM13setMotorInputEs)
+    [Anonymous Symbol]                       0x08005b00   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM14getMeasurementEv)
+    [Anonymous Symbol]                       0x08005b1c   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM17updateMeasurementEv)
+    [Anonymous Symbol]                       0x08005b24   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM22updateMotorMeasurementEv)
+    [Anonymous Symbol]                       0x08005cac   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM4initEv)
+    [Anonymous Symbol]                       0x08005cc0   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM6uninitEv)
+    [Anonymous Symbol]                       0x08005cc4   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RM6updateEj)
+    [Anonymous Symbol]                       0x08005cd8   Section        0  screwmotortask.o(.text._ZN8robo_lib8Motor_RM9setParamsENS_18_Motor_RM_Params_tE)
+    [Anonymous Symbol]                       0x08005d04   Section        0  motor_rm.o(.text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha)
+    [Anonymous Symbol]                       0x08005d68   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice3popEPNS_19_CAN_Tx_Data_Pack_tE)
+    [Anonymous Symbol]                       0x08005d84   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice4initEP19__CAN_HandleTypeDefPNS_19_CAN_Tx_Data_Pack_tEt)
+    [Anonymous Symbol]                       0x08005dfc   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice4pushENS_19_CAN_Tx_Data_Pack_tE)
+    [Anonymous Symbol]                       0x08005e34   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice6updateEj)
+    [Anonymous Symbol]                       0x08005e68   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice9addRxLinkEPNS_19_CAN_Rx_Data_Pack_tE)
+    [Anonymous Symbol]                       0x08005e98   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice9addTxLinkEthhPPhh)
+    [Anonymous Symbol]                       0x08005f7c   Section        0  candevice.o(.text._ZN8robo_lib9CanDevice9sendAsyncEPNS_19_CAN_Tx_Data_Pack_tE)
+    [Anonymous Symbol]                       0x08005fa4   Section        0  candevice.o(.text._ZN8robo_lib9CanDeviceC2Ev)
+    [Anonymous Symbol]                       0x08005fb8   Section        0  scheduler.o(.text._ZN8robo_lib9Scheduler12registerTaskEPNS_9Task_BaseE)
+    [Anonymous Symbol]                       0x08005ffc   Section        0  scheduler.o(.text._ZN8robo_lib9Scheduler14unregisterTaskEPPNS_9Task_BaseE)
+    [Anonymous Symbol]                       0x08006084   Section        0  scheduler.o(.text._ZN8robo_lib9Scheduler3runEv)
+    [Anonymous Symbol]                       0x08006210   Section        0  scheduler.o(.text._ZN8robo_lib9SchedulerC2Ev)
+    [Anonymous Symbol]                       0x08006224   Section        0  advancedadd.o(.text._ZN8robo_lib9SimpleAddIfEclEff)
+    [Anonymous Symbol]                       0x0800622c   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_Base11setIntervalEj)
+    [Anonymous Symbol]                       0x08006230   Section        0  playsound.o(.text._ZN8robo_lib9Task_Base8selfKillEv)
+    [Anonymous Symbol]                       0x08006238   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_BaseC2Ev)
+    [Anonymous Symbol]                       0x08006248   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD0Ev)
+    [Anonymous Symbol]                       0x0800624c   Section        0  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev)
+    robo_lib::getCurrentMicrosTim5()         0x08006251   Thumb Code    12  scheduler_common.o(.text._ZN8robo_libL20getCurrentMicrosTim5Ev)
+    [Anonymous Symbol]                       0x08006250   Section        0  scheduler_common.o(.text._ZN8robo_libL20getCurrentMicrosTim5Ev)
+    [Anonymous Symbol]                       0x0800625c   Section        0  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
+    [Anonymous Symbol]                       0x08006268   Section        0  new.cpp.o(.text._ZdlPv)
+    [Anonymous Symbol]                       0x0800626c   Section        0  new.cpp.o(.text._Znwj)
+    __NVIC_EnableIRQ                         0x08006295   Thumb Code    32  stm32f4xx_hal_cortex.o(.text.__NVIC_EnableIRQ)
+    [Anonymous Symbol]                       0x08006294   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_EnableIRQ)
+    __NVIC_GetPriorityGrouping               0x080062b5   Thumb Code    16  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
+    [Anonymous Symbol]                       0x080062b4   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_GetPriorityGrouping)
+    __NVIC_SetPriority                       0x080062c5   Thumb Code    34  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x080062c4   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriority)
+    __NVIC_SetPriorityGrouping               0x080062e9   Thumb Code    32  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
+    [Anonymous Symbol]                       0x080062e8   Section        0  stm32f4xx_hal_cortex.o(.text.__NVIC_SetPriorityGrouping)
+    [Anonymous Symbol]                       0x08006308   Section        0  cxa_virtual.cpp.o(.text.__cxa_pure_virtual)
+    __cxx_global_var_init                    0x08006331   Thumb Code    40  main_1.o(.text.__cxx_global_var_init)
+    [Anonymous Symbol]                       0x08006330   Section        0  main_1.o(.text.__cxx_global_var_init)
+    [Anonymous Symbol]                       0x08006358   Section        0  abort_message.cpp.o(.text.abort_message)
+    [Anonymous Symbol]                       0x0800635c   Section        0  main_1.o(.text.main)
+    $v0                                      0x080063d8   Number         0  ddiv.o(x$fpl$ddiv)
+    x$fpl$ddiv                               0x080063d8   Section      692  ddiv.o(x$fpl$ddiv)
+    ddiv_entry                               0x080063df   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    $v0                                      0x0800668c   Number         0  dfix.o(x$fpl$dfix)
+    x$fpl$dfix                               0x0800668c   Section       94  dfix.o(x$fpl$dfix)
+    $v0                                      0x080066ea   Number         0  dflt_clz.o(x$fpl$dflt)
+    x$fpl$dflt                               0x080066ea   Section       46  dflt_clz.o(x$fpl$dflt)
+    $v0                                      0x08006718   Number         0  dnaninf.o(x$fpl$dnaninf)
+    x$fpl$dnaninf                            0x08006718   Section      156  dnaninf.o(x$fpl$dnaninf)
+    $v0                                      0x080067b4   Number         0  dretinf.o(x$fpl$dretinf)
+    x$fpl$dretinf                            0x080067b4   Section       12  dretinf.o(x$fpl$dretinf)
+    $v0                                      0x080067c0   Number         0  ffltll_clz.o(x$fpl$ffltll)
+    x$fpl$ffltll                             0x080067c0   Section       96  ffltll_clz.o(x$fpl$ffltll)
+    $v0                                      0x08006820   Number         0  fpinit.o(x$fpl$fpinit)
+    x$fpl$fpinit                             0x08006820   Section       26  fpinit.o(x$fpl$fpinit)
+    x$fpl$usenofp                            0x0800683a   Section        0  usenofp.o(x$fpl$usenofp)
+    .Lconstinit                              0x0800683c   Data          96  main_1.o(.rodata..Lconstinit)
+    .Lconstinit                              0x0800689c   Data          96  soundmanagetask.o(.rodata..Lconstinit)
+    .init_array                              0x08006aec   Section        0  init_aeabi.o(.init_array)
     .bss                                     0x20000010   Section       96  libspace.o(.bss)
     HAL_RCC_CAN1_CLK_ENABLED                 0x20000070   Data           4  can.o(.bss.HAL_RCC_CAN1_CLK_ENABLED)
     [Anonymous Symbol]                       0x20000070   Section        0  can.o(.bss.HAL_RCC_CAN1_CLK_ENABLED)
     HAL_TIM_PeriodElapsedCallback::tim2clk   0x2000007c   Data           1  main_1.o(.bss._ZZ29HAL_TIM_PeriodElapsedCallbackE7tim2clk)
     [Anonymous Symbol]                       0x2000007c   Section        0  main_1.o(.bss._ZZ29HAL_TIM_PeriodElapsedCallbackE7tim2clk)
-    Heap_Mem                                 0x20002340   Data       98304  startup_stm32f407xx.o(HEAP)
-    HEAP                                     0x20002340   Section    98304  startup_stm32f407xx.o(HEAP)
-    Stack_Mem                                0x2001a340   Data       20480  startup_stm32f407xx.o(STACK)
-    STACK                                    0x2001a340   Section    20480  startup_stm32f407xx.o(STACK)
-    __initial_sp                             0x2001f340   Data           0  startup_stm32f407xx.o(STACK)
+    Heap_Mem                                 0x20002348   Data       98304  startup_stm32f407xx.o(HEAP)
+    HEAP                                     0x20002348   Section    98304  startup_stm32f407xx.o(HEAP)
+    Stack_Mem                                0x2001a348   Data       20480  startup_stm32f407xx.o(STACK)
+    STACK                                    0x2001a348   Section    20480  startup_stm32f407xx.o(STACK)
+    __initial_sp                             0x2001f348   Data           0  startup_stm32f407xx.o(STACK)
 
     Global Symbols
 
@@ -8658,150 +8769,179 @@ Image Symbol Table
     CANSyncTask::CANSyncTask__sub_object(Robot&, robo_lib::CanDevice*, unsigned short, unsigned int) 0x08004931   Thumb Code    68  cansynctask.o(.text._ZN11CANSyncTaskC2ER5RobotPN8robo_lib9CanDeviceEtj)
     CANSyncTask::~CANSyncTask__deallocating() 0x08004975   Thumb Code    12  cansynctask.o(.text._ZN11CANSyncTaskD0Ev)
     ControlBase::ControlBase__sub_object()   0x08004981   Thumb Code    14  main_1.o(.text._ZN11ControlBaseC2Ev)
-    Task_RoboBase::Task_RoboBase__sub_object(RoboBase&) 0x08004991   Thumb Code    24  motor_dm_task.o(.text._ZN13Task_RoboBaseC2ER8RoboBase)
-    Task_RoboBase::~Task_RoboBase__deallocating() 0x080049a9   Thumb Code     2  motor_dm_task.o(.text._ZN13Task_RoboBaseD0Ev)
-    PIDControlTask::calculatePID(unsigned int) 0x080049ad   Thumb Code    10  pidcontroltask.o(.text._ZN14PIDControlTask12calculatePIDEj)
-    PIDControlTask::setPIDControllerExpect(float) 0x080049b9   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerExpectEf)
-    PIDControlTask::setPIDControllerParams(robo_lib::_PID_Params_t const&) 0x080049c5   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerParamsERKN8robo_lib13_PID_Params_tE)
-    PIDControlTask::setPIDControllerFeedback(float) 0x080049d1   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask24setPIDControllerFeedbackEf)
-    PIDControlTask::init()                   0x080049dd   Thumb Code     2  pidcontroltask.o(.text._ZN14PIDControlTask4initEv)
-    PIDControlTask::uninit()                 0x080049e1   Thumb Code     2  pidcontroltask.o(.text._ZN14PIDControlTask6uninitEv)
-    PIDControlTask::update(unsigned int)     0x080049e5   Thumb Code     8  pidcontroltask.o(.text._ZN14PIDControlTask6updateEj)
-    PIDControlTask::getOutput()              0x080049ed   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask9getOutputEv)
-    PIDControlTask::PIDControlTask__sub_object(RoboBase&, unsigned int) 0x080049f9   Thumb Code    36  motor_dm_task.o(.text._ZN14PIDControlTaskC2ER8RoboBasej)
-    PIDControlTask::~PIDControlTask__deallocating() 0x08004a1d   Thumb Code    12  pidcontroltask.o(.text._ZN14PIDControlTaskD0Ev)
-    _Init_Params_t::_Init_Params_t__sub_object() 0x08004a29   Thumb Code    10  main_1.o(.text._ZN14_Init_Params_tC2Ev)
-    Motor_RM_PIDControlTask::setMotorInput(short) 0x08004a35   Thumb Code    10  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs)
-    Motor_RM_PIDControlTask::get_motor_backend_p() 0x08004a41   Thumb Code     4  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask19get_motor_backend_pEv)
-    Motor_RM_PIDControlTask::getAngularVelocityTaskPointer() 0x08004a45   Thumb Code     4  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask29getAngularVelocityTaskPointerEv)
-    Motor_RM_PIDControlTask::init()          0x08004a49   Thumb Code     2  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask4initEv)
-    Motor_RM_PIDControlTask::uninit()        0x08004a4d   Thumb Code     2  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6uninitEv)
-    Motor_RM_PIDControlTask::update(unsigned int) 0x08004a51   Thumb Code    18  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6updateEj)
-    Motor_RM_PIDControlTask::Motor_RM_PIDControlTask(RoboBase&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char, unsigned int) 0x08004a65   Thumb Code   134  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj)
-    Motor_RM_PIDControlTask::Motor_RM_PIDControlTask__sub_object(RoboBase&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char, unsigned int) 0x08004a65   Thumb Code   134  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj)
-    Motor_RM_PIDControlTask::~Motor_RM_PIDControlTask__deallocating() 0x08004aed   Thumb Code    12  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskD0Ev)
-    Srew_Motor_PIDControlTask::init()        0x08004af9   Thumb Code    58  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask4initEv)
-    Srew_Motor_PIDControlTask::uninit()      0x08004b35   Thumb Code     2  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6uninitEv)
-    Srew_Motor_PIDControlTask::update(unsigned int) 0x08004b39   Thumb Code   208  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj)
-    Srew_Motor_PIDControlTask::Srew_Motor_PIDControlTask(Robot&, robo_lib::_Motor_RM_Params_t*, robo_lib::_PID_Params_t*, robo_lib::_PID_Params_t*, unsigned int) 0x08004c09   Thumb Code   196  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j)
-    Srew_Motor_PIDControlTask::Srew_Motor_PIDControlTask__sub_object(Robot&, robo_lib::_Motor_RM_Params_t*, robo_lib::_PID_Params_t*, robo_lib::_PID_Params_t*, unsigned int) 0x08004c09   Thumb Code   196  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j)
-    Srew_Motor_PIDControlTask::~Srew_Motor_PIDControlTask__deallocating() 0x08004ccd   Thumb Code    12  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskD0Ev)
-    Robot::run()                             0x08004cd9   Thumb Code    10  robot.o(.text._ZN5Robot3runEv)
-    Robot::init()                            0x08004ce5   Thumb Code   262  robot.o(.text._ZN5Robot4initEv)
-    Robot::Robot__sub_object()               0x08004ded   Thumb Code    42  main_1.o(.text._ZN5RobotC2Ev)
-    Params::initMotorsParams(unsigned char)  0x08004e19   Thumb Code   154  params.o(.text._ZN6Params16initMotorsParamsEh)
-    Params::Params__sub_object()             0x08004eb5   Thumb Code     8  main_1.o(.text._ZN6ParamsC2Ev)
-    RoboBase::getScheduler()                 0x08004ebd   Thumb Code     4  screwmotortask.o(.text._ZN8RoboBase12getSchedulerEv)
-    RoboBase::getCAN1Device()                0x08004ec1   Thumb Code     6  screwmotortask.o(.text._ZN8RoboBase13getCAN1DeviceEv)
-    RoboBase::getCAN2Device()                0x08004ec9   Thumb Code     8  screwmotortask.o(.text._ZN8RoboBase13getCAN2DeviceEv)
-    RoboBase::getRCProtocol()                0x08004ed1   Thumb Code     6  screwmotortask.o(.text._ZN8RoboBase13getRCProtocolEv)
-    RoboBase::getCAN1DevicePointer()         0x08004ed9   Thumb Code     6  main_1.o(.text._ZN8RoboBase20getCAN1DevicePointerEv)
-    RoboBase::getCAN2DevicePointer()         0x08004ee1   Thumb Code     8  main_1.o(.text._ZN8RoboBase20getCAN2DevicePointerEv)
-    RoboBase::getRCProtocolPointer()         0x08004ee9   Thumb Code     6  main_1.o(.text._ZN8RoboBase20getRCProtocolPointerEv)
-    RoboBase::getMotors()                    0x08004ef1   Thumb Code     6  motor_dm_task.o(.text._ZN8RoboBase9getMotorsEv)
-    RoboBase::RoboBase__sub_object()         0x08004ef9   Thumb Code    84  main_1.o(.text._ZN8RoboBaseC2Ev)
-    RoboBase::~RoboBase__sub_object()        0x08004f4d   Thumb Code    16  main_1.o(.text._ZN8RoboBaseD2Ev)
-    robo_lib::RCProtocol::addBackend(robo_lib::RCProtocol_Backend*) 0x08004f5d   Thumb Code     4  rcprotocol.o(.text._ZN8robo_lib10RCProtocol10addBackendEPNS_18RCProtocol_BackendE)
-    robo_lib::RCProtocol::processByte(unsigned char const volatile*) 0x08004f61   Thumb Code    18  rcprotocol.o(.text._ZN8robo_lib10RCProtocol11processByteEPVKh)
-    robo_lib::RCProtocol::init()             0x08004f75   Thumb Code   138  rcprotocol.o(.text._ZN8robo_lib10RCProtocol4initEv)
-    robo_lib::RCProtocol::getRCData()        0x08005001   Thumb Code    62  screwmotortask.o(.text._ZN8robo_lib10RCProtocol9getRCDataEv)
-    robo_lib::RCProtocol::RCProtocol__sub_object() 0x08005041   Thumb Code     2  main_1.o(.text._ZN8robo_lib10RCProtocolC2Ev)
-    robo_lib::RCProtocol::~RCProtocol__sub_object() 0x08005045   Thumb Code     2  main_1.o(.text._ZN8robo_lib10RCProtocolD2Ev)
-    robo_lib::Motor_Backend::publishMeasurement() 0x08005049   Thumb Code    68  motor_backend.o(.text._ZN8robo_lib13Motor_Backend18publishMeasurementEv)
-    robo_lib::Motor_Backend::Motor_Backend__sub_object(robo_lib::Motor&) 0x0800508d   Thumb Code    16  motor_backend.o(.text._ZN8robo_lib13Motor_BackendC2ERNS_5MotorE)
-    robo_lib::InertialSensor::InertialSensor() 0x0800509d   Thumb Code    44  inertialsensor.o(.text._ZN8robo_lib14InertialSensorC2Ev)
-    robo_lib::InertialSensor::InertialSensor__sub_object() 0x0800509d   Thumb Code    44  inertialsensor.o(.text._ZN8robo_lib14InertialSensorC2Ev)
-    robo_lib::PID_Controller::setFeedback(float) 0x080050c9   Thumb Code     6  screwmotortask.o(.text._ZN8robo_lib14PID_Controller11setFeedbackEf)
-    robo_lib::PID_Controller::calculateWithCPU(unsigned int) 0x080050d1   Thumb Code    20  pidcontroltask.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEj)
-    robo_lib::PID_Controller::calculateWithCPU(unsigned int, float, float, float) 0x080050e5   Thumb Code   748  pid_controller.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEjfff)
-    robo_lib::PID_Controller::getOutput()    0x080053d1   Thumb Code     6  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9getOutputEv)
-    robo_lib::PID_Controller::setExpect(float) 0x080053d9   Thumb Code     6  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9setExpectEf)
-    robo_lib::PID_Controller::setParams(robo_lib::_PID_Params_t const&) 0x080053e1   Thumb Code    68  pid_controller.o(.text._ZN8robo_lib14PID_Controller9setParamsERKNS_13_PID_Params_tE)
-    robo_lib::PID_Controller::PID_Controller() 0x08005425   Thumb Code     2  pid_controller.o(.text._ZN8robo_lib14PID_ControllerC2Ev)
-    robo_lib::PID_Controller::PID_Controller__sub_object() 0x08005425   Thumb Code     2  pid_controller.o(.text._ZN8robo_lib14PID_ControllerC2Ev)
-    robo_lib::RCProtocol_DBUS::processByte(unsigned char const volatile*) 0x08005429   Thumb Code   266  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS11processByteEPVKh)
-    robo_lib::RCProtocol_DBUS::init()        0x08005535   Thumb Code     2  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS4initEv)
-    robo_lib::RCProtocol_DBUS::uninit()      0x08005539   Thumb Code     2  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS6uninitEv)
-    robo_lib::RCProtocol_DBUS::RCProtocol_DBUS__sub_object(robo_lib::RCProtocol&) 0x0800553d   Thumb Code    20  rcprotocol.o(.text._ZN8robo_lib15RCProtocol_DBUSC2ERNS_10RCProtocolE)
-    robo_lib::RCProtocol_Backend::publishRCData(robo_lib::RC_Data) 0x08005551   Thumb Code   164  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_Backend13publishRCDataENS_7RC_DataE)
-    robo_lib::RCProtocol_Backend::RCProtocol_Backend__sub_object(robo_lib::RCProtocol&) 0x080055f5   Thumb Code    16  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_BackendC2ERNS_10RCProtocolE)
-    robo_lib::USART1_DMA_Tx_Init()           0x08005605   Thumb Code    20  uartdriver.o(.text._ZN8robo_lib18USART1_DMA_Tx_InitEv)
-    robo_lib::Error::Error_Handler()         0x08005619   Thumb Code     2  error.o(.text._ZN8robo_lib5Error13Error_HandlerEv)
-    robo_lib::Motor::addBackend(robo_lib::Motor_Backend*) 0x0800561d   Thumb Code    40  motor.o(.text._ZN8robo_lib5Motor10addBackendEPNS_13Motor_BackendE)
-    robo_lib::Motor::Motor__sub_object()     0x08005645   Thumb Code     2  main_1.o(.text._ZN8robo_lib5MotorC2Ev)
-    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Init(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*, robo_lib::_CAN_Tx_Data_Pack_t*, unsigned int) 0x08005649   Thumb Code    12  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_InitEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_j)
-    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Push(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*, robo_lib::_CAN_Tx_Data_Pack_t) 0x08005655   Thumb Code    82  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_PushEPNS_19QUEUE_HandleTypeDefIS1_EES1_)
-    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Clear(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*) 0x080056a9   Thumb Code     8  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE11Queue_ClearEPNS_19QUEUE_HandleTypeDefIS1_EE)
-    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Pop(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*, robo_lib::_CAN_Tx_Data_Pack_t*) 0x080056b1   Thumb Code    78  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE9Queue_PopEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_)
-    robo_lib::Helper::Helper__sub_object()   0x08005701   Thumb Code    90  main_1.o(.text._ZN8robo_lib6HelperC2Ev)
-    robo_lib::micros()                       0x0800575d   Thumb Code     8  scheduler_common.o(.text._ZN8robo_lib6microsEv)
-    robo_lib::Vector3<float>::Vector3__sub_object() 0x08005765   Thumb Code    10  ahrs.o(.text._ZN8robo_lib7Vector3IfEC2Ev)
-    robo_lib::Motor_RM::syncCANData()        0x08005771   Thumb Code    18  screwmotortask.o(.text._ZN8robo_lib8Motor_RM11syncCANDataEv)
-    robo_lib::Motor_RM::setMotorInput(short) 0x08005785   Thumb Code    18  screwmotortask.o(.text._ZN8robo_lib8Motor_RM13setMotorInputEs)
-    robo_lib::Motor_RM::getMeasurement()     0x08005799   Thumb Code    28  screwmotortask.o(.text._ZN8robo_lib8Motor_RM14getMeasurementEv)
-    robo_lib::Motor_RM::updateMeasurement()  0x080057b5   Thumb Code     8  motor_rm.o(.text._ZN8robo_lib8Motor_RM17updateMeasurementEv)
-    robo_lib::Motor_RM::updateMotorMeasurement() 0x080057bd   Thumb Code   392  motor_rm.o(.text._ZN8robo_lib8Motor_RM22updateMotorMeasurementEv)
-    robo_lib::Motor_RM::init()               0x08005945   Thumb Code    18  motor_rm.o(.text._ZN8robo_lib8Motor_RM4initEv)
-    robo_lib::Motor_RM::uninit()             0x08005959   Thumb Code     2  motor_rm.o(.text._ZN8robo_lib8Motor_RM6uninitEv)
-    robo_lib::Motor_RM::update(unsigned int) 0x0800595d   Thumb Code    20  motor_rm.o(.text._ZN8robo_lib8Motor_RM6updateEj)
-    robo_lib::Motor_RM::setParams(robo_lib::_Motor_RM_Params_t) 0x08005971   Thumb Code    42  screwmotortask.o(.text._ZN8robo_lib8Motor_RM9setParamsENS_18_Motor_RM_Params_tE)
-    robo_lib::Motor_RM::Motor_RM(robo_lib::Motor&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char) 0x0800599d   Thumb Code    98  motor_rm.o(.text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha)
-    robo_lib::Motor_RM::Motor_RM__sub_object(robo_lib::Motor&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char) 0x0800599d   Thumb Code    98  motor_rm.o(.text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha)
-    robo_lib::CanDevice::pop(robo_lib::_CAN_Tx_Data_Pack_t*) 0x08005a01   Thumb Code    26  candevice.o(.text._ZN8robo_lib9CanDevice3popEPNS_19_CAN_Tx_Data_Pack_tE)
-    robo_lib::CanDevice::init(__CAN_HandleTypeDef*, robo_lib::_CAN_Tx_Data_Pack_t*, unsigned short) 0x08005a1d   Thumb Code   120  candevice.o(.text._ZN8robo_lib9CanDevice4initEP19__CAN_HandleTypeDefPNS_19_CAN_Tx_Data_Pack_tEt)
-    robo_lib::CanDevice::push(robo_lib::_CAN_Tx_Data_Pack_t) 0x08005a95   Thumb Code    56  candevice.o(.text._ZN8robo_lib9CanDevice4pushENS_19_CAN_Tx_Data_Pack_tE)
-    robo_lib::CanDevice::update(unsigned int) 0x08005acd   Thumb Code    52  candevice.o(.text._ZN8robo_lib9CanDevice6updateEj)
-    robo_lib::CanDevice::addRxLink(robo_lib::_CAN_Rx_Data_Pack_t*) 0x08005b01   Thumb Code    48  candevice.o(.text._ZN8robo_lib9CanDevice9addRxLinkEPNS_19_CAN_Rx_Data_Pack_tE)
-    robo_lib::CanDevice::addTxLink(unsigned short, unsigned char, unsigned char, unsigned char**, unsigned char) 0x08005b31   Thumb Code   226  candevice.o(.text._ZN8robo_lib9CanDevice9addTxLinkEthhPPhh)
-    robo_lib::CanDevice::sendAsync(robo_lib::_CAN_Tx_Data_Pack_t*) 0x08005c15   Thumb Code    38  candevice.o(.text._ZN8robo_lib9CanDevice9sendAsyncEPNS_19_CAN_Tx_Data_Pack_tE)
-    robo_lib::CanDevice::CanDevice()         0x08005c3d   Thumb Code    18  candevice.o(.text._ZN8robo_lib9CanDeviceC2Ev)
-    robo_lib::CanDevice::CanDevice__sub_object() 0x08005c3d   Thumb Code    18  candevice.o(.text._ZN8robo_lib9CanDeviceC2Ev)
-    robo_lib::Scheduler::registerTask(robo_lib::Task_Base*) 0x08005c51   Thumb Code    66  scheduler.o(.text._ZN8robo_lib9Scheduler12registerTaskEPNS_9Task_BaseE)
-    robo_lib::Scheduler::unregisterTask(robo_lib::Task_Base**) 0x08005c95   Thumb Code   136  scheduler.o(.text._ZN8robo_lib9Scheduler14unregisterTaskEPPNS_9Task_BaseE)
-    robo_lib::Scheduler::run()               0x08005d1d   Thumb Code   396  scheduler.o(.text._ZN8robo_lib9Scheduler3runEv)
-    robo_lib::Scheduler::Scheduler()         0x08005ea9   Thumb Code    20  scheduler.o(.text._ZN8robo_lib9SchedulerC2Ev)
-    robo_lib::Scheduler::Scheduler__sub_object() 0x08005ea9   Thumb Code    20  scheduler.o(.text._ZN8robo_lib9SchedulerC2Ev)
-    robo_lib::SimpleAdd<float>::operator()(float, float) 0x08005ebd   Thumb Code     6  advancedadd.o(.text._ZN8robo_lib9SimpleAddIfEclEff)
-    robo_lib::Task_Base::setInterval(unsigned int) 0x08005ec5   Thumb Code     4  screwmotortask.o(.text._ZN8robo_lib9Task_Base11setIntervalEj)
-    robo_lib::Task_Base::Task_Base__sub_object() 0x08005ec9   Thumb Code    14  screwmotortask.o(.text._ZN8robo_lib9Task_BaseC2Ev)
-    robo_lib::Task_Base::~Task_Base__deallocating() 0x08005ed9   Thumb Code     2  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD0Ev)
-    robo_lib::Task_Base::~Task_Base__sub_object() 0x08005edd   Thumb Code     2  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev)
-    std::get_new_handler()                   0x08005eed   Thumb Code    12  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
-    operator delete(void*)                   0x08005ef9   Thumb Code     4  new.cpp.o(.text._ZdlPv)
-    operator new(unsigned int)               0x08005efd   Thumb Code    38  new.cpp.o(.text._Znwj)
-    __cxa_pure_virtual                       0x08005f99   Thumb Code     8  cxa_virtual.cpp.o(.text.__cxa_pure_virtual)
-    abort_message                            0x08005fe9   Thumb Code     4  abort_message.cpp.o(.text.abort_message)
-    main                                     0x08005fed   Thumb Code   124  main_1.o(.text.main)
-    __aeabi_ul2f                             0x08006069   Thumb Code     0  ffltll_clz.o(x$fpl$ffltll)
-    _ll_uto_f                                0x08006069   Thumb Code     6  ffltll_clz.o(x$fpl$ffltll)
-    __aeabi_l2f                              0x0800606f   Thumb Code     0  ffltll_clz.o(x$fpl$ffltll)
-    _ll_sto_f                                0x0800606f   Thumb Code    90  ffltll_clz.o(x$fpl$ffltll)
-    _fp_init                                 0x080060c9   Thumb Code    26  fpinit.o(x$fpl$fpinit)
-    __fplib_config_fpu_vfp                   0x080060e1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __fplib_config_pureend_doubles           0x080060e1   Thumb Code     0  fpinit.o(x$fpl$fpinit)
-    __I$use$fp                               0x080060e2   Number         0  usenofp.o(x$fpl$usenofp)
-    AHBPrescTable                            0x08006144   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x08006154   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
-    vtable for Task_Robot                    0x0800615c   Data          28  screwmotortask.o(.rodata._ZTV10Task_Robot)
-    vtable for CANSendTask                   0x08006178   Data          28  cansendtask.o(.rodata._ZTV11CANSendTask)
-    vtable for CANSyncTask                   0x08006194   Data          28  cansynctask.o(.rodata._ZTV11CANSyncTask)
-    vtable for ControlBase                   0x080061b0   Data          16  main_1.o(.rodata._ZTV11ControlBase)
-    vtable for Task_RoboBase                 0x080061c0   Data          28  motor_dm_task.o(.rodata._ZTV13Task_RoboBase)
-    vtable for PIDControlTask                0x080061dc   Data          28  pidcontroltask.o(.rodata._ZTV14PIDControlTask)
-    vtable for Motor_RM_PIDControlTask       0x080061f8   Data          28  motor_rm_tasks.o(.rodata._ZTV23Motor_RM_PIDControlTask)
-    vtable for Srew_Motor_PIDControlTask     0x08006214   Data          28  screwmotortask.o(.rodata._ZTV25Srew_Motor_PIDControlTask)
-    vtable for Robot                         0x08006230   Data          16  robot.o(.rodata._ZTV5Robot)
-    vtable for RoboBase                      0x08006240   Data          16  main_1.o(.rodata._ZTV8RoboBase)
-    vtable for robo_lib::Motor_Backend       0x08006250   Data          28  motor_backend.o(.rodata._ZTVN8robo_lib13Motor_BackendE)
-    vtable for robo_lib::RCProtocol_DBUS     0x0800626c   Data          20  rcprotocol_dbus.o(.rodata._ZTVN8robo_lib15RCProtocol_DBUSE)
-    vtable for robo_lib::RCProtocol_Backend  0x08006280   Data          20  rcprotocol_backend.o(.rodata._ZTVN8robo_lib18RCProtocol_BackendE)
-    vtable for robo_lib::Motor_RM            0x08006294   Data          28  motor_rm.o(.rodata._ZTVN8robo_lib8Motor_RME)
-    vtable for robo_lib::SimpleAdd<float>    0x080062b0   Data          12  advancedadd.o(.rodata._ZTVN8robo_lib9SimpleAddIfEE)
-    vtable for robo_lib::Task_Base           0x080062bc   Data          28  screwmotortask.o(.rodata._ZTVN8robo_lib9Task_BaseE)
-    Region$$Table$$Base                      0x080062d8   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080062f8   Number         0  anon$$obj.o(Region$$Table)
-    SHT$$INIT_ARRAY$$Base                    0x080062f8   Number         0  main_1.o(.init_array)
-    SHT$$INIT_ARRAY$$Limit                   0x080062fc   Number         0  init_aeabi.o(.init_array)
+    PlaySoundTask::init()                    0x08004991   Thumb Code    28  playsound.o(.text._ZN13PlaySoundTask4initEv)
+    PlaySoundTask::uninit()                  0x080049ad   Thumb Code     2  playsound.o(.text._ZN13PlaySoundTask6uninitEv)
+    PlaySoundTask::update(unsigned int)      0x080049b1   Thumb Code    52  playsound.o(.text._ZN13PlaySoundTask6updateEj)
+    PlaySoundTask::playsong()                0x080049e5   Thumb Code   114  playsound.o(.text._ZN13PlaySoundTask8playsongEv)
+    PlaySoundTask::PlaySoundTask__sub_object(Robot&, unsigned short*, unsigned short, Play_Type, unsigned int) 0x08004a59   Thumb Code    72  soundmanagetask.o(.text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej)
+    PlaySoundTask::~PlaySoundTask__deallocating() 0x08004aa1   Thumb Code    12  playsound.o(.text._ZN13PlaySoundTaskD0Ev)
+    Task_RoboBase::Task_RoboBase__sub_object(RoboBase&) 0x08004aad   Thumb Code    24  motor_dm_task.o(.text._ZN13Task_RoboBaseC2ER8RoboBase)
+    Task_RoboBase::~Task_RoboBase__deallocating() 0x08004ac5   Thumb Code     2  motor_dm_task.o(.text._ZN13Task_RoboBaseD0Ev)
+    PIDControlTask::calculatePID(unsigned int) 0x08004ac9   Thumb Code    10  pidcontroltask.o(.text._ZN14PIDControlTask12calculatePIDEj)
+    PIDControlTask::setPIDControllerExpect(float) 0x08004ad5   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerExpectEf)
+    PIDControlTask::setPIDControllerParams(robo_lib::_PID_Params_t const&) 0x08004ae1   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask22setPIDControllerParamsERKN8robo_lib13_PID_Params_tE)
+    PIDControlTask::setPIDControllerFeedback(float) 0x08004aed   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask24setPIDControllerFeedbackEf)
+    PIDControlTask::init()                   0x08004af9   Thumb Code     2  pidcontroltask.o(.text._ZN14PIDControlTask4initEv)
+    PIDControlTask::uninit()                 0x08004afd   Thumb Code     2  pidcontroltask.o(.text._ZN14PIDControlTask6uninitEv)
+    PIDControlTask::update(unsigned int)     0x08004b01   Thumb Code     8  pidcontroltask.o(.text._ZN14PIDControlTask6updateEj)
+    PIDControlTask::getOutput()              0x08004b09   Thumb Code    10  screwmotortask.o(.text._ZN14PIDControlTask9getOutputEv)
+    PIDControlTask::PIDControlTask__sub_object(RoboBase&, unsigned int) 0x08004b15   Thumb Code    36  motor_dm_task.o(.text._ZN14PIDControlTaskC2ER8RoboBasej)
+    PIDControlTask::~PIDControlTask__deallocating() 0x08004b39   Thumb Code    12  pidcontroltask.o(.text._ZN14PIDControlTaskD0Ev)
+    _Init_Params_t::_Init_Params_t__sub_object() 0x08004b45   Thumb Code    18  main_1.o(.text._ZN14_Init_Params_tC2Ev)
+    PlaySoundManageTask::init()              0x08004b59   Thumb Code     2  soundmanagetask.o(.text._ZN19PlaySoundManageTask4initEv)
+    PlaySoundManageTask::uninit()            0x08004b5d   Thumb Code     2  soundmanagetask.o(.text._ZN19PlaySoundManageTask6uninitEv)
+    PlaySoundManageTask::update(unsigned int) 0x08004b61   Thumb Code    22  soundmanagetask.o(.text._ZN19PlaySoundManageTask6updateEj)
+    PlaySoundManageTask::playSound(Sound)    0x08004b79   Thumb Code    90  soundmanagetask.o(.text._ZN19PlaySoundManageTask9playSoundE5Sound)
+    PlaySoundManageTask::PlaySoundManageTask__sub_object(Robot&, unsigned int) 0x08004bd5   Thumb Code    30  robot.o(.text._ZN19PlaySoundManageTaskC2ER5Robotj)
+    PlaySoundManageTask::~PlaySoundManageTask__deallocating() 0x08004bf5   Thumb Code    12  soundmanagetask.o(.text._ZN19PlaySoundManageTaskD0Ev)
+    Motor_RM_PIDControlTask::setMotorInput(short) 0x08004c01   Thumb Code    10  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask13setMotorInputEs)
+    Motor_RM_PIDControlTask::get_motor_backend_p() 0x08004c0d   Thumb Code     4  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask19get_motor_backend_pEv)
+    Motor_RM_PIDControlTask::getAngularVelocityTaskPointer() 0x08004c11   Thumb Code     4  screwmotortask.o(.text._ZN23Motor_RM_PIDControlTask29getAngularVelocityTaskPointerEv)
+    Motor_RM_PIDControlTask::init()          0x08004c15   Thumb Code     2  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask4initEv)
+    Motor_RM_PIDControlTask::uninit()        0x08004c19   Thumb Code     2  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6uninitEv)
+    Motor_RM_PIDControlTask::update(unsigned int) 0x08004c1d   Thumb Code    18  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTask6updateEj)
+    Motor_RM_PIDControlTask::Motor_RM_PIDControlTask(RoboBase&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char, unsigned int) 0x08004c31   Thumb Code   134  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj)
+    Motor_RM_PIDControlTask::Motor_RM_PIDControlTask__sub_object(RoboBase&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char, unsigned int) 0x08004c31   Thumb Code   134  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj)
+    Motor_RM_PIDControlTask::~Motor_RM_PIDControlTask__deallocating() 0x08004cb9   Thumb Code    12  motor_rm_tasks.o(.text._ZN23Motor_RM_PIDControlTaskD0Ev)
+    Srew_Motor_PIDControlTask::init()        0x08004cc5   Thumb Code    58  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask4initEv)
+    Srew_Motor_PIDControlTask::uninit()      0x08004d01   Thumb Code     2  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6uninitEv)
+    Srew_Motor_PIDControlTask::update(unsigned int) 0x08004d09   Thumb Code   392  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTask6updateEj)
+    Srew_Motor_PIDControlTask::Srew_Motor_PIDControlTask(Robot&, robo_lib::_Motor_RM_Params_t*, robo_lib::_PID_Params_t*, robo_lib::_PID_Params_t*, unsigned int) 0x08004e91   Thumb Code   210  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j)
+    Srew_Motor_PIDControlTask::Srew_Motor_PIDControlTask__sub_object(Robot&, robo_lib::_Motor_RM_Params_t*, robo_lib::_PID_Params_t*, robo_lib::_PID_Params_t*, unsigned int) 0x08004e91   Thumb Code   210  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j)
+    Srew_Motor_PIDControlTask::~Srew_Motor_PIDControlTask__deallocating() 0x08004f65   Thumb Code    12  screwmotortask.o(.text._ZN25Srew_Motor_PIDControlTaskD0Ev)
+    Robot::get_Params()                      0x08004f71   Thumb Code    16  screwmotortask.o(.text._ZN5Robot10get_ParamsEv)
+    Robot::get_play_sound()                  0x08004f81   Thumb Code     8  screwmotortask.o(.text._ZN5Robot14get_play_soundEv)
+    Robot::run()                             0x08004f89   Thumb Code    10  robot.o(.text._ZN5Robot3runEv)
+    Robot::init()                            0x08004f95   Thumb Code   302  robot.o(.text._ZN5Robot4initEv)
+    Robot::Robot__sub_object()               0x080050c5   Thumb Code    42  main_1.o(.text._ZN5RobotC2Ev)
+    Params::initMotorsParams(unsigned char)  0x080050f1   Thumb Code   154  params.o(.text._ZN6Params16initMotorsParamsEh)
+    Params::Params__sub_object()             0x0800518d   Thumb Code     8  main_1.o(.text._ZN6ParamsC2Ev)
+    RoboBase::getScheduler()                 0x08005195   Thumb Code     4  screwmotortask.o(.text._ZN8RoboBase12getSchedulerEv)
+    RoboBase::getCAN1Device()                0x08005199   Thumb Code     6  screwmotortask.o(.text._ZN8RoboBase13getCAN1DeviceEv)
+    RoboBase::getCAN2Device()                0x080051a1   Thumb Code     8  screwmotortask.o(.text._ZN8RoboBase13getCAN2DeviceEv)
+    RoboBase::getRCProtocol()                0x080051a9   Thumb Code     6  screwmotortask.o(.text._ZN8RoboBase13getRCProtocolEv)
+    RoboBase::getCAN1DevicePointer()         0x080051b1   Thumb Code     6  main_1.o(.text._ZN8RoboBase20getCAN1DevicePointerEv)
+    RoboBase::getCAN2DevicePointer()         0x080051b9   Thumb Code     8  main_1.o(.text._ZN8RoboBase20getCAN2DevicePointerEv)
+    RoboBase::getRCProtocolPointer()         0x080051c1   Thumb Code     6  main_1.o(.text._ZN8RoboBase20getRCProtocolPointerEv)
+    RoboBase::getHelper()                    0x080051c9   Thumb Code     6  screwmotortask.o(.text._ZN8RoboBase9getHelperEv)
+    RoboBase::getMotors()                    0x080051d1   Thumb Code     6  motor_dm_task.o(.text._ZN8RoboBase9getMotorsEv)
+    RoboBase::RoboBase__sub_object()         0x080051d9   Thumb Code    84  main_1.o(.text._ZN8RoboBaseC2Ev)
+    RoboBase::~RoboBase__sub_object()        0x0800522d   Thumb Code    16  main_1.o(.text._ZN8RoboBaseD2Ev)
+    robo_lib::RCProtocol::addBackend(robo_lib::RCProtocol_Backend*) 0x0800523d   Thumb Code     4  rcprotocol.o(.text._ZN8robo_lib10RCProtocol10addBackendEPNS_18RCProtocol_BackendE)
+    robo_lib::RCProtocol::processByte(unsigned char const volatile*) 0x08005241   Thumb Code    18  rcprotocol.o(.text._ZN8robo_lib10RCProtocol11processByteEPVKh)
+    robo_lib::RCProtocol::init()             0x08005255   Thumb Code   138  rcprotocol.o(.text._ZN8robo_lib10RCProtocol4initEv)
+    robo_lib::RCProtocol::getRCData()        0x080052e1   Thumb Code    62  screwmotortask.o(.text._ZN8robo_lib10RCProtocol9getRCDataEv)
+    robo_lib::RCProtocol::RCProtocol__sub_object() 0x08005321   Thumb Code     2  main_1.o(.text._ZN8robo_lib10RCProtocolC2Ev)
+    robo_lib::RCProtocol::~RCProtocol__sub_object() 0x08005325   Thumb Code     2  main_1.o(.text._ZN8robo_lib10RCProtocolD2Ev)
+    robo_lib::Motor_Backend::publishMeasurement() 0x08005329   Thumb Code    68  motor_backend.o(.text._ZN8robo_lib13Motor_Backend18publishMeasurementEv)
+    robo_lib::Motor_Backend::Motor_Backend__sub_object(robo_lib::Motor&) 0x0800536d   Thumb Code    16  motor_backend.o(.text._ZN8robo_lib13Motor_BackendC2ERNS_5MotorE)
+    robo_lib::InertialSensor::InertialSensor() 0x0800537d   Thumb Code    44  inertialsensor.o(.text._ZN8robo_lib14InertialSensorC2Ev)
+    robo_lib::InertialSensor::InertialSensor__sub_object() 0x0800537d   Thumb Code    44  inertialsensor.o(.text._ZN8robo_lib14InertialSensorC2Ev)
+    robo_lib::PID_Controller::setFeedback(float) 0x080053a9   Thumb Code     6  screwmotortask.o(.text._ZN8robo_lib14PID_Controller11setFeedbackEf)
+    robo_lib::PID_Controller::calculateWithCPU(unsigned int) 0x080053b1   Thumb Code    20  pidcontroltask.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEj)
+    robo_lib::PID_Controller::calculateWithCPU(unsigned int, float, float, float) 0x080053c5   Thumb Code   748  pid_controller.o(.text._ZN8robo_lib14PID_Controller16calculateWithCPUEjfff)
+    robo_lib::PID_Controller::getOutput()    0x080056b1   Thumb Code     6  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9getOutputEv)
+    robo_lib::PID_Controller::setExpect(float) 0x080056b9   Thumb Code     6  screwmotortask.o(.text._ZN8robo_lib14PID_Controller9setExpectEf)
+    robo_lib::PID_Controller::setParams(robo_lib::_PID_Params_t const&) 0x080056c1   Thumb Code    68  pid_controller.o(.text._ZN8robo_lib14PID_Controller9setParamsERKNS_13_PID_Params_tE)
+    robo_lib::PID_Controller::PID_Controller() 0x08005705   Thumb Code     2  pid_controller.o(.text._ZN8robo_lib14PID_ControllerC2Ev)
+    robo_lib::PID_Controller::PID_Controller__sub_object() 0x08005705   Thumb Code     2  pid_controller.o(.text._ZN8robo_lib14PID_ControllerC2Ev)
+    robo_lib::RCProtocol_DBUS::processByte(unsigned char const volatile*) 0x08005709   Thumb Code   266  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS11processByteEPVKh)
+    robo_lib::RCProtocol_DBUS::init()        0x08005815   Thumb Code     2  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS4initEv)
+    robo_lib::RCProtocol_DBUS::uninit()      0x08005819   Thumb Code     2  rcprotocol_dbus.o(.text._ZN8robo_lib15RCProtocol_DBUS6uninitEv)
+    robo_lib::RCProtocol_DBUS::RCProtocol_DBUS__sub_object(robo_lib::RCProtocol&) 0x0800581d   Thumb Code    20  rcprotocol.o(.text._ZN8robo_lib15RCProtocol_DBUSC2ERNS_10RCProtocolE)
+    robo_lib::RCProtocol_Backend::publishRCData(robo_lib::RC_Data) 0x08005831   Thumb Code   164  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_Backend13publishRCDataENS_7RC_DataE)
+    robo_lib::RCProtocol_Backend::RCProtocol_Backend__sub_object(robo_lib::RCProtocol&) 0x080058d5   Thumb Code    16  rcprotocol_backend.o(.text._ZN8robo_lib18RCProtocol_BackendC2ERNS_10RCProtocolE)
+    robo_lib::USART1_DMA_Tx_Init()           0x080058e5   Thumb Code    20  uartdriver.o(.text._ZN8robo_lib18USART1_DMA_Tx_InitEv)
+    robo_lib::Error::Error_Handler()         0x080058f9   Thumb Code     2  error.o(.text._ZN8robo_lib5Error13Error_HandlerEv)
+    robo_lib::Motor::addBackend(robo_lib::Motor_Backend*) 0x080058fd   Thumb Code    40  motor.o(.text._ZN8robo_lib5Motor10addBackendEPNS_13Motor_BackendE)
+    robo_lib::Motor::Motor__sub_object()     0x08005925   Thumb Code     2  main_1.o(.text._ZN8robo_lib5MotorC2Ev)
+    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Init(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*, robo_lib::_CAN_Tx_Data_Pack_t*, unsigned int) 0x08005929   Thumb Code    12  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_InitEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_j)
+    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Push(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*, robo_lib::_CAN_Tx_Data_Pack_t) 0x08005935   Thumb Code    82  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_PushEPNS_19QUEUE_HandleTypeDefIS1_EES1_)
+    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Clear(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*) 0x08005989   Thumb Code     8  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE11Queue_ClearEPNS_19QUEUE_HandleTypeDefIS1_EE)
+    robo_lib::Queue<robo_lib::_CAN_Tx_Data_Pack_t>::Queue_Pop(robo_lib::QUEUE_HandleTypeDef<robo_lib::_CAN_Tx_Data_Pack_t>*, robo_lib::_CAN_Tx_Data_Pack_t*) 0x08005991   Thumb Code    78  candevice.o(.text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE9Queue_PopEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_)
+    robo_lib::Helper::setBuzzerOff()         0x080059e1   Thumb Code    16  helper.o(.text._ZN8robo_lib6Helper12setBuzzerOffEv)
+    robo_lib::Helper::setBuzzerFrequence(unsigned short) 0x080059f1   Thumb Code    52  helper.o(.text._ZN8robo_lib6Helper18setBuzzerFrequenceEt)
+    robo_lib::Helper::setLED(unsigned char, unsigned char, unsigned char) 0x08005a25   Thumb Code    66  helper.o(.text._ZN8robo_lib6Helper6setLEDEhhh)
+    robo_lib::Helper::Helper__sub_object()   0x08005a69   Thumb Code    90  main_1.o(.text._ZN8robo_lib6HelperC2Ev)
+    robo_lib::micros()                       0x08005ac5   Thumb Code     8  scheduler_common.o(.text._ZN8robo_lib6microsEv)
+    robo_lib::Vector3<float>::Vector3__sub_object() 0x08005acd   Thumb Code    10  ahrs.o(.text._ZN8robo_lib7Vector3IfEC2Ev)
+    robo_lib::Motor_RM::syncCANData()        0x08005ad9   Thumb Code    18  screwmotortask.o(.text._ZN8robo_lib8Motor_RM11syncCANDataEv)
+    robo_lib::Motor_RM::setMotorInput(short) 0x08005aed   Thumb Code    18  screwmotortask.o(.text._ZN8robo_lib8Motor_RM13setMotorInputEs)
+    robo_lib::Motor_RM::getMeasurement()     0x08005b01   Thumb Code    28  screwmotortask.o(.text._ZN8robo_lib8Motor_RM14getMeasurementEv)
+    robo_lib::Motor_RM::updateMeasurement()  0x08005b1d   Thumb Code     8  motor_rm.o(.text._ZN8robo_lib8Motor_RM17updateMeasurementEv)
+    robo_lib::Motor_RM::updateMotorMeasurement() 0x08005b25   Thumb Code   392  motor_rm.o(.text._ZN8robo_lib8Motor_RM22updateMotorMeasurementEv)
+    robo_lib::Motor_RM::init()               0x08005cad   Thumb Code    18  motor_rm.o(.text._ZN8robo_lib8Motor_RM4initEv)
+    robo_lib::Motor_RM::uninit()             0x08005cc1   Thumb Code     2  motor_rm.o(.text._ZN8robo_lib8Motor_RM6uninitEv)
+    robo_lib::Motor_RM::update(unsigned int) 0x08005cc5   Thumb Code    20  motor_rm.o(.text._ZN8robo_lib8Motor_RM6updateEj)
+    robo_lib::Motor_RM::setParams(robo_lib::_Motor_RM_Params_t) 0x08005cd9   Thumb Code    42  screwmotortask.o(.text._ZN8robo_lib8Motor_RM9setParamsENS_18_Motor_RM_Params_tE)
+    robo_lib::Motor_RM::Motor_RM(robo_lib::Motor&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char) 0x08005d05   Thumb Code    98  motor_rm.o(.text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha)
+    robo_lib::Motor_RM::Motor_RM__sub_object(robo_lib::Motor&, robo_lib::CanDevice&, unsigned short, unsigned short, unsigned char, signed char) 0x08005d05   Thumb Code    98  motor_rm.o(.text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha)
+    robo_lib::CanDevice::pop(robo_lib::_CAN_Tx_Data_Pack_t*) 0x08005d69   Thumb Code    26  candevice.o(.text._ZN8robo_lib9CanDevice3popEPNS_19_CAN_Tx_Data_Pack_tE)
+    robo_lib::CanDevice::init(__CAN_HandleTypeDef*, robo_lib::_CAN_Tx_Data_Pack_t*, unsigned short) 0x08005d85   Thumb Code   120  candevice.o(.text._ZN8robo_lib9CanDevice4initEP19__CAN_HandleTypeDefPNS_19_CAN_Tx_Data_Pack_tEt)
+    robo_lib::CanDevice::push(robo_lib::_CAN_Tx_Data_Pack_t) 0x08005dfd   Thumb Code    56  candevice.o(.text._ZN8robo_lib9CanDevice4pushENS_19_CAN_Tx_Data_Pack_tE)
+    robo_lib::CanDevice::update(unsigned int) 0x08005e35   Thumb Code    52  candevice.o(.text._ZN8robo_lib9CanDevice6updateEj)
+    robo_lib::CanDevice::addRxLink(robo_lib::_CAN_Rx_Data_Pack_t*) 0x08005e69   Thumb Code    48  candevice.o(.text._ZN8robo_lib9CanDevice9addRxLinkEPNS_19_CAN_Rx_Data_Pack_tE)
+    robo_lib::CanDevice::addTxLink(unsigned short, unsigned char, unsigned char, unsigned char**, unsigned char) 0x08005e99   Thumb Code   226  candevice.o(.text._ZN8robo_lib9CanDevice9addTxLinkEthhPPhh)
+    robo_lib::CanDevice::sendAsync(robo_lib::_CAN_Tx_Data_Pack_t*) 0x08005f7d   Thumb Code    38  candevice.o(.text._ZN8robo_lib9CanDevice9sendAsyncEPNS_19_CAN_Tx_Data_Pack_tE)
+    robo_lib::CanDevice::CanDevice()         0x08005fa5   Thumb Code    18  candevice.o(.text._ZN8robo_lib9CanDeviceC2Ev)
+    robo_lib::CanDevice::CanDevice__sub_object() 0x08005fa5   Thumb Code    18  candevice.o(.text._ZN8robo_lib9CanDeviceC2Ev)
+    robo_lib::Scheduler::registerTask(robo_lib::Task_Base*) 0x08005fb9   Thumb Code    66  scheduler.o(.text._ZN8robo_lib9Scheduler12registerTaskEPNS_9Task_BaseE)
+    robo_lib::Scheduler::unregisterTask(robo_lib::Task_Base**) 0x08005ffd   Thumb Code   136  scheduler.o(.text._ZN8robo_lib9Scheduler14unregisterTaskEPPNS_9Task_BaseE)
+    robo_lib::Scheduler::run()               0x08006085   Thumb Code   396  scheduler.o(.text._ZN8robo_lib9Scheduler3runEv)
+    robo_lib::Scheduler::Scheduler()         0x08006211   Thumb Code    20  scheduler.o(.text._ZN8robo_lib9SchedulerC2Ev)
+    robo_lib::Scheduler::Scheduler__sub_object() 0x08006211   Thumb Code    20  scheduler.o(.text._ZN8robo_lib9SchedulerC2Ev)
+    robo_lib::SimpleAdd<float>::operator()(float, float) 0x08006225   Thumb Code     6  advancedadd.o(.text._ZN8robo_lib9SimpleAddIfEclEff)
+    robo_lib::Task_Base::setInterval(unsigned int) 0x0800622d   Thumb Code     4  screwmotortask.o(.text._ZN8robo_lib9Task_Base11setIntervalEj)
+    robo_lib::Task_Base::selfKill()          0x08006231   Thumb Code     6  playsound.o(.text._ZN8robo_lib9Task_Base8selfKillEv)
+    robo_lib::Task_Base::Task_Base__sub_object() 0x08006239   Thumb Code    14  screwmotortask.o(.text._ZN8robo_lib9Task_BaseC2Ev)
+    robo_lib::Task_Base::~Task_Base__deallocating() 0x08006249   Thumb Code     2  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD0Ev)
+    robo_lib::Task_Base::~Task_Base__sub_object() 0x0800624d   Thumb Code     2  screwmotortask.o(.text._ZN8robo_lib9Task_BaseD2Ev)
+    std::get_new_handler()                   0x0800625d   Thumb Code    12  cxa_handlers.cpp.o(.text._ZSt15get_new_handlerv)
+    operator delete(void*)                   0x08006269   Thumb Code     4  new.cpp.o(.text._ZdlPv)
+    operator new(unsigned int)               0x0800626d   Thumb Code    38  new.cpp.o(.text._Znwj)
+    __cxa_pure_virtual                       0x08006309   Thumb Code     8  cxa_virtual.cpp.o(.text.__cxa_pure_virtual)
+    abort_message                            0x08006359   Thumb Code     4  abort_message.cpp.o(.text.abort_message)
+    main                                     0x0800635d   Thumb Code   124  main_1.o(.text.main)
+    __aeabi_ddiv                             0x080063d9   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    _ddiv                                    0x080063d9   Thumb Code   556  ddiv.o(x$fpl$ddiv)
+    __aeabi_d2iz                             0x0800668d   Thumb Code     0  dfix.o(x$fpl$dfix)
+    _dfix                                    0x0800668d   Thumb Code    94  dfix.o(x$fpl$dfix)
+    __aeabi_i2d                              0x080066eb   Thumb Code     0  dflt_clz.o(x$fpl$dflt)
+    _dflt                                    0x080066eb   Thumb Code    46  dflt_clz.o(x$fpl$dflt)
+    __fpl_dnaninf                            0x08006719   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
+    __fpl_dretinf                            0x080067b5   Thumb Code    12  dretinf.o(x$fpl$dretinf)
+    __aeabi_ul2f                             0x080067c1   Thumb Code     0  ffltll_clz.o(x$fpl$ffltll)
+    _ll_uto_f                                0x080067c1   Thumb Code     6  ffltll_clz.o(x$fpl$ffltll)
+    __aeabi_l2f                              0x080067c7   Thumb Code     0  ffltll_clz.o(x$fpl$ffltll)
+    _ll_sto_f                                0x080067c7   Thumb Code    90  ffltll_clz.o(x$fpl$ffltll)
+    _fp_init                                 0x08006821   Thumb Code    26  fpinit.o(x$fpl$fpinit)
+    __fplib_config_fpu_vfp                   0x08006839   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __fplib_config_pureend_doubles           0x08006839   Thumb Code     0  fpinit.o(x$fpl$fpinit)
+    __I$use$fp                               0x0800683a   Number         0  usenofp.o(x$fpl$usenofp)
+    AHBPrescTable                            0x080068fc   Data          16  system_stm32f4xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x0800690c   Data           8  system_stm32f4xx.o(.rodata.APBPrescTable)
+    vtable for Task_Robot                    0x08006914   Data          28  screwmotortask.o(.rodata._ZTV10Task_Robot)
+    vtable for CANSendTask                   0x08006930   Data          28  cansendtask.o(.rodata._ZTV11CANSendTask)
+    vtable for CANSyncTask                   0x0800694c   Data          28  cansynctask.o(.rodata._ZTV11CANSyncTask)
+    vtable for ControlBase                   0x08006968   Data          16  main_1.o(.rodata._ZTV11ControlBase)
+    vtable for PlaySoundTask                 0x08006978   Data          28  playsound.o(.rodata._ZTV13PlaySoundTask)
+    vtable for Task_RoboBase                 0x08006994   Data          28  motor_dm_task.o(.rodata._ZTV13Task_RoboBase)
+    vtable for PIDControlTask                0x080069b0   Data          28  pidcontroltask.o(.rodata._ZTV14PIDControlTask)
+    vtable for PlaySoundManageTask           0x080069cc   Data          28  soundmanagetask.o(.rodata._ZTV19PlaySoundManageTask)
+    vtable for Motor_RM_PIDControlTask       0x080069e8   Data          28  motor_rm_tasks.o(.rodata._ZTV23Motor_RM_PIDControlTask)
+    vtable for Srew_Motor_PIDControlTask     0x08006a04   Data          28  screwmotortask.o(.rodata._ZTV25Srew_Motor_PIDControlTask)
+    vtable for Robot                         0x08006a20   Data          16  robot.o(.rodata._ZTV5Robot)
+    vtable for RoboBase                      0x08006a30   Data          16  main_1.o(.rodata._ZTV8RoboBase)
+    vtable for robo_lib::Motor_Backend       0x08006a40   Data          28  motor_backend.o(.rodata._ZTVN8robo_lib13Motor_BackendE)
+    vtable for robo_lib::RCProtocol_DBUS     0x08006a5c   Data          20  rcprotocol_dbus.o(.rodata._ZTVN8robo_lib15RCProtocol_DBUSE)
+    vtable for robo_lib::RCProtocol_Backend  0x08006a70   Data          20  rcprotocol_backend.o(.rodata._ZTVN8robo_lib18RCProtocol_BackendE)
+    vtable for robo_lib::Motor_RM            0x08006a84   Data          28  motor_rm.o(.rodata._ZTVN8robo_lib8Motor_RME)
+    vtable for robo_lib::SimpleAdd<float>    0x08006aa0   Data          12  advancedadd.o(.rodata._ZTVN8robo_lib9SimpleAddIfEE)
+    vtable for robo_lib::Task_Base           0x08006aac   Data          28  screwmotortask.o(.rodata._ZTVN8robo_lib9Task_BaseE)
+    Region$$Table$$Base                      0x08006ac8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08006ae8   Number         0  anon$$obj.o(Region$$Table)
+    SHT$$INIT_ARRAY$$Base                    0x08006ae8   Number         0  main_1.o(.init_array)
+    SHT$$INIT_ARRAY$$Limit                   0x08006aec   Number         0  init_aeabi.o(.init_array)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f4xx.o(.data.SystemCoreClock)
     robo_lib::simple_adder_instance_f        0x20000004   Data           4  advancedadd.o(.data._ZN8robo_lib23simple_adder_instance_fE)
     uwTickFreq                               0x20000008   Data           1  stm32f4xx_hal.o(.data.uwTickFreq)
@@ -8832,8 +8972,8 @@ Image Symbol Table
     huart1                                   0x2000064c   Data          68  usart.o(.bss.huart1)
     huart3                                   0x20000690   Data          68  usart.o(.bss.huart3)
     huart6                                   0x200006d4   Data          68  usart.o(.bss.huart6)
-    robot                                    0x20000718   Data        7200  main_1.o(.bss.robot)
-    uwTick                                   0x20002338   Data           4  stm32f4xx_hal.o(.bss.uwTick)
+    robot                                    0x20000718   Data        7212  main_1.o(.bss.robot)
+    uwTick                                   0x20002344   Data           4  stm32f4xx_hal.o(.bss.uwTick)
 
 
 
@@ -8843,102 +8983,102 @@ Memory Map of the image
 
   Image Entry point : 0x08000189
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006310, Max: 0x000e0000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00006b00, Max: 0x000e0000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000062fc, Max: 0x000e0000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00006aec, Max: 0x000e0000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f407xx.o
-    0x08000188   0x08000188   0x00000008   Code   RO         4159  * !!!main             c_w.l(__main.o)
-    0x08000190   0x08000190   0x00000034   Code   RO         4849    !!!scatter          c_w.l(__scatter.o)
-    0x080001c4   0x080001c4   0x0000001a   Code   RO         4851    !!handler_copy      c_w.l(__scatter_copy.o)
+    0x08000188   0x08000188   0x00000008   Code   RO         4212  * !!!main             c_w.l(__main.o)
+    0x08000190   0x08000190   0x00000034   Code   RO         4902    !!!scatter          c_w.l(__scatter.o)
+    0x080001c4   0x080001c4   0x0000001a   Code   RO         4904    !!handler_copy      c_w.l(__scatter_copy.o)
     0x080001de   0x080001de   0x00000002   PAD
-    0x080001e0   0x080001e0   0x0000001c   Code   RO         4853    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x080001fc   0x080001fc   0x00000000   Code   RO         4138    .ARM.Collect$$_printf_percent$$00000000  c_w.l(_printf_percent.o)
-    0x080001fc   0x080001fc   0x00000006   Code   RO         4137    .ARM.Collect$$_printf_percent$$00000009  c_w.l(_printf_d.o)
-    0x08000202   0x08000202   0x00000004   Code   RO         4441    .ARM.Collect$$_printf_percent$$00000017  c_w.l(_printf_percent_end.o)
-    0x08000206   0x08000206   0x00000002   Code   RO         4776    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x08000208   0x08000208   0x00000004   Code   RO         4459    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
-    0x0800020c   0x0800020c   0x00000000   Code   RO         4462    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x0800020c   0x0800020c   0x00000008   Code   RO         4463    .ARM.Collect$$libinit$$00000005  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4465    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4467    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4469    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4472    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4474    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4476    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4478    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4480    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4482    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4484    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4486    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4488    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4490    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4492    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4496    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4498    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000000   Code   RO         4500    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x08000214   0x08000214   0x00000004   Code   RO         4501    .ARM.Collect$$libinit$$00000031  c_w.l(libinit2.o)
-    0x08000218   0x08000218   0x00000000   Code   RO         4502    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x08000218   0x08000218   0x00000002   Code   RO         4503    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x0800021a   0x0800021a   0x00000002   Code   RO         4847    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x0800021c   0x0800021c   0x00000006   Code   RO         4777    .ARM.Collect$$libshutdown$$00000001  c_w.l(libshutdown2.o)
-    0x08000222   0x08000222   0x00000000   Code   RO         4778    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x08000222   0x08000222   0x00000000   Code   RO         4780    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x08000222   0x08000222   0x00000000   Code   RO         4783    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x08000222   0x08000222   0x00000000   Code   RO         4786    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x08000222   0x08000222   0x00000000   Code   RO         4788    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x08000222   0x08000222   0x00000000   Code   RO         4791    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x08000222   0x08000222   0x00000002   Code   RO         4792    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x08000224   0x08000224   0x00000000   Code   RO         4310    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x08000224   0x08000224   0x00000000   Code   RO         4600    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x08000224   0x08000224   0x00000006   Code   RO         4612    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x0800022a   0x0800022a   0x00000000   Code   RO         4602    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x0800022a   0x0800022a   0x00000004   Code   RO         4603    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x0800022e   0x0800022e   0x00000000   Code   RO         4605    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x0800022e   0x0800022e   0x00000008   Code   RO         4606    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x08000236   0x08000236   0x00000002   Code   RO         4795    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x08000238   0x08000238   0x00000000   Code   RO         4819    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x08000238   0x08000238   0x00000004   Code   RO         4820    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x0800023c   0x0800023c   0x00000006   Code   RO         4821    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x080001e0   0x080001e0   0x0000001c   Code   RO         4906    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x080001fc   0x080001fc   0x00000000   Code   RO         4191    .ARM.Collect$$_printf_percent$$00000000  c_w.l(_printf_percent.o)
+    0x080001fc   0x080001fc   0x00000006   Code   RO         4190    .ARM.Collect$$_printf_percent$$00000009  c_w.l(_printf_d.o)
+    0x08000202   0x08000202   0x00000004   Code   RO         4494    .ARM.Collect$$_printf_percent$$00000017  c_w.l(_printf_percent_end.o)
+    0x08000206   0x08000206   0x00000002   Code   RO         4829    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x08000208   0x08000208   0x00000004   Code   RO         4512    .ARM.Collect$$libinit$$00000001  c_w.l(libinit2.o)
+    0x0800020c   0x0800020c   0x00000000   Code   RO         4515    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x0800020c   0x0800020c   0x00000008   Code   RO         4516    .ARM.Collect$$libinit$$00000005  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4518    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4520    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4522    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4525    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4527    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4529    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4531    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4533    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4535    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4537    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4539    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4541    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4543    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4545    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4549    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4551    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000000   Code   RO         4553    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x08000214   0x08000214   0x00000004   Code   RO         4554    .ARM.Collect$$libinit$$00000031  c_w.l(libinit2.o)
+    0x08000218   0x08000218   0x00000000   Code   RO         4555    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x08000218   0x08000218   0x00000002   Code   RO         4556    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x0800021a   0x0800021a   0x00000002   Code   RO         4900    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0800021c   0x0800021c   0x00000006   Code   RO         4830    .ARM.Collect$$libshutdown$$00000001  c_w.l(libshutdown2.o)
+    0x08000222   0x08000222   0x00000000   Code   RO         4831    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x08000222   0x08000222   0x00000000   Code   RO         4833    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x08000222   0x08000222   0x00000000   Code   RO         4836    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x08000222   0x08000222   0x00000000   Code   RO         4839    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x08000222   0x08000222   0x00000000   Code   RO         4841    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x08000222   0x08000222   0x00000000   Code   RO         4844    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x08000222   0x08000222   0x00000002   Code   RO         4845    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x08000224   0x08000224   0x00000000   Code   RO         4363    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x08000224   0x08000224   0x00000000   Code   RO         4653    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x08000224   0x08000224   0x00000006   Code   RO         4665    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x0800022a   0x0800022a   0x00000000   Code   RO         4655    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x0800022a   0x0800022a   0x00000004   Code   RO         4656    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x0800022e   0x0800022e   0x00000000   Code   RO         4658    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x0800022e   0x0800022e   0x00000008   Code   RO         4659    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x08000236   0x08000236   0x00000002   Code   RO         4848    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000238   0x08000238   0x00000000   Code   RO         4872    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000238   0x08000238   0x00000004   Code   RO         4873    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x0800023c   0x0800023c   0x00000006   Code   RO         4874    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x08000242   0x08000242   0x00000002   PAD
     0x08000244   0x08000244   0x00000040   Code   RO            4    .text               startup_stm32f407xx.o
-    0x08000284   0x08000284   0x000000f0   Code   RO         4103    .text               c_w.l(lludivv7m.o)
-    0x08000374   0x08000374   0x00000078   Code   RO         4115    .text               c_w.l(_printf_dec.o)
-    0x080003ec   0x080003ec   0x0000000a   Code   RO         4142    .text               c_w.l(cxa_atexit.o)
-    0x080003f6   0x080003f6   0x0000008a   Code   RO         4147    .text               c_w.l(rt_memcpy_v6.o)
-    0x08000480   0x08000480   0x00000064   Code   RO         4149    .text               c_w.l(rt_memcpy_w.o)
-    0x080004e4   0x080004e4   0x0000004e   Code   RO         4155    .text               c_w.l(rt_memclr_w.o)
-    0x08000532   0x08000532   0x00000006   Code   RO         4157    .text               c_w.l(heapauxi.o)
-    0x08000538   0x08000538   0x00000024   Code   RO         4164    .text               c_w.l(init_aeabi.o)
-    0x0800055c   0x0800055c   0x0000005e   Code   RO         4319    .text               c_w.l(h1_alloc.o)
-    0x080005ba   0x080005ba   0x0000004e   Code   RO         4321    .text               c_w.l(h1_free.o)
-    0x08000608   0x08000608   0x000000b2   Code   RO         4389    .text               c_w.l(_printf_intcommon.o)
-    0x080006ba   0x080006ba   0x00000016   Code   RO         4451    .text               c_w.l(abort.o)
-    0x080006d0   0x080006d0   0x0000002e   Code   RO         4456    .text               c_w.l(aeabi_atexit.o)
+    0x08000284   0x08000284   0x000000f0   Code   RO         4156    .text               c_w.l(lludivv7m.o)
+    0x08000374   0x08000374   0x00000078   Code   RO         4168    .text               c_w.l(_printf_dec.o)
+    0x080003ec   0x080003ec   0x0000000a   Code   RO         4195    .text               c_w.l(cxa_atexit.o)
+    0x080003f6   0x080003f6   0x0000008a   Code   RO         4200    .text               c_w.l(rt_memcpy_v6.o)
+    0x08000480   0x08000480   0x00000064   Code   RO         4202    .text               c_w.l(rt_memcpy_w.o)
+    0x080004e4   0x080004e4   0x0000004e   Code   RO         4208    .text               c_w.l(rt_memclr_w.o)
+    0x08000532   0x08000532   0x00000006   Code   RO         4210    .text               c_w.l(heapauxi.o)
+    0x08000538   0x08000538   0x00000024   Code   RO         4217    .text               c_w.l(init_aeabi.o)
+    0x0800055c   0x0800055c   0x0000005e   Code   RO         4372    .text               c_w.l(h1_alloc.o)
+    0x080005ba   0x080005ba   0x0000004e   Code   RO         4374    .text               c_w.l(h1_free.o)
+    0x08000608   0x08000608   0x000000b2   Code   RO         4442    .text               c_w.l(_printf_intcommon.o)
+    0x080006ba   0x080006ba   0x00000016   Code   RO         4504    .text               c_w.l(abort.o)
+    0x080006d0   0x080006d0   0x0000002e   Code   RO         4509    .text               c_w.l(aeabi_atexit.o)
     0x080006fe   0x080006fe   0x00000002   PAD
-    0x08000700   0x08000700   0x0000000c   Code   RO         4593    .text               c_w.l(sys_exit.o)
-    0x0800070c   0x0800070c   0x00000008   Code   RO         4619    .text               c_w.l(rt_heap_descriptor_intlibspace.o)
-    0x08000714   0x08000714   0x00000008   Code   RO         4624    .text               c_w.l(rt_ddtor_pointer_addr_intlibspace.o)
-    0x0800071c   0x0800071c   0x00000004   Code   RO         4631    .text               c_w.l(hguard.o)
-    0x08000720   0x08000720   0x0000008a   Code   RO         4633    .text               c_w.l(init_alloc.o)
-    0x080007aa   0x080007aa   0x0000000e   Code   RO         4637    .text               c_w.l(h1_init.o)
-    0x080007b8   0x080007b8   0x00000042   Code   RO         4666    .text               c_w.l(cxa_finalize.o)
-    0x080007fa   0x080007fa   0x0000000e   Code   RO         4669    .text               c_w.l(defsig_abrt_outer.o)
-    0x08000808   0x08000808   0x00000008   Code   RO         4693    .text               c_w.l(libspace.o)
-    0x08000810   0x08000810   0x00000002   Code   RO         4696    .text               c_w.l(use_no_semi.o)
-    0x08000812   0x08000812   0x00000000   Code   RO         4698    .text               c_w.l(indicate_semi.o)
-    0x08000812   0x08000812   0x0000004a   Code   RO         4699    .text               c_w.l(sys_stackheap_outer.o)
-    0x0800085c   0x0800085c   0x00000000   Code   RO         4712    .text               c_w.l(maybetermalloc1.o)
-    0x0800085c   0x0800085c   0x00000034   Code   RO         4714    .text               c_w.l(h1_extend.o)
-    0x08000890   0x08000890   0x00000012   Code   RO         4750    .text               c_w.l(exit.o)
-    0x080008a2   0x080008a2   0x0000000a   Code   RO         4752    .text               c_w.l(defsig_exit.o)
-    0x080008ac   0x080008ac   0x00000030   Code   RO         4754    .text               c_w.l(defsig_abrt_inner.o)
-    0x080008dc   0x080008dc   0x0000000e   Code   RO         4760    .text               c_w.l(defsig_rtmem_outer.o)
-    0x080008ea   0x080008ea   0x00000032   Code   RO         4806    .text               c_w.l(defsig_general.o)
-    0x0800091c   0x0800091c   0x00000050   Code   RO         4810    .text               c_w.l(defsig_rtmem_inner.o)
-    0x0800096c   0x0800096c   0x0000000e   Code   RO         4814    .text               c_w.l(sys_wrch.o)
+    0x08000700   0x08000700   0x0000000c   Code   RO         4646    .text               c_w.l(sys_exit.o)
+    0x0800070c   0x0800070c   0x00000008   Code   RO         4672    .text               c_w.l(rt_heap_descriptor_intlibspace.o)
+    0x08000714   0x08000714   0x00000008   Code   RO         4677    .text               c_w.l(rt_ddtor_pointer_addr_intlibspace.o)
+    0x0800071c   0x0800071c   0x00000004   Code   RO         4684    .text               c_w.l(hguard.o)
+    0x08000720   0x08000720   0x0000008a   Code   RO         4686    .text               c_w.l(init_alloc.o)
+    0x080007aa   0x080007aa   0x0000000e   Code   RO         4690    .text               c_w.l(h1_init.o)
+    0x080007b8   0x080007b8   0x00000042   Code   RO         4719    .text               c_w.l(cxa_finalize.o)
+    0x080007fa   0x080007fa   0x0000000e   Code   RO         4722    .text               c_w.l(defsig_abrt_outer.o)
+    0x08000808   0x08000808   0x00000008   Code   RO         4746    .text               c_w.l(libspace.o)
+    0x08000810   0x08000810   0x00000002   Code   RO         4749    .text               c_w.l(use_no_semi.o)
+    0x08000812   0x08000812   0x00000000   Code   RO         4751    .text               c_w.l(indicate_semi.o)
+    0x08000812   0x08000812   0x0000004a   Code   RO         4752    .text               c_w.l(sys_stackheap_outer.o)
+    0x0800085c   0x0800085c   0x00000000   Code   RO         4765    .text               c_w.l(maybetermalloc1.o)
+    0x0800085c   0x0800085c   0x00000034   Code   RO         4767    .text               c_w.l(h1_extend.o)
+    0x08000890   0x08000890   0x00000012   Code   RO         4803    .text               c_w.l(exit.o)
+    0x080008a2   0x080008a2   0x0000000a   Code   RO         4805    .text               c_w.l(defsig_exit.o)
+    0x080008ac   0x080008ac   0x00000030   Code   RO         4807    .text               c_w.l(defsig_abrt_inner.o)
+    0x080008dc   0x080008dc   0x0000000e   Code   RO         4813    .text               c_w.l(defsig_rtmem_outer.o)
+    0x080008ea   0x080008ea   0x00000032   Code   RO         4859    .text               c_w.l(defsig_general.o)
+    0x0800091c   0x0800091c   0x00000050   Code   RO         4863    .text               c_w.l(defsig_rtmem_inner.o)
+    0x0800096c   0x0800096c   0x0000000e   Code   RO         4867    .text               c_w.l(sys_wrch.o)
     0x0800097a   0x0800097a   0x00000002   PAD
     0x0800097c   0x0800097c   0x00000108   Code   RO          242    .text.ADC_Init      stm32f4xx_hal_adc.o
     0x08000a84   0x08000a84   0x00000002   Code   RO          179    .text.BusFault_Handler  stm32f4xx_it.o
@@ -8963,7 +9103,7 @@ Memory Map of the image
     0x08000c92   0x08000c92   0x00000002   PAD
     0x08000c94   0x08000c94   0x0000000a   Code   RO          203    .text.EXTI9_5_IRQHandler  stm32f4xx_it.o
     0x08000c9e   0x08000c9e   0x00000002   PAD
-    0x08000ca0   0x08000ca0   0x0000000a   Code   RO         2472    .text.Error_Handler  main_1.o
+    0x08000ca0   0x08000ca0   0x0000000a   Code   RO         2478    .text.Error_Handler  main_1.o
     0x08000caa   0x08000caa   0x00000002   PAD
     0x08000cac   0x08000cac   0x00000106   Code   RO          282    .text.HAL_ADC_ConfigChannel  stm32f4xx_hal_adc.o
     0x08000db2   0x08000db2   0x00000002   PAD
@@ -8985,7 +9125,7 @@ Memory Map of the image
     0x080014c8   0x080014c8   0x00000140   Code   RO           42    .text.HAL_CAN_MspInit  can.o
     0x08001608   0x08001608   0x00000002   Code   RO          832    .text.HAL_CAN_RxFifo0FullCallback  stm32f4xx_hal_can.o
     0x0800160a   0x0800160a   0x00000002   PAD
-    0x0800160c   0x0800160c   0x0000014a   Code   RO         2484    .text.HAL_CAN_RxFifo0MsgPendingCallback  main_1.o
+    0x0800160c   0x0800160c   0x0000014a   Code   RO         2490    .text.HAL_CAN_RxFifo0MsgPendingCallback  main_1.o
     0x08001756   0x08001756   0x00000002   PAD
     0x08001758   0x08001758   0x00000002   Code   RO          836    .text.HAL_CAN_RxFifo1FullCallback  stm32f4xx_hal_can.o
     0x0800175a   0x0800175a   0x00000002   PAD
@@ -9014,7 +9154,7 @@ Memory Map of the image
     0x08001880   0x08001880   0x0000018c   Code   RO          537    .text.HAL_DMA_IRQHandler  stm32f4xx_hal_dma.o
     0x08001a0c   0x08001a0c   0x000000ce   Code   RO          517    .text.HAL_DMA_Init  stm32f4xx_hal_dma.o
     0x08001ada   0x08001ada   0x00000002   PAD
-    0x08001adc   0x08001adc   0x00000002   Code   RO         2482    .text.HAL_GPIO_EXTI_Callback  main_1.o
+    0x08001adc   0x08001adc   0x00000002   Code   RO         2488    .text.HAL_GPIO_EXTI_Callback  main_1.o
     0x08001ade   0x08001ade   0x00000002   PAD
     0x08001ae0   0x08001ae0   0x0000001a   Code   RO          489    .text.HAL_GPIO_EXTI_IRQHandler  stm32f4xx_hal_gpio.o
     0x08001afa   0x08001afa   0x00000002   PAD
@@ -9075,7 +9215,7 @@ Memory Map of the image
     0x08002f72   0x08002f72   0x00000002   PAD
     0x08002f74   0x08002f74   0x00000122   Code   RO         1223    .text.HAL_TIM_PWM_Start  stm32f4xx_hal_tim.o
     0x08003096   0x08003096   0x00000002   PAD
-    0x08003098   0x08003098   0x00000026   Code   RO         2474    .text.HAL_TIM_PeriodElapsedCallback  main_1.o
+    0x08003098   0x08003098   0x00000026   Code   RO         2480    .text.HAL_TIM_PeriodElapsedCallback  main_1.o
     0x080030be   0x080030be   0x00000002   PAD
     0x080030c0   0x080030c0   0x00000002   Code   RO         1305    .text.HAL_TIM_TriggerCallback  stm32f4xx_hal_tim.o
     0x080030c2   0x080030c2   0x00000002   PAD
@@ -9161,251 +9301,289 @@ Memory Map of the image
     0x080045bc   0x080045bc   0x000000dc   Code   RO         1503    .text.UART_SetConfig  stm32f4xx_hal_uart.o
     0x08004698   0x08004698   0x00000052   Code   RO         1591    .text.UART_Transmit_IT  stm32f4xx_hal_uart.o
     0x080046ea   0x080046ea   0x00000002   PAD
-    0x080046ec   0x080046ec   0x0000002c   Code   RO         2478    .text.USART1_IRQHandler  main_1.o
-    0x08004718   0x08004718   0x000000c6   Code   RO         2476    .text.USART3_IRQHandler  main_1.o
+    0x080046ec   0x080046ec   0x0000002c   Code   RO         2484    .text.USART1_IRQHandler  main_1.o
+    0x08004718   0x08004718   0x000000c6   Code   RO         2482    .text.USART3_IRQHandler  main_1.o
     0x080047de   0x080047de   0x00000002   PAD
-    0x080047e0   0x080047e0   0x0000002c   Code   RO         2480    .text.USART6_IRQHandler  main_1.o
+    0x080047e0   0x080047e0   0x0000002c   Code   RO         2486    .text.USART6_IRQHandler  main_1.o
     0x0800480c   0x0800480c   0x00000002   Code   RO          181    .text.UsageFault_Handler  stm32f4xx_it.o
     0x0800480e   0x0800480e   0x00000002   PAD
-    0x08004810   0x08004810   0x00000008   Code   RO         2486    .text._GLOBAL__sub_I_main.cpp  main_1.o
-    0x08004818   0x08004818   0x000000a8   Code   RO         2470    .text._Z18SystemClock_Configv  main_1.o
+    0x08004810   0x08004810   0x00000008   Code   RO         2492    .text._GLOBAL__sub_I_main.cpp  main_1.o
+    0x08004818   0x08004818   0x000000a8   Code   RO         2476    .text._Z18SystemClock_Configv  main_1.o
     0x080048c0   0x080048c0   0x00000018   Code   RO         1660    .text._ZN10Task_RobotC2ER5Robot  screwmotortask.o
-    0x080048d8   0x080048d8   0x00000002   Code   RO         1698    .text._ZN10Task_RobotD0Ev  screwmotortask.o
+    0x080048d8   0x080048d8   0x00000002   Code   RO         1704    .text._ZN10Task_RobotD0Ev  screwmotortask.o
     0x080048da   0x080048da   0x00000002   PAD
-    0x080048dc   0x080048dc   0x00000002   Code   RO         2352    .text._ZN11CANSendTask4initEv  cansendtask.o
+    0x080048dc   0x080048dc   0x00000002   Code   RO         2358    .text._ZN11CANSendTask4initEv  cansendtask.o
     0x080048de   0x080048de   0x00000002   PAD
-    0x080048e0   0x080048e0   0x00000002   Code   RO         2356    .text._ZN11CANSendTask6uninitEv  cansendtask.o
+    0x080048e0   0x080048e0   0x00000002   Code   RO         2362    .text._ZN11CANSendTask6uninitEv  cansendtask.o
     0x080048e2   0x080048e2   0x00000002   PAD
-    0x080048e4   0x080048e4   0x0000000a   Code   RO         2354    .text._ZN11CANSendTask6updateEj  cansendtask.o
+    0x080048e4   0x080048e4   0x0000000a   Code   RO         2360    .text._ZN11CANSendTask6updateEj  cansendtask.o
     0x080048ee   0x080048ee   0x00000002   PAD
-    0x080048f0   0x080048f0   0x0000001c   Code   RO         2350    .text._ZN11CANSendTaskC2ER5RobotPN8robo_lib9CanDeviceEj  cansendtask.o
-    0x0800490c   0x0800490c   0x0000000c   Code   RO         2366    .text._ZN11CANSendTaskD0Ev  cansendtask.o
-    0x08004918   0x08004918   0x00000002   Code   RO         2377    .text._ZN11CANSyncTask4initEv  cansynctask.o
+    0x080048f0   0x080048f0   0x0000001c   Code   RO         2356    .text._ZN11CANSendTaskC2ER5RobotPN8robo_lib9CanDeviceEj  cansendtask.o
+    0x0800490c   0x0800490c   0x0000000c   Code   RO         2372    .text._ZN11CANSendTaskD0Ev  cansendtask.o
+    0x08004918   0x08004918   0x00000002   Code   RO         2383    .text._ZN11CANSyncTask4initEv  cansynctask.o
     0x0800491a   0x0800491a   0x00000002   PAD
-    0x0800491c   0x0800491c   0x00000002   Code   RO         2381    .text._ZN11CANSyncTask6uninitEv  cansynctask.o
+    0x0800491c   0x0800491c   0x00000002   Code   RO         2387    .text._ZN11CANSyncTask6uninitEv  cansynctask.o
     0x0800491e   0x0800491e   0x00000002   PAD
-    0x08004920   0x08004920   0x0000000e   Code   RO         2379    .text._ZN11CANSyncTask6updateEj  cansynctask.o
+    0x08004920   0x08004920   0x0000000e   Code   RO         2385    .text._ZN11CANSyncTask6updateEj  cansynctask.o
     0x0800492e   0x0800492e   0x00000002   PAD
-    0x08004930   0x08004930   0x00000044   Code   RO         2373    .text._ZN11CANSyncTaskC2ER5RobotPN8robo_lib9CanDeviceEtj  cansynctask.o
-    0x08004974   0x08004974   0x0000000c   Code   RO         2391    .text._ZN11CANSyncTaskD0Ev  cansynctask.o
-    0x08004980   0x08004980   0x0000000e   Code   RO         2514    .text._ZN11ControlBaseC2Ev  main_1.o
+    0x08004930   0x08004930   0x00000044   Code   RO         2379    .text._ZN11CANSyncTaskC2ER5RobotPN8robo_lib9CanDeviceEtj  cansynctask.o
+    0x08004974   0x08004974   0x0000000c   Code   RO         2397    .text._ZN11CANSyncTaskD0Ev  cansynctask.o
+    0x08004980   0x08004980   0x0000000e   Code   RO         2520    .text._ZN11ControlBaseC2Ev  main_1.o
     0x0800498e   0x0800498e   0x00000002   PAD
-    0x08004990   0x08004990   0x00000018   Code   RO         2410    .text._ZN13Task_RoboBaseC2ER8RoboBase  motor_dm_task.o
-    0x080049a8   0x080049a8   0x00000002   Code   RO         2418    .text._ZN13Task_RoboBaseD0Ev  motor_dm_task.o
-    0x080049aa   0x080049aa   0x00000002   PAD
-    0x080049ac   0x080049ac   0x0000000a   Code   RO         2457    .text._ZN14PIDControlTask12calculatePIDEj  pidcontroltask.o
-    0x080049b6   0x080049b6   0x00000002   PAD
-    0x080049b8   0x080049b8   0x0000000a   Code   RO         1686    .text._ZN14PIDControlTask22setPIDControllerExpectEf  screwmotortask.o
-    0x080049c2   0x080049c2   0x00000002   PAD
-    0x080049c4   0x080049c4   0x0000000a   Code   RO         1672    .text._ZN14PIDControlTask22setPIDControllerParamsERKN8robo_lib13_PID_Params_tE  screwmotortask.o
-    0x080049ce   0x080049ce   0x00000002   PAD
-    0x080049d0   0x080049d0   0x0000000a   Code   RO         1688    .text._ZN14PIDControlTask24setPIDControllerFeedbackEf  screwmotortask.o
-    0x080049da   0x080049da   0x00000002   PAD
-    0x080049dc   0x080049dc   0x00000002   Code   RO         2443    .text._ZN14PIDControlTask4initEv  pidcontroltask.o
-    0x080049de   0x080049de   0x00000002   PAD
-    0x080049e0   0x080049e0   0x00000002   Code   RO         2445    .text._ZN14PIDControlTask6uninitEv  pidcontroltask.o
-    0x080049e2   0x080049e2   0x00000002   PAD
-    0x080049e4   0x080049e4   0x00000008   Code   RO         2441    .text._ZN14PIDControlTask6updateEj  pidcontroltask.o
-    0x080049ec   0x080049ec   0x0000000a   Code   RO         1690    .text._ZN14PIDControlTask9getOutputEv  screwmotortask.o
-    0x080049f6   0x080049f6   0x00000002   PAD
-    0x080049f8   0x080049f8   0x00000024   Code   RO         2412    .text._ZN14PIDControlTaskC2ER8RoboBasej  motor_dm_task.o
-    0x08004a1c   0x08004a1c   0x0000000c   Code   RO         2461    .text._ZN14PIDControlTaskD0Ev  pidcontroltask.o
-    0x08004a28   0x08004a28   0x0000000a   Code   RO         2522    .text._ZN14_Init_Params_tC2Ev  main_1.o
-    0x08004a32   0x08004a32   0x00000002   PAD
-    0x08004a34   0x08004a34   0x0000000a   Code   RO         1682    .text._ZN23Motor_RM_PIDControlTask13setMotorInputEs  screwmotortask.o
-    0x08004a3e   0x08004a3e   0x00000002   PAD
-    0x08004a40   0x08004a40   0x00000004   Code   RO         1666    .text._ZN23Motor_RM_PIDControlTask19get_motor_backend_pEv  screwmotortask.o
-    0x08004a44   0x08004a44   0x00000004   Code   RO         1670    .text._ZN23Motor_RM_PIDControlTask29getAngularVelocityTaskPointerEv  screwmotortask.o
-    0x08004a48   0x08004a48   0x00000002   Code   RO         2424    .text._ZN23Motor_RM_PIDControlTask4initEv  motor_rm_tasks.o
-    0x08004a4a   0x08004a4a   0x00000002   PAD
-    0x08004a4c   0x08004a4c   0x00000002   Code   RO         2426    .text._ZN23Motor_RM_PIDControlTask6uninitEv  motor_rm_tasks.o
-    0x08004a4e   0x08004a4e   0x00000002   PAD
-    0x08004a50   0x08004a50   0x00000012   Code   RO         2428    .text._ZN23Motor_RM_PIDControlTask6updateEj  motor_rm_tasks.o
-    0x08004a62   0x08004a62   0x00000002   PAD
-    0x08004a64   0x08004a64   0x00000086   Code   RO         2422    .text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj  motor_rm_tasks.o
+    0x08004990   0x08004990   0x0000001c   Code   RO         2559    .text._ZN13PlaySoundTask4initEv  playsound.o
+    0x080049ac   0x080049ac   0x00000002   Code   RO         2561    .text._ZN13PlaySoundTask6uninitEv  playsound.o
+    0x080049ae   0x080049ae   0x00000002   PAD
+    0x080049b0   0x080049b0   0x00000034   Code   RO         2565    .text._ZN13PlaySoundTask6updateEj  playsound.o
+    0x080049e4   0x080049e4   0x00000072   Code   RO         2563    .text._ZN13PlaySoundTask8playsongEv  playsound.o
+    0x08004a56   0x08004a56   0x00000002   PAD
+    0x08004a58   0x08004a58   0x00000048   Code   RO         2599    .text._ZN13PlaySoundTaskC2ER5RobotPtt9Play_Typej  soundmanagetask.o
+    0x08004aa0   0x08004aa0   0x0000000c   Code   RO         2577    .text._ZN13PlaySoundTaskD0Ev  playsound.o
+    0x08004aac   0x08004aac   0x00000018   Code   RO         2416    .text._ZN13Task_RoboBaseC2ER8RoboBase  motor_dm_task.o
+    0x08004ac4   0x08004ac4   0x00000002   Code   RO         2424    .text._ZN13Task_RoboBaseD0Ev  motor_dm_task.o
+    0x08004ac6   0x08004ac6   0x00000002   PAD
+    0x08004ac8   0x08004ac8   0x0000000a   Code   RO         2463    .text._ZN14PIDControlTask12calculatePIDEj  pidcontroltask.o
+    0x08004ad2   0x08004ad2   0x00000002   PAD
+    0x08004ad4   0x08004ad4   0x0000000a   Code   RO         1688    .text._ZN14PIDControlTask22setPIDControllerExpectEf  screwmotortask.o
+    0x08004ade   0x08004ade   0x00000002   PAD
+    0x08004ae0   0x08004ae0   0x0000000a   Code   RO         1672    .text._ZN14PIDControlTask22setPIDControllerParamsERKN8robo_lib13_PID_Params_tE  screwmotortask.o
     0x08004aea   0x08004aea   0x00000002   PAD
-    0x08004aec   0x08004aec   0x0000000c   Code   RO         2438    .text._ZN23Motor_RM_PIDControlTaskD0Ev  motor_rm_tasks.o
-    0x08004af8   0x08004af8   0x0000003a   Code   RO         1646    .text._ZN25Srew_Motor_PIDControlTask4initEv  screwmotortask.o
-    0x08004b32   0x08004b32   0x00000002   PAD
-    0x08004b34   0x08004b34   0x00000002   Code   RO         1650    .text._ZN25Srew_Motor_PIDControlTask6uninitEv  screwmotortask.o
-    0x08004b36   0x08004b36   0x00000002   PAD
-    0x08004b38   0x08004b38   0x000000d0   Code   RO         1648    .text._ZN25Srew_Motor_PIDControlTask6updateEj  screwmotortask.o
-    0x08004c08   0x08004c08   0x000000c4   Code   RO         1644    .text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j  screwmotortask.o
-    0x08004ccc   0x08004ccc   0x0000000c   Code   RO         1694    .text._ZN25Srew_Motor_PIDControlTaskD0Ev  screwmotortask.o
-    0x08004cd8   0x08004cd8   0x0000000a   Code   RO         2540    .text._ZN5Robot3runEv  robot.o
-    0x08004ce2   0x08004ce2   0x00000002   PAD
-    0x08004ce4   0x08004ce4   0x00000106   Code   RO         2538    .text._ZN5Robot4initEv  robot.o
-    0x08004dea   0x08004dea   0x00000002   PAD
-    0x08004dec   0x08004dec   0x0000002a   Code   RO         2500    .text._ZN5RobotC2Ev  main_1.o
-    0x08004e16   0x08004e16   0x00000002   PAD
-    0x08004e18   0x08004e18   0x0000009a   Code   RO         2529    .text._ZN6Params16initMotorsParamsEh  params.o
-    0x08004eb2   0x08004eb2   0x00000002   PAD
-    0x08004eb4   0x08004eb4   0x00000008   Code   RO         2512    .text._ZN6ParamsC2Ev  main_1.o
-    0x08004ebc   0x08004ebc   0x00000004   Code   RO         1676    .text._ZN8RoboBase12getSchedulerEv  screwmotortask.o
-    0x08004ec0   0x08004ec0   0x00000006   Code   RO         1662    .text._ZN8RoboBase13getCAN1DeviceEv  screwmotortask.o
-    0x08004ec6   0x08004ec6   0x00000002   PAD
-    0x08004ec8   0x08004ec8   0x00000008   Code   RO         1664    .text._ZN8RoboBase13getCAN2DeviceEv  screwmotortask.o
-    0x08004ed0   0x08004ed0   0x00000006   Code   RO         1678    .text._ZN8RoboBase13getRCProtocolEv  screwmotortask.o
-    0x08004ed6   0x08004ed6   0x00000002   PAD
-    0x08004ed8   0x08004ed8   0x00000006   Code   RO         2506    .text._ZN8RoboBase20getCAN1DevicePointerEv  main_1.o
-    0x08004ede   0x08004ede   0x00000002   PAD
-    0x08004ee0   0x08004ee0   0x00000008   Code   RO         2508    .text._ZN8RoboBase20getCAN2DevicePointerEv  main_1.o
-    0x08004ee8   0x08004ee8   0x00000006   Code   RO         2504    .text._ZN8RoboBase20getRCProtocolPointerEv  main_1.o
-    0x08004eee   0x08004eee   0x00000002   PAD
-    0x08004ef0   0x08004ef0   0x00000006   Code   RO         2414    .text._ZN8RoboBase9getMotorsEv  motor_dm_task.o
-    0x08004ef6   0x08004ef6   0x00000002   PAD
-    0x08004ef8   0x08004ef8   0x00000054   Code   RO         2510    .text._ZN8RoboBaseC2Ev  main_1.o
-    0x08004f4c   0x08004f4c   0x00000010   Code   RO         2502    .text._ZN8RoboBaseD2Ev  main_1.o
-    0x08004f5c   0x08004f5c   0x00000004   Code   RO         2138    .text._ZN8robo_lib10RCProtocol10addBackendEPNS_18RCProtocol_BackendE  rcprotocol.o
-    0x08004f60   0x08004f60   0x00000012   Code   RO         2142    .text._ZN8robo_lib10RCProtocol11processByteEPVKh  rcprotocol.o
-    0x08004f72   0x08004f72   0x00000002   PAD
-    0x08004f74   0x08004f74   0x0000008a   Code   RO         2136    .text._ZN8robo_lib10RCProtocol4initEv  rcprotocol.o
-    0x08004ffe   0x08004ffe   0x00000002   PAD
-    0x08005000   0x08005000   0x0000003e   Code   RO         1680    .text._ZN8robo_lib10RCProtocol9getRCDataEv  screwmotortask.o
-    0x0800503e   0x0800503e   0x00000002   PAD
-    0x08005040   0x08005040   0x00000002   Code   RO         2518    .text._ZN8robo_lib10RCProtocolC2Ev  main_1.o
-    0x08005042   0x08005042   0x00000002   PAD
-    0x08005044   0x08005044   0x00000002   Code   RO         2524    .text._ZN8robo_lib10RCProtocolD2Ev  main_1.o
-    0x08005046   0x08005046   0x00000002   PAD
-    0x08005048   0x08005048   0x00000044   Code   RO         2027    .text._ZN8robo_lib13Motor_Backend18publishMeasurementEv  motor_backend.o
-    0x0800508c   0x0800508c   0x00000010   Code   RO         2025    .text._ZN8robo_lib13Motor_BackendC2ERNS_5MotorE  motor_backend.o
-    0x0800509c   0x0800509c   0x0000002c   Code   RO         1875    .text._ZN8robo_lib14InertialSensorC2Ev  inertialsensor.o
-    0x080050c8   0x080050c8   0x00000006   Code   RO         1708    .text._ZN8robo_lib14PID_Controller11setFeedbackEf  screwmotortask.o
-    0x080050ce   0x080050ce   0x00000002   PAD
-    0x080050d0   0x080050d0   0x00000014   Code   RO         2463    .text._ZN8robo_lib14PID_Controller16calculateWithCPUEj  pidcontroltask.o
-    0x080050e4   0x080050e4   0x000002ec   Code   RO         2126    .text._ZN8robo_lib14PID_Controller16calculateWithCPUEjfff  pid_controller.o
-    0x080053d0   0x080053d0   0x00000006   Code   RO         1710    .text._ZN8robo_lib14PID_Controller9getOutputEv  screwmotortask.o
-    0x080053d6   0x080053d6   0x00000002   PAD
-    0x080053d8   0x080053d8   0x00000006   Code   RO         1706    .text._ZN8robo_lib14PID_Controller9setExpectEf  screwmotortask.o
-    0x080053de   0x080053de   0x00000002   PAD
-    0x080053e0   0x080053e0   0x00000044   Code   RO         2122    .text._ZN8robo_lib14PID_Controller9setParamsERKNS_13_PID_Params_tE  pid_controller.o
-    0x08005424   0x08005424   0x00000002   Code   RO         2112    .text._ZN8robo_lib14PID_ControllerC2Ev  pid_controller.o
-    0x08005426   0x08005426   0x00000002   PAD
-    0x08005428   0x08005428   0x0000010a   Code   RO         2188    .text._ZN8robo_lib15RCProtocol_DBUS11processByteEPVKh  rcprotocol_dbus.o
-    0x08005532   0x08005532   0x00000002   PAD
-    0x08005534   0x08005534   0x00000002   Code   RO         2186    .text._ZN8robo_lib15RCProtocol_DBUS4initEv  rcprotocol_dbus.o
-    0x08005536   0x08005536   0x00000002   PAD
-    0x08005538   0x08005538   0x00000002   Code   RO         2190    .text._ZN8robo_lib15RCProtocol_DBUS6uninitEv  rcprotocol_dbus.o
-    0x0800553a   0x0800553a   0x00000002   PAD
-    0x0800553c   0x0800553c   0x00000014   Code   RO         2153    .text._ZN8robo_lib15RCProtocol_DBUSC2ERNS_10RCProtocolE  rcprotocol.o
-    0x08005550   0x08005550   0x000000a4   Code   RO         2160    .text._ZN8robo_lib18RCProtocol_Backend13publishRCDataENS_7RC_DataE  rcprotocol_backend.o
-    0x080055f4   0x080055f4   0x00000010   Code   RO         2158    .text._ZN8robo_lib18RCProtocol_BackendC2ERNS_10RCProtocolE  rcprotocol_backend.o
-    0x08005604   0x08005604   0x00000014   Code   RO         2296    .text._ZN8robo_lib18USART1_DMA_Tx_InitEv  uartdriver.o
-    0x08005618   0x08005618   0x00000002   Code   RO         1816    .text._ZN8robo_lib5Error13Error_HandlerEv  error.o
-    0x0800561a   0x0800561a   0x00000002   PAD
-    0x0800561c   0x0800561c   0x00000028   Code   RO         2011    .text._ZN8robo_lib5Motor10addBackendEPNS_13Motor_BackendE  motor.o
-    0x08005644   0x08005644   0x00000002   Code   RO         2520    .text._ZN8robo_lib5MotorC2Ev  main_1.o
-    0x08005646   0x08005646   0x00000002   PAD
-    0x08005648   0x08005648   0x0000000c   Code   RO         1803    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_InitEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_j  candevice.o
-    0x08005654   0x08005654   0x00000052   Code   RO         1809    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_PushEPNS_19QUEUE_HandleTypeDefIS1_EES1_  candevice.o
-    0x080056a6   0x080056a6   0x00000002   PAD
-    0x080056a8   0x080056a8   0x00000008   Code   RO         1813    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE11Queue_ClearEPNS_19QUEUE_HandleTypeDefIS1_EE  candevice.o
-    0x080056b0   0x080056b0   0x0000004e   Code   RO         1811    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE9Queue_PopEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_  candevice.o
-    0x080056fe   0x080056fe   0x00000002   PAD
-    0x08005700   0x08005700   0x0000005a   Code   RO         2516    .text._ZN8robo_lib6HelperC2Ev  main_1.o
-    0x0800575a   0x0800575a   0x00000002   PAD
-    0x0800575c   0x0800575c   0x00000008   Code   RO         2277    .text._ZN8robo_lib6microsEv  scheduler_common.o
-    0x08005764   0x08005764   0x0000000a   Code   RO         1734    .text._ZN8robo_lib7Vector3IfEC2Ev  ahrs.o
-    0x0800576e   0x0800576e   0x00000002   PAD
-    0x08005770   0x08005770   0x00000012   Code   RO         1704    .text._ZN8robo_lib8Motor_RM11syncCANDataEv  screwmotortask.o
-    0x08005782   0x08005782   0x00000002   PAD
-    0x08005784   0x08005784   0x00000012   Code   RO         1702    .text._ZN8robo_lib8Motor_RM13setMotorInputEs  screwmotortask.o
-    0x08005796   0x08005796   0x00000002   PAD
-    0x08005798   0x08005798   0x0000001c   Code   RO         1684    .text._ZN8robo_lib8Motor_RM14getMeasurementEv  screwmotortask.o
-    0x080057b4   0x080057b4   0x00000008   Code   RO         2069    .text._ZN8robo_lib8Motor_RM17updateMeasurementEv  motor_rm.o
-    0x080057bc   0x080057bc   0x00000188   Code   RO         2065    .text._ZN8robo_lib8Motor_RM22updateMotorMeasurementEv  motor_rm.o
-    0x08005944   0x08005944   0x00000012   Code   RO         2071    .text._ZN8robo_lib8Motor_RM4initEv  motor_rm.o
-    0x08005956   0x08005956   0x00000002   PAD
-    0x08005958   0x08005958   0x00000002   Code   RO         2075    .text._ZN8robo_lib8Motor_RM6uninitEv  motor_rm.o
-    0x0800595a   0x0800595a   0x00000002   PAD
-    0x0800595c   0x0800595c   0x00000014   Code   RO         2073    .text._ZN8robo_lib8Motor_RM6updateEj  motor_rm.o
-    0x08005970   0x08005970   0x0000002a   Code   RO         1668    .text._ZN8robo_lib8Motor_RM9setParamsENS_18_Motor_RM_Params_tE  screwmotortask.o
-    0x0800599a   0x0800599a   0x00000002   PAD
-    0x0800599c   0x0800599c   0x00000062   Code   RO         2063    .text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha  motor_rm.o
-    0x080059fe   0x080059fe   0x00000002   PAD
-    0x08005a00   0x08005a00   0x0000001a   Code   RO         1807    .text._ZN8robo_lib9CanDevice3popEPNS_19_CAN_Tx_Data_Pack_tE  candevice.o
-    0x08005a1a   0x08005a1a   0x00000002   PAD
-    0x08005a1c   0x08005a1c   0x00000078   Code   RO         1786    .text._ZN8robo_lib9CanDevice4initEP19__CAN_HandleTypeDefPNS_19_CAN_Tx_Data_Pack_tEt  candevice.o
-    0x08005a94   0x08005a94   0x00000038   Code   RO         1805    .text._ZN8robo_lib9CanDevice4pushENS_19_CAN_Tx_Data_Pack_tE  candevice.o
-    0x08005acc   0x08005acc   0x00000034   Code   RO         1790    .text._ZN8robo_lib9CanDevice6updateEj  candevice.o
-    0x08005b00   0x08005b00   0x00000030   Code   RO         1792    .text._ZN8robo_lib9CanDevice9addRxLinkEPNS_19_CAN_Rx_Data_Pack_tE  candevice.o
-    0x08005b30   0x08005b30   0x000000e2   Code   RO         1794    .text._ZN8robo_lib9CanDevice9addTxLinkEthhPPhh  candevice.o
-    0x08005c12   0x08005c12   0x00000002   PAD
-    0x08005c14   0x08005c14   0x00000026   Code   RO         1788    .text._ZN8robo_lib9CanDevice9sendAsyncEPNS_19_CAN_Tx_Data_Pack_tE  candevice.o
-    0x08005c3a   0x08005c3a   0x00000002   PAD
-    0x08005c3c   0x08005c3c   0x00000012   Code   RO         1784    .text._ZN8robo_lib9CanDeviceC2Ev  candevice.o
-    0x08005c4e   0x08005c4e   0x00000002   PAD
-    0x08005c50   0x08005c50   0x00000042   Code   RO         2257    .text._ZN8robo_lib9Scheduler12registerTaskEPNS_9Task_BaseE  scheduler.o
-    0x08005c92   0x08005c92   0x00000002   PAD
-    0x08005c94   0x08005c94   0x00000088   Code   RO         2259    .text._ZN8robo_lib9Scheduler14unregisterTaskEPPNS_9Task_BaseE  scheduler.o
-    0x08005d1c   0x08005d1c   0x0000018c   Code   RO         2265    .text._ZN8robo_lib9Scheduler3runEv  scheduler.o
-    0x08005ea8   0x08005ea8   0x00000014   Code   RO         2253    .text._ZN8robo_lib9SchedulerC2Ev  scheduler.o
-    0x08005ebc   0x08005ebc   0x00000006   Code   RO         1984    .text._ZN8robo_lib9SimpleAddIfEclEff  advancedadd.o
-    0x08005ec2   0x08005ec2   0x00000002   PAD
-    0x08005ec4   0x08005ec4   0x00000004   Code   RO         1674    .text._ZN8robo_lib9Task_Base11setIntervalEj  screwmotortask.o
-    0x08005ec8   0x08005ec8   0x0000000e   Code   RO         1696    .text._ZN8robo_lib9Task_BaseC2Ev  screwmotortask.o
-    0x08005ed6   0x08005ed6   0x00000002   PAD
-    0x08005ed8   0x08005ed8   0x00000002   Code   RO         1700    .text._ZN8robo_lib9Task_BaseD0Ev  screwmotortask.o
-    0x08005eda   0x08005eda   0x00000002   PAD
-    0x08005edc   0x08005edc   0x00000002   Code   RO         1692    .text._ZN8robo_lib9Task_BaseD2Ev  screwmotortask.o
-    0x08005ede   0x08005ede   0x00000002   PAD
-    0x08005ee0   0x08005ee0   0x0000000c   Code   RO         2279    .text._ZN8robo_libL20getCurrentMicrosTim5Ev  scheduler_common.o
-    0x08005eec   0x08005eec   0x0000000c   Code   RO         4552    .text._ZSt15get_new_handlerv  libcppabi_w.l(cxa_handlers.cpp.o)
-    0x08005ef8   0x08005ef8   0x00000004   Code   RO         4212    .text._ZdlPv        libcpp_w.l(new.cpp.o)
-    0x08005efc   0x08005efc   0x00000026   Code   RO         4204    .text._Znwj         libcpp_w.l(new.cpp.o)
-    0x08005f22   0x08005f22   0x00000002   PAD
-    0x08005f24   0x08005f24   0x00000020   Code   RO          631    .text.__NVIC_EnableIRQ  stm32f4xx_hal_cortex.o
-    0x08005f44   0x08005f44   0x00000010   Code   RO          623    .text.__NVIC_GetPriorityGrouping  stm32f4xx_hal_cortex.o
-    0x08005f54   0x08005f54   0x00000022   Code   RO          625    .text.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
-    0x08005f76   0x08005f76   0x00000002   PAD
-    0x08005f78   0x08005f78   0x00000020   Code   RO          619    .text.__NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
-    0x08005f98   0x08005f98   0x00000028   Code   RO         4247    .text.__cxa_pure_virtual  libcppabi_w.l(cxa_virtual.cpp.o)
-    0x08005fc0   0x08005fc0   0x00000028   Code   RO         2466    .text.__cxx_global_var_init  main_1.o
-    0x08005fe8   0x08005fe8   0x00000004   Code   RO         4557    .text.abort_message  libcppabi_w.l(abort_message.cpp.o)
-    0x08005fec   0x08005fec   0x0000007c   Code   RO         2468    .text.main          main_1.o
-    0x08006068   0x08006068   0x00000060   Code   RO         4199    x$fpl$ffltll        fz_wm.l(ffltll_clz.o)
-    0x080060c8   0x080060c8   0x0000001a   Code   RO         4679    x$fpl$fpinit        fz_wm.l(fpinit.o)
-    0x080060e2   0x080060e2   0x00000000   Code   RO         4536    x$fpl$usenofp       fz_wm.l(usenofp.o)
-    0x080060e2   0x080060e2   0x00000002   PAD
-    0x080060e4   0x080060e4   0x00000060   Data   RO         2490    .rodata..Lconstinit  main_1.o
-    0x08006144   0x08006144   0x00000010   Data   RO         1634    .rodata.AHBPrescTable  system_stm32f4xx.o
-    0x08006154   0x08006154   0x00000008   Data   RO         1635    .rodata.APBPrescTable  system_stm32f4xx.o
-    0x0800615c   0x0800615c   0x0000001c   Data   RO         1712    .rodata._ZTV10Task_Robot  screwmotortask.o
-    0x08006178   0x08006178   0x0000001c   Data   RO         2358    .rodata._ZTV11CANSendTask  cansendtask.o
-    0x08006194   0x08006194   0x0000001c   Data   RO         2383    .rodata._ZTV11CANSyncTask  cansynctask.o
-    0x080061b0   0x080061b0   0x00000010   Data   RO         2527    .rodata._ZTV11ControlBase  main_1.o
-    0x080061c0   0x080061c0   0x0000001c   Data   RO         2420    .rodata._ZTV13Task_RoboBase  motor_dm_task.o
-    0x080061dc   0x080061dc   0x0000001c   Data   RO         2449    .rodata._ZTV14PIDControlTask  pidcontroltask.o
-    0x080061f8   0x080061f8   0x0000001c   Data   RO         2430    .rodata._ZTV23Motor_RM_PIDControlTask  motor_rm_tasks.o
-    0x08006214   0x08006214   0x0000001c   Data   RO         1652    .rodata._ZTV25Srew_Motor_PIDControlTask  screwmotortask.o
-    0x08006230   0x08006230   0x00000010   Data   RO         2542    .rodata._ZTV5Robot  robot.o
-    0x08006240   0x08006240   0x00000010   Data   RO         2526    .rodata._ZTV8RoboBase  main_1.o
-    0x08006250   0x08006250   0x0000001c   Data   RO         2029    .rodata._ZTVN8robo_lib13Motor_BackendE  motor_backend.o
-    0x0800626c   0x0800626c   0x00000014   Data   RO         2192    .rodata._ZTVN8robo_lib15RCProtocol_DBUSE  rcprotocol_dbus.o
-    0x08006280   0x08006280   0x00000014   Data   RO         2169    .rodata._ZTVN8robo_lib18RCProtocol_BackendE  rcprotocol_backend.o
-    0x08006294   0x08006294   0x0000001c   Data   RO         2077    .rodata._ZTVN8robo_lib8Motor_RME  motor_rm.o
-    0x080062b0   0x080062b0   0x0000000c   Data   RO         1988    .rodata._ZTVN8robo_lib9SimpleAddIfEE  advancedadd.o
-    0x080062bc   0x080062bc   0x0000001c   Data   RO         1713    .rodata._ZTVN8robo_lib9Task_BaseE  screwmotortask.o
-    0x080062d8   0x080062d8   0x00000020   Data   RO         4848    Region$$Table       anon$$obj.o
-    0x080062f8   0x080062f8   0x00000004   Data   RO         2491    .init_array         main_1.o
-    0x080062fc   0x080062f8   0x00000000   Data   RO         4162    .init_array         c_w.l(init_aeabi.o)
+    0x08004aec   0x08004aec   0x0000000a   Code   RO         1690    .text._ZN14PIDControlTask24setPIDControllerFeedbackEf  screwmotortask.o
+    0x08004af6   0x08004af6   0x00000002   PAD
+    0x08004af8   0x08004af8   0x00000002   Code   RO         2449    .text._ZN14PIDControlTask4initEv  pidcontroltask.o
+    0x08004afa   0x08004afa   0x00000002   PAD
+    0x08004afc   0x08004afc   0x00000002   Code   RO         2451    .text._ZN14PIDControlTask6uninitEv  pidcontroltask.o
+    0x08004afe   0x08004afe   0x00000002   PAD
+    0x08004b00   0x08004b00   0x00000008   Code   RO         2447    .text._ZN14PIDControlTask6updateEj  pidcontroltask.o
+    0x08004b08   0x08004b08   0x0000000a   Code   RO         1692    .text._ZN14PIDControlTask9getOutputEv  screwmotortask.o
+    0x08004b12   0x08004b12   0x00000002   PAD
+    0x08004b14   0x08004b14   0x00000024   Code   RO         2418    .text._ZN14PIDControlTaskC2ER8RoboBasej  motor_dm_task.o
+    0x08004b38   0x08004b38   0x0000000c   Code   RO         2467    .text._ZN14PIDControlTaskD0Ev  pidcontroltask.o
+    0x08004b44   0x08004b44   0x00000012   Code   RO         2528    .text._ZN14_Init_Params_tC2Ev  main_1.o
+    0x08004b56   0x08004b56   0x00000002   PAD
+    0x08004b58   0x08004b58   0x00000002   Code   RO         2580    .text._ZN19PlaySoundManageTask4initEv  soundmanagetask.o
+    0x08004b5a   0x08004b5a   0x00000002   PAD
+    0x08004b5c   0x08004b5c   0x00000002   Code   RO         2582    .text._ZN19PlaySoundManageTask6uninitEv  soundmanagetask.o
+    0x08004b5e   0x08004b5e   0x00000002   PAD
+    0x08004b60   0x08004b60   0x00000016   Code   RO         2586    .text._ZN19PlaySoundManageTask6updateEj  soundmanagetask.o
+    0x08004b76   0x08004b76   0x00000002   PAD
+    0x08004b78   0x08004b78   0x0000005a   Code   RO         2588    .text._ZN19PlaySoundManageTask9playSoundE5Sound  soundmanagetask.o
+    0x08004bd2   0x08004bd2   0x00000002   PAD
+    0x08004bd4   0x08004bd4   0x0000001e   Code   RO         2556    .text._ZN19PlaySoundManageTaskC2ER5Robotj  robot.o
+    0x08004bf2   0x08004bf2   0x00000002   PAD
+    0x08004bf4   0x08004bf4   0x0000000c   Code   RO         2601    .text._ZN19PlaySoundManageTaskD0Ev  soundmanagetask.o
+    0x08004c00   0x08004c00   0x0000000a   Code   RO         1682    .text._ZN23Motor_RM_PIDControlTask13setMotorInputEs  screwmotortask.o
+    0x08004c0a   0x08004c0a   0x00000002   PAD
+    0x08004c0c   0x08004c0c   0x00000004   Code   RO         1666    .text._ZN23Motor_RM_PIDControlTask19get_motor_backend_pEv  screwmotortask.o
+    0x08004c10   0x08004c10   0x00000004   Code   RO         1670    .text._ZN23Motor_RM_PIDControlTask29getAngularVelocityTaskPointerEv  screwmotortask.o
+    0x08004c14   0x08004c14   0x00000002   Code   RO         2430    .text._ZN23Motor_RM_PIDControlTask4initEv  motor_rm_tasks.o
+    0x08004c16   0x08004c16   0x00000002   PAD
+    0x08004c18   0x08004c18   0x00000002   Code   RO         2432    .text._ZN23Motor_RM_PIDControlTask6uninitEv  motor_rm_tasks.o
+    0x08004c1a   0x08004c1a   0x00000002   PAD
+    0x08004c1c   0x08004c1c   0x00000012   Code   RO         2434    .text._ZN23Motor_RM_PIDControlTask6updateEj  motor_rm_tasks.o
+    0x08004c2e   0x08004c2e   0x00000002   PAD
+    0x08004c30   0x08004c30   0x00000086   Code   RO         2428    .text._ZN23Motor_RM_PIDControlTaskC2ER8RoboBaseRN8robo_lib9CanDeviceEtthaj  motor_rm_tasks.o
+    0x08004cb6   0x08004cb6   0x00000002   PAD
+    0x08004cb8   0x08004cb8   0x0000000c   Code   RO         2444    .text._ZN23Motor_RM_PIDControlTaskD0Ev  motor_rm_tasks.o
+    0x08004cc4   0x08004cc4   0x0000003a   Code   RO         1646    .text._ZN25Srew_Motor_PIDControlTask4initEv  screwmotortask.o
+    0x08004cfe   0x08004cfe   0x00000002   PAD
+    0x08004d00   0x08004d00   0x00000002   Code   RO         1650    .text._ZN25Srew_Motor_PIDControlTask6uninitEv  screwmotortask.o
+    0x08004d02   0x08004d02   0x00000006   PAD
+    0x08004d08   0x08004d08   0x00000188   Code   RO         1648    .text._ZN25Srew_Motor_PIDControlTask6updateEj  screwmotortask.o
+    0x08004e90   0x08004e90   0x000000d2   Code   RO         1644    .text._ZN25Srew_Motor_PIDControlTaskC2ER5RobotPN8robo_lib18_Motor_RM_Params_tEPNS2_13_PID_Params_tES6_j  screwmotortask.o
+    0x08004f62   0x08004f62   0x00000002   PAD
+    0x08004f64   0x08004f64   0x0000000c   Code   RO         1700    .text._ZN25Srew_Motor_PIDControlTaskD0Ev  screwmotortask.o
+    0x08004f70   0x08004f70   0x00000010   Code   RO         1694    .text._ZN5Robot10get_ParamsEv  screwmotortask.o
+    0x08004f80   0x08004f80   0x00000008   Code   RO         1696    .text._ZN5Robot14get_play_soundEv  screwmotortask.o
+    0x08004f88   0x08004f88   0x0000000a   Code   RO         2546    .text._ZN5Robot3runEv  robot.o
+    0x08004f92   0x08004f92   0x00000002   PAD
+    0x08004f94   0x08004f94   0x0000012e   Code   RO         2544    .text._ZN5Robot4initEv  robot.o
+    0x080050c2   0x080050c2   0x00000002   PAD
+    0x080050c4   0x080050c4   0x0000002a   Code   RO         2506    .text._ZN5RobotC2Ev  main_1.o
+    0x080050ee   0x080050ee   0x00000002   PAD
+    0x080050f0   0x080050f0   0x0000009a   Code   RO         2535    .text._ZN6Params16initMotorsParamsEh  params.o
+    0x0800518a   0x0800518a   0x00000002   PAD
+    0x0800518c   0x0800518c   0x00000008   Code   RO         2518    .text._ZN6ParamsC2Ev  main_1.o
+    0x08005194   0x08005194   0x00000004   Code   RO         1676    .text._ZN8RoboBase12getSchedulerEv  screwmotortask.o
+    0x08005198   0x08005198   0x00000006   Code   RO         1662    .text._ZN8RoboBase13getCAN1DeviceEv  screwmotortask.o
+    0x0800519e   0x0800519e   0x00000002   PAD
+    0x080051a0   0x080051a0   0x00000008   Code   RO         1664    .text._ZN8RoboBase13getCAN2DeviceEv  screwmotortask.o
+    0x080051a8   0x080051a8   0x00000006   Code   RO         1678    .text._ZN8RoboBase13getRCProtocolEv  screwmotortask.o
+    0x080051ae   0x080051ae   0x00000002   PAD
+    0x080051b0   0x080051b0   0x00000006   Code   RO         2512    .text._ZN8RoboBase20getCAN1DevicePointerEv  main_1.o
+    0x080051b6   0x080051b6   0x00000002   PAD
+    0x080051b8   0x080051b8   0x00000008   Code   RO         2514    .text._ZN8RoboBase20getCAN2DevicePointerEv  main_1.o
+    0x080051c0   0x080051c0   0x00000006   Code   RO         2510    .text._ZN8RoboBase20getRCProtocolPointerEv  main_1.o
+    0x080051c6   0x080051c6   0x00000002   PAD
+    0x080051c8   0x080051c8   0x00000006   Code   RO         1686    .text._ZN8RoboBase9getHelperEv  screwmotortask.o
+    0x080051ce   0x080051ce   0x00000002   PAD
+    0x080051d0   0x080051d0   0x00000006   Code   RO         2420    .text._ZN8RoboBase9getMotorsEv  motor_dm_task.o
+    0x080051d6   0x080051d6   0x00000002   PAD
+    0x080051d8   0x080051d8   0x00000054   Code   RO         2516    .text._ZN8RoboBaseC2Ev  main_1.o
+    0x0800522c   0x0800522c   0x00000010   Code   RO         2508    .text._ZN8RoboBaseD2Ev  main_1.o
+    0x0800523c   0x0800523c   0x00000004   Code   RO         2144    .text._ZN8robo_lib10RCProtocol10addBackendEPNS_18RCProtocol_BackendE  rcprotocol.o
+    0x08005240   0x08005240   0x00000012   Code   RO         2148    .text._ZN8robo_lib10RCProtocol11processByteEPVKh  rcprotocol.o
+    0x08005252   0x08005252   0x00000002   PAD
+    0x08005254   0x08005254   0x0000008a   Code   RO         2142    .text._ZN8robo_lib10RCProtocol4initEv  rcprotocol.o
+    0x080052de   0x080052de   0x00000002   PAD
+    0x080052e0   0x080052e0   0x0000003e   Code   RO         1680    .text._ZN8robo_lib10RCProtocol9getRCDataEv  screwmotortask.o
+    0x0800531e   0x0800531e   0x00000002   PAD
+    0x08005320   0x08005320   0x00000002   Code   RO         2524    .text._ZN8robo_lib10RCProtocolC2Ev  main_1.o
+    0x08005322   0x08005322   0x00000002   PAD
+    0x08005324   0x08005324   0x00000002   Code   RO         2530    .text._ZN8robo_lib10RCProtocolD2Ev  main_1.o
+    0x08005326   0x08005326   0x00000002   PAD
+    0x08005328   0x08005328   0x00000044   Code   RO         2033    .text._ZN8robo_lib13Motor_Backend18publishMeasurementEv  motor_backend.o
+    0x0800536c   0x0800536c   0x00000010   Code   RO         2031    .text._ZN8robo_lib13Motor_BackendC2ERNS_5MotorE  motor_backend.o
+    0x0800537c   0x0800537c   0x0000002c   Code   RO         1881    .text._ZN8robo_lib14InertialSensorC2Ev  inertialsensor.o
+    0x080053a8   0x080053a8   0x00000006   Code   RO         1714    .text._ZN8robo_lib14PID_Controller11setFeedbackEf  screwmotortask.o
+    0x080053ae   0x080053ae   0x00000002   PAD
+    0x080053b0   0x080053b0   0x00000014   Code   RO         2469    .text._ZN8robo_lib14PID_Controller16calculateWithCPUEj  pidcontroltask.o
+    0x080053c4   0x080053c4   0x000002ec   Code   RO         2132    .text._ZN8robo_lib14PID_Controller16calculateWithCPUEjfff  pid_controller.o
+    0x080056b0   0x080056b0   0x00000006   Code   RO         1716    .text._ZN8robo_lib14PID_Controller9getOutputEv  screwmotortask.o
+    0x080056b6   0x080056b6   0x00000002   PAD
+    0x080056b8   0x080056b8   0x00000006   Code   RO         1712    .text._ZN8robo_lib14PID_Controller9setExpectEf  screwmotortask.o
+    0x080056be   0x080056be   0x00000002   PAD
+    0x080056c0   0x080056c0   0x00000044   Code   RO         2128    .text._ZN8robo_lib14PID_Controller9setParamsERKNS_13_PID_Params_tE  pid_controller.o
+    0x08005704   0x08005704   0x00000002   Code   RO         2118    .text._ZN8robo_lib14PID_ControllerC2Ev  pid_controller.o
+    0x08005706   0x08005706   0x00000002   PAD
+    0x08005708   0x08005708   0x0000010a   Code   RO         2194    .text._ZN8robo_lib15RCProtocol_DBUS11processByteEPVKh  rcprotocol_dbus.o
+    0x08005812   0x08005812   0x00000002   PAD
+    0x08005814   0x08005814   0x00000002   Code   RO         2192    .text._ZN8robo_lib15RCProtocol_DBUS4initEv  rcprotocol_dbus.o
+    0x08005816   0x08005816   0x00000002   PAD
+    0x08005818   0x08005818   0x00000002   Code   RO         2196    .text._ZN8robo_lib15RCProtocol_DBUS6uninitEv  rcprotocol_dbus.o
+    0x0800581a   0x0800581a   0x00000002   PAD
+    0x0800581c   0x0800581c   0x00000014   Code   RO         2159    .text._ZN8robo_lib15RCProtocol_DBUSC2ERNS_10RCProtocolE  rcprotocol.o
+    0x08005830   0x08005830   0x000000a4   Code   RO         2166    .text._ZN8robo_lib18RCProtocol_Backend13publishRCDataENS_7RC_DataE  rcprotocol_backend.o
+    0x080058d4   0x080058d4   0x00000010   Code   RO         2164    .text._ZN8robo_lib18RCProtocol_BackendC2ERNS_10RCProtocolE  rcprotocol_backend.o
+    0x080058e4   0x080058e4   0x00000014   Code   RO         2302    .text._ZN8robo_lib18USART1_DMA_Tx_InitEv  uartdriver.o
+    0x080058f8   0x080058f8   0x00000002   Code   RO         1822    .text._ZN8robo_lib5Error13Error_HandlerEv  error.o
+    0x080058fa   0x080058fa   0x00000002   PAD
+    0x080058fc   0x080058fc   0x00000028   Code   RO         2017    .text._ZN8robo_lib5Motor10addBackendEPNS_13Motor_BackendE  motor.o
+    0x08005924   0x08005924   0x00000002   Code   RO         2526    .text._ZN8robo_lib5MotorC2Ev  main_1.o
+    0x08005926   0x08005926   0x00000002   PAD
+    0x08005928   0x08005928   0x0000000c   Code   RO         1809    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_InitEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_j  candevice.o
+    0x08005934   0x08005934   0x00000052   Code   RO         1815    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE10Queue_PushEPNS_19QUEUE_HandleTypeDefIS1_EES1_  candevice.o
+    0x08005986   0x08005986   0x00000002   PAD
+    0x08005988   0x08005988   0x00000008   Code   RO         1819    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE11Queue_ClearEPNS_19QUEUE_HandleTypeDefIS1_EE  candevice.o
+    0x08005990   0x08005990   0x0000004e   Code   RO         1817    .text._ZN8robo_lib5QueueINS_19_CAN_Tx_Data_Pack_tEE9Queue_PopEPNS_19QUEUE_HandleTypeDefIS1_EEPS1_  candevice.o
+    0x080059de   0x080059de   0x00000002   PAD
+    0x080059e0   0x080059e0   0x00000010   Code   RO         1847    .text._ZN8robo_lib6Helper12setBuzzerOffEv  helper.o
+    0x080059f0   0x080059f0   0x00000034   Code   RO         1849    .text._ZN8robo_lib6Helper18setBuzzerFrequenceEt  helper.o
+    0x08005a24   0x08005a24   0x00000042   Code   RO         1857    .text._ZN8robo_lib6Helper6setLEDEhhh  helper.o
+    0x08005a66   0x08005a66   0x00000002   PAD
+    0x08005a68   0x08005a68   0x0000005a   Code   RO         2522    .text._ZN8robo_lib6HelperC2Ev  main_1.o
+    0x08005ac2   0x08005ac2   0x00000002   PAD
+    0x08005ac4   0x08005ac4   0x00000008   Code   RO         2283    .text._ZN8robo_lib6microsEv  scheduler_common.o
+    0x08005acc   0x08005acc   0x0000000a   Code   RO         1740    .text._ZN8robo_lib7Vector3IfEC2Ev  ahrs.o
+    0x08005ad6   0x08005ad6   0x00000002   PAD
+    0x08005ad8   0x08005ad8   0x00000012   Code   RO         1710    .text._ZN8robo_lib8Motor_RM11syncCANDataEv  screwmotortask.o
+    0x08005aea   0x08005aea   0x00000002   PAD
+    0x08005aec   0x08005aec   0x00000012   Code   RO         1708    .text._ZN8robo_lib8Motor_RM13setMotorInputEs  screwmotortask.o
+    0x08005afe   0x08005afe   0x00000002   PAD
+    0x08005b00   0x08005b00   0x0000001c   Code   RO         1684    .text._ZN8robo_lib8Motor_RM14getMeasurementEv  screwmotortask.o
+    0x08005b1c   0x08005b1c   0x00000008   Code   RO         2075    .text._ZN8robo_lib8Motor_RM17updateMeasurementEv  motor_rm.o
+    0x08005b24   0x08005b24   0x00000188   Code   RO         2071    .text._ZN8robo_lib8Motor_RM22updateMotorMeasurementEv  motor_rm.o
+    0x08005cac   0x08005cac   0x00000012   Code   RO         2077    .text._ZN8robo_lib8Motor_RM4initEv  motor_rm.o
+    0x08005cbe   0x08005cbe   0x00000002   PAD
+    0x08005cc0   0x08005cc0   0x00000002   Code   RO         2081    .text._ZN8robo_lib8Motor_RM6uninitEv  motor_rm.o
+    0x08005cc2   0x08005cc2   0x00000002   PAD
+    0x08005cc4   0x08005cc4   0x00000014   Code   RO         2079    .text._ZN8robo_lib8Motor_RM6updateEj  motor_rm.o
+    0x08005cd8   0x08005cd8   0x0000002a   Code   RO         1668    .text._ZN8robo_lib8Motor_RM9setParamsENS_18_Motor_RM_Params_tE  screwmotortask.o
+    0x08005d02   0x08005d02   0x00000002   PAD
+    0x08005d04   0x08005d04   0x00000062   Code   RO         2069    .text._ZN8robo_lib8Motor_RMC2ERNS_5MotorERNS_9CanDeviceEttha  motor_rm.o
+    0x08005d66   0x08005d66   0x00000002   PAD
+    0x08005d68   0x08005d68   0x0000001a   Code   RO         1813    .text._ZN8robo_lib9CanDevice3popEPNS_19_CAN_Tx_Data_Pack_tE  candevice.o
+    0x08005d82   0x08005d82   0x00000002   PAD
+    0x08005d84   0x08005d84   0x00000078   Code   RO         1792    .text._ZN8robo_lib9CanDevice4initEP19__CAN_HandleTypeDefPNS_19_CAN_Tx_Data_Pack_tEt  candevice.o
+    0x08005dfc   0x08005dfc   0x00000038   Code   RO         1811    .text._ZN8robo_lib9CanDevice4pushENS_19_CAN_Tx_Data_Pack_tE  candevice.o
+    0x08005e34   0x08005e34   0x00000034   Code   RO         1796    .text._ZN8robo_lib9CanDevice6updateEj  candevice.o
+    0x08005e68   0x08005e68   0x00000030   Code   RO         1798    .text._ZN8robo_lib9CanDevice9addRxLinkEPNS_19_CAN_Rx_Data_Pack_tE  candevice.o
+    0x08005e98   0x08005e98   0x000000e2   Code   RO         1800    .text._ZN8robo_lib9CanDevice9addTxLinkEthhPPhh  candevice.o
+    0x08005f7a   0x08005f7a   0x00000002   PAD
+    0x08005f7c   0x08005f7c   0x00000026   Code   RO         1794    .text._ZN8robo_lib9CanDevice9sendAsyncEPNS_19_CAN_Tx_Data_Pack_tE  candevice.o
+    0x08005fa2   0x08005fa2   0x00000002   PAD
+    0x08005fa4   0x08005fa4   0x00000012   Code   RO         1790    .text._ZN8robo_lib9CanDeviceC2Ev  candevice.o
+    0x08005fb6   0x08005fb6   0x00000002   PAD
+    0x08005fb8   0x08005fb8   0x00000042   Code   RO         2263    .text._ZN8robo_lib9Scheduler12registerTaskEPNS_9Task_BaseE  scheduler.o
+    0x08005ffa   0x08005ffa   0x00000002   PAD
+    0x08005ffc   0x08005ffc   0x00000088   Code   RO         2265    .text._ZN8robo_lib9Scheduler14unregisterTaskEPPNS_9Task_BaseE  scheduler.o
+    0x08006084   0x08006084   0x0000018c   Code   RO         2271    .text._ZN8robo_lib9Scheduler3runEv  scheduler.o
+    0x08006210   0x08006210   0x00000014   Code   RO         2259    .text._ZN8robo_lib9SchedulerC2Ev  scheduler.o
+    0x08006224   0x08006224   0x00000006   Code   RO         1990    .text._ZN8robo_lib9SimpleAddIfEclEff  advancedadd.o
+    0x0800622a   0x0800622a   0x00000002   PAD
+    0x0800622c   0x0800622c   0x00000004   Code   RO         1674    .text._ZN8robo_lib9Task_Base11setIntervalEj  screwmotortask.o
+    0x08006230   0x08006230   0x00000006   Code   RO         2575    .text._ZN8robo_lib9Task_Base8selfKillEv  playsound.o
+    0x08006236   0x08006236   0x00000002   PAD
+    0x08006238   0x08006238   0x0000000e   Code   RO         1702    .text._ZN8robo_lib9Task_BaseC2Ev  screwmotortask.o
+    0x08006246   0x08006246   0x00000002   PAD
+    0x08006248   0x08006248   0x00000002   Code   RO         1706    .text._ZN8robo_lib9Task_BaseD0Ev  screwmotortask.o
+    0x0800624a   0x0800624a   0x00000002   PAD
+    0x0800624c   0x0800624c   0x00000002   Code   RO         1698    .text._ZN8robo_lib9Task_BaseD2Ev  screwmotortask.o
+    0x0800624e   0x0800624e   0x00000002   PAD
+    0x08006250   0x08006250   0x0000000c   Code   RO         2285    .text._ZN8robo_libL20getCurrentMicrosTim5Ev  scheduler_common.o
+    0x0800625c   0x0800625c   0x0000000c   Code   RO         4605    .text._ZSt15get_new_handlerv  libcppabi_w.l(cxa_handlers.cpp.o)
+    0x08006268   0x08006268   0x00000004   Code   RO         4265    .text._ZdlPv        libcpp_w.l(new.cpp.o)
+    0x0800626c   0x0800626c   0x00000026   Code   RO         4257    .text._Znwj         libcpp_w.l(new.cpp.o)
+    0x08006292   0x08006292   0x00000002   PAD
+    0x08006294   0x08006294   0x00000020   Code   RO          631    .text.__NVIC_EnableIRQ  stm32f4xx_hal_cortex.o
+    0x080062b4   0x080062b4   0x00000010   Code   RO          623    .text.__NVIC_GetPriorityGrouping  stm32f4xx_hal_cortex.o
+    0x080062c4   0x080062c4   0x00000022   Code   RO          625    .text.__NVIC_SetPriority  stm32f4xx_hal_cortex.o
+    0x080062e6   0x080062e6   0x00000002   PAD
+    0x080062e8   0x080062e8   0x00000020   Code   RO          619    .text.__NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
+    0x08006308   0x08006308   0x00000028   Code   RO         4300    .text.__cxa_pure_virtual  libcppabi_w.l(cxa_virtual.cpp.o)
+    0x08006330   0x08006330   0x00000028   Code   RO         2472    .text.__cxx_global_var_init  main_1.o
+    0x08006358   0x08006358   0x00000004   Code   RO         4610    .text.abort_message  libcppabi_w.l(abort_message.cpp.o)
+    0x0800635c   0x0800635c   0x0000007c   Code   RO         2474    .text.main          main_1.o
+    0x080063d8   0x080063d8   0x000002b4   Code   RO         4231    x$fpl$ddiv          fz_wm.l(ddiv.o)
+    0x0800668c   0x0800668c   0x0000005e   Code   RO         4234    x$fpl$dfix          fz_wm.l(dfix.o)
+    0x080066ea   0x080066ea   0x0000002e   Code   RO         4239    x$fpl$dflt          fz_wm.l(dflt_clz.o)
+    0x08006718   0x08006718   0x0000009c   Code   RO         4569    x$fpl$dnaninf       fz_wm.l(dnaninf.o)
+    0x080067b4   0x080067b4   0x0000000c   Code   RO         4571    x$fpl$dretinf       fz_wm.l(dretinf.o)
+    0x080067c0   0x080067c0   0x00000060   Code   RO         4252    x$fpl$ffltll        fz_wm.l(ffltll_clz.o)
+    0x08006820   0x08006820   0x0000001a   Code   RO         4732    x$fpl$fpinit        fz_wm.l(fpinit.o)
+    0x0800683a   0x0800683a   0x00000000   Code   RO         4589    x$fpl$usenofp       fz_wm.l(usenofp.o)
+    0x0800683a   0x0800683a   0x00000002   PAD
+    0x0800683c   0x0800683c   0x00000060   Data   RO         2496    .rodata..Lconstinit  main_1.o
+    0x0800689c   0x0800689c   0x00000060   Data   RO         2591    .rodata..Lconstinit  soundmanagetask.o
+    0x080068fc   0x080068fc   0x00000010   Data   RO         1634    .rodata.AHBPrescTable  system_stm32f4xx.o
+    0x0800690c   0x0800690c   0x00000008   Data   RO         1635    .rodata.APBPrescTable  system_stm32f4xx.o
+    0x08006914   0x08006914   0x0000001c   Data   RO         1718    .rodata._ZTV10Task_Robot  screwmotortask.o
+    0x08006930   0x08006930   0x0000001c   Data   RO         2364    .rodata._ZTV11CANSendTask  cansendtask.o
+    0x0800694c   0x0800694c   0x0000001c   Data   RO         2389    .rodata._ZTV11CANSyncTask  cansynctask.o
+    0x08006968   0x08006968   0x00000010   Data   RO         2533    .rodata._ZTV11ControlBase  main_1.o
+    0x08006978   0x08006978   0x0000001c   Data   RO         2567    .rodata._ZTV13PlaySoundTask  playsound.o
+    0x08006994   0x08006994   0x0000001c   Data   RO         2426    .rodata._ZTV13Task_RoboBase  motor_dm_task.o
+    0x080069b0   0x080069b0   0x0000001c   Data   RO         2455    .rodata._ZTV14PIDControlTask  pidcontroltask.o
+    0x080069cc   0x080069cc   0x0000001c   Data   RO         2590    .rodata._ZTV19PlaySoundManageTask  soundmanagetask.o
+    0x080069e8   0x080069e8   0x0000001c   Data   RO         2436    .rodata._ZTV23Motor_RM_PIDControlTask  motor_rm_tasks.o
+    0x08006a04   0x08006a04   0x0000001c   Data   RO         1652    .rodata._ZTV25Srew_Motor_PIDControlTask  screwmotortask.o
+    0x08006a20   0x08006a20   0x00000010   Data   RO         2548    .rodata._ZTV5Robot  robot.o
+    0x08006a30   0x08006a30   0x00000010   Data   RO         2532    .rodata._ZTV8RoboBase  main_1.o
+    0x08006a40   0x08006a40   0x0000001c   Data   RO         2035    .rodata._ZTVN8robo_lib13Motor_BackendE  motor_backend.o
+    0x08006a5c   0x08006a5c   0x00000014   Data   RO         2198    .rodata._ZTVN8robo_lib15RCProtocol_DBUSE  rcprotocol_dbus.o
+    0x08006a70   0x08006a70   0x00000014   Data   RO         2175    .rodata._ZTVN8robo_lib18RCProtocol_BackendE  rcprotocol_backend.o
+    0x08006a84   0x08006a84   0x0000001c   Data   RO         2083    .rodata._ZTVN8robo_lib8Motor_RME  motor_rm.o
+    0x08006aa0   0x08006aa0   0x0000000c   Data   RO         1994    .rodata._ZTVN8robo_lib9SimpleAddIfEE  advancedadd.o
+    0x08006aac   0x08006aac   0x0000001c   Data   RO         1719    .rodata._ZTVN8robo_lib9Task_BaseE  screwmotortask.o
+    0x08006ac8   0x08006ac8   0x00000020   Data   RO         4901    Region$$Table       anon$$obj.o
+    0x08006ae8   0x08006ae8   0x00000004   Data   RO         2497    .init_array         main_1.o
+    0x08006aec   0x08006ae8   0x00000000   Data   RO         4215    .init_array         c_w.l(init_aeabi.o)
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006300, Size: 0x0001f340, Max: 0x00020000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08006af0, Size: 0x0001f348, Max: 0x00020000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08006300   0x00000004   Data   RW         1633    .data.SystemCoreClock  system_stm32f4xx.o
-    0x20000004   0x08006304   0x00000004   Data   RW         1975    .data._ZN8robo_lib23simple_adder_instance_fE  advancedadd.o
-    0x20000008   0x08006308   0x00000001   Data   RW          744    .data.uwTickFreq    stm32f4xx_hal.o
-    0x20000009   0x08006309   0x00000003   PAD
-    0x2000000c   0x0800630c   0x00000004   Data   RW          743    .data.uwTickPrio    stm32f4xx_hal.o
-    0x20000010        -       0x00000060   Zero   RW         4694    .bss                c_w.l(libspace.o)
+    0x20000000   0x08006af0   0x00000004   Data   RW         1633    .data.SystemCoreClock  system_stm32f4xx.o
+    0x20000004   0x08006af4   0x00000004   Data   RW         1981    .data._ZN8robo_lib23simple_adder_instance_fE  advancedadd.o
+    0x20000008   0x08006af8   0x00000001   Data   RW          744    .data.uwTickFreq    stm32f4xx_hal.o
+    0x20000009   0x08006af9   0x00000003   PAD
+    0x2000000c   0x08006afc   0x00000004   Data   RW          743    .data.uwTickPrio    stm32f4xx_hal.o
+    0x20000010        -       0x00000060   Zero   RW         4747    .bss                c_w.l(libspace.o)
     0x20000070        -       0x00000004   Zero   RW           48    .bss.HAL_RCC_CAN1_CLK_ENABLED  can.o
-    0x20000074        -       0x00000008   Zero   RW         1818    .bss._ZN8robo_lib5errorE  error.o
-    0x2000007c        -       0x00000001   Zero   RW         2489    .bss._ZZ29HAL_TIM_PeriodElapsedCallbackE7tim2clk  main_1.o
-    0x2000007d   0x08006310   0x00000003   PAD
-    0x20000080        -       0x00000004   Zero   RW         4554    .bss.__cxa_new_handler  libcppabi_w.l(cxa_handlers.cpp.o)
+    0x20000074        -       0x00000008   Zero   RW         1824    .bss._ZN8robo_lib5errorE  error.o
+    0x2000007c        -       0x00000001   Zero   RW         2495    .bss._ZZ29HAL_TIM_PeriodElapsedCallbackE7tim2clk  main_1.o
+    0x2000007d   0x08006b00   0x00000003   PAD
+    0x20000080        -       0x00000004   Zero   RW         4607    .bss.__cxa_new_handler  libcppabi_w.l(cxa_handlers.cpp.o)
     0x20000084        -       0x00000048   Zero   RW           28    .bss.hadc1          adc.o
     0x200000cc        -       0x00000048   Zero   RW           29    .bss.hadc3          adc.o
     0x20000114        -       0x00000028   Zero   RW           46    .bss.hcan1          can.o
@@ -9428,11 +9606,10 @@ Memory Map of the image
     0x2000064c        -       0x00000044   Zero   RW          157    .bss.huart1         usart.o
     0x20000690        -       0x00000044   Zero   RW          158    .bss.huart3         usart.o
     0x200006d4        -       0x00000044   Zero   RW          159    .bss.huart6         usart.o
-    0x20000718        -       0x00001c20   Zero   RW         2488    .bss.robot          main_1.o
-    0x20002338        -       0x00000004   Zero   RW          745    .bss.uwTick         stm32f4xx_hal.o
-    0x2000233c   0x08006310   0x00000004   PAD
-    0x20002340        -       0x00018000   Zero   RW            2    HEAP                startup_stm32f407xx.o
-    0x2001a340        -       0x00005000   Zero   RW            1    STACK               startup_stm32f407xx.o
+    0x20000718        -       0x00001c2c   Zero   RW         2494    .bss.robot          main_1.o
+    0x20002344        -       0x00000004   Zero   RW          745    .bss.uwTick         stm32f4xx_hal.o
+    0x20002348        -       0x00018000   Zero   RW            2    HEAP                startup_stm32f407xx.o
+    0x2001a348        -       0x00005000   Zero   RW            1    STACK               startup_stm32f407xx.o
 
 
 ==============================================================================
@@ -9452,24 +9629,27 @@ Image component sizes
        138          0          0          0          0       3301   dma.o
          2          0          0          0          8       2504   error.o
        508          0          0          0          0       4233   gpio.o
+       134          0          0          0          0       7071   helper.o
        406          0          0          0        168       5431   i2c.o
         44          0          0          0          0      21103   inertialsensor.o
-      1296          0        132          0       7201      41881   main_1.o
+      1304          0        132          0       7213      41878   main_1.o
         40          0          0          0          0       3803   motor.o
         84          0         28          0          0       4358   motor_backend.o
         68          0         28          0          0      25431   motor_dm_task.o
        538          8         28          0          0      21499   motor_rm.o
        168          0         28          0          0      25208   motor_rm_tasks.o
-       154          0          0          0          0      15680   params.o
+       154          0          0          0          0      15675   params.o
        818          8          0          0          0      20662   pid_controller.o
         54          0         28          0          0      23010   pidcontroltask.o
+       214          0         28          0          0      17601   playsound.o
        180          0          0          0          0       6097   rcprotocol.o
        180          0         20          0          0       5380   rcprotocol_backend.o
        270          0         20          0          0       5162   rcprotocol_dbus.o
-       272          0         16          0          0      20550   robot.o
+       342          0         16          0          0      22723   robot.o
        618          4          0          0          0       5128   scheduler.o
         20          0          0          0          0       9109   scheduler_common.o
-       792          8         84          0          0      32501   screwmotortask.o
+      1020         16         84          0          0      35282   screwmotortask.o
+       200          0        124          0          0      19485   soundmanagetask.o
        398          0          0          0        176       5210   spi.o
         64         26        392          0     118784        800   startup_stm32f407xx.o
        172          0          0          5          4       7243   stm32f4xx_hal.o
@@ -9492,9 +9672,9 @@ Image component sizes
        920          0          0          0        684       7674   usart.o
 
     ----------------------------------------------------------------------
-     22216         76        928         16     127692     635475   Object Totals
+     23096         84       1080         16     127700     684578   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-       292          0          0          3          7          0   (incl. Padding)
+       318          0          0          3          3          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -9550,6 +9730,11 @@ Image component sizes
         74          0          0          0          0         80   sys_stackheap_outer.o
         14          0          0          0          0         76   sys_wrch.o
          2          0          0          0          0         68   use_no_semi.o
+       692        140          0          0          0        264   ddiv.o
+        94          4          0          0          0        140   dfix.o
+        46          0          0          0          0        116   dflt_clz.o
+       156          4          0          0          0        140   dnaninf.o
+        12          0          0          0          0        116   dretinf.o
         96          0          0          0          0        132   ffltll_clz.o
         26          0          0          0          0        116   fpinit.o
          0          0          0          0          0          0   usenofp.o
@@ -9559,7 +9744,7 @@ Image component sizes
         40         32          0          0          0         52   cxa_virtual.cpp.o
 
     ----------------------------------------------------------------------
-      2196        172          0          0        100       3648   Library Totals
+      3196        320          0          0        100       4424   Library Totals
         12          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
@@ -9567,12 +9752,12 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
       1964        140          0          0         96       2784   c_w.l
-       122          0          0          0          0        248   fz_wm.l
+      1122        148          0          0          0       1024   fz_wm.l
         42          0          0          0          0        380   libcpp_w.l
         56         32          0          0          4        236   libcppabi_w.l
 
     ----------------------------------------------------------------------
-      2196        172          0          0        100       3648   Library Totals
+      3196        320          0          0        100       4424   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -9581,15 +9766,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     24412        248        928         16     127792     636463   Grand Totals
-     24412        248        928         16     127792     636463   ELF Image Totals
-     24412        248        928         16          0          0   ROM Totals
+     26292        404       1080         16     127800     685782   Grand Totals
+     26292        404       1080         16     127800     685782   ELF Image Totals
+     26292        404       1080         16          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                25340 (  24.75kB)
-    Total RW  Size (RW Data + ZI Data)            127808 ( 124.81kB)
-    Total ROM Size (Code + RO Data + RW Data)      25356 (  24.76kB)
+    Total RO  Size (Code + RO Data)                27372 (  26.73kB)
+    Total RW  Size (RW Data + ZI Data)            127816 ( 124.82kB)
+    Total ROM Size (Code + RO Data + RW Data)      27388 (  26.75kB)
 
 ==============================================================================
 

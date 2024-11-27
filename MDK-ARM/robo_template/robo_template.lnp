@@ -74,6 +74,8 @@
 "robo_template\main_1.o"
 "robo_template\params.o"
 "robo_template\robot.o"
+"robo_template\playsound.o"
+"robo_template\soundmanagetask.o"
 "robo_template\basicmathfunctions.o"
 "robo_template\basicmathfunctionsf16.o"
 "robo_template\bayesfunctions.o"

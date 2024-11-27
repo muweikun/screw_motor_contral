@@ -6,6 +6,7 @@
 #include "Modules/CanTask/CanSendTask.h"
 #include "Modules/CanTask/CANSyncTask.h"
 #include "Modules/RoboBase/RoboBase.h"
+#include "Modules/SoundManageTask/SoundManageTask.h"
 #define CAN1_TX_BUF_LEN 20
 #define CAN2_TX_BUF_LEN 20
 
@@ -19,6 +20,10 @@ class Robot : public RoboBase
 	{
 		return params;
 	}
+	
+	PlaySoundManageTask * get_play_sound(){
+		return play_sound_task_p;
+	}
 
 	protected:
 	robo_lib::CAN_Tx_Data_Pack_t can1_queue_data[CAN1_TX_BUF_LEN];
@@ -27,8 +32,9 @@ class Robot : public RoboBase
 	Params params;
 	CANSendTask *can1_send_task_p, *can2_send_task_p;
   CANSyncTask *can1_sync_task_0x200_p;
-  
+
 	Srew_Motor_PIDControlTask *srew_motor1_p;
+	PlaySoundManageTask *play_sound_task_p;
 	
 	
 

@@ -22,45 +22,17 @@ Dialog DLL:      TCM.DLL V1.53.0.0
  
 <h2>Project:</h2>
 D:\hero\hero\MDK-ARM\robo_template.uvprojx
-Project File Date:  11/25/2024
+Project File Date:  11/27/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'hero_test'
 Note: source file '..\Vehicle\hero_test\Robot\main.cpp' - object file renamed from 'robo_template\main.o' to 'robo_template\main_1.o'.
-compiling Robot.cpp...
-compiling Params.cpp...
 compiling ScrewMotorTask.cpp...
-../Vehicle/hero_test/Robot/main.cpp(267): warning: 'getRCProtocolPointer' is deprecated [-Wdeprecated-declarations]
-        RCProtocol *rc_protocol = robot.getRCProtocolPointer();
-                                        ^
-..\Modules/RoboBase/RoboBase.h(50): note: 'getRCProtocolPointer' has been explicitly marked deprecated here
-        [[deprecated]]
-          ^
-../Vehicle/hero_test/Robot/main.cpp(296): warning: 'getRCProtocolPointer' is deprecated [-Wdeprecated-declarations]
-        RCProtocol *rc_protocol = robot.getRCProtocolPointer();
-                                        ^
-..\Modules/RoboBase/RoboBase.h(50): note: 'getRCProtocolPointer' has been explicitly marked deprecated here
-        [[deprecated]]
-          ^
-../Vehicle/hero_test/Robot/main.cpp(384): warning: 'getCAN1DevicePointer' is deprecated [-Wdeprecated-declarations]
-  CanDevice *can1_device_p = robot.getCAN1DevicePointer();
-                                   ^
-..\Modules/RoboBase/RoboBase.h(62): note: 'getCAN1DevicePointer' has been explicitly marked deprecated here
-        [[deprecated]]
-          ^
-../Vehicle/hero_test/Robot/main.cpp(385): warning: 'getCAN2DevicePointer' is deprecated [-Wdeprecated-declarations]
-  CanDevice *can2_device_p = robot.getCAN2DevicePointer();
-                                   ^
-..\Modules/RoboBase/RoboBase.h(69): note: 'getCAN2DevicePointer' has been explicitly marked deprecated here
-        [[deprecated]]
-          ^
-4 warnings generated.
-compiling main.cpp...
 linking...
-Program Size: Code=24412 RO-data=928 RW-data=16 ZI-data=127792  
+Program Size: Code=26292 RO-data=1080 RW-data=16 ZI-data=127800  
 FromELF: creating hex file...
-"robo_template\robo_template.axf" - 0 Error(s), 4 Warning(s).
+"robo_template\robo_template.axf" - 0 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -89,40 +61,40 @@ Package Vendor: Keil
       Include file:  CMSIS\Core\Include\tz_context.h
 
    * Component: ARM::CMSIS:DSP:Source:1.9.0-dev
-      Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c
       Include file:  CMSIS\DSP\Include\arm_math_f16.h
-      Include file:  CMSIS\DSP\Include\arm_const_structs_f16.h
-      Include file:  CMSIS\DSP\Include\arm_const_structs.h
       Include file:  CMSIS\DSP\Include\arm_common_tables.h
-      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c
       Include file:  CMSIS\DSP\Include\arm_common_tables_f16.h
-      Source file:   CMSIS\DSP\Source\QuaternionMathFunctions\QuaternionMathFunctions.c
-      Source file:   CMSIS\DSP\Source\CommonTables\CommonTables.c
-      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c
       Include file:  CMSIS\DSP\Include\arm_math.h
-      Source file:   CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c
+      Source file:   CMSIS\DSP\Source\QuaternionMathFunctions\QuaternionMathFunctions.c
+      Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctions.c
+      Include file:  CMSIS\DSP\Include\arm_const_structs.h
+      Include file:  CMSIS\DSP\Include\arm_const_structs_f16.h
+      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctions.c
+      Source file:   CMSIS\DSP\Source\CommonTables\CommonTables.c
+      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c
+      Source file:   CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctions.c
+      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c
+      Source file:   CMSIS\DSP\Source\CommonTables\CommonTablesF16.c
+      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c
+      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c
+      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c
       Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctions.c
+      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c
       Source file:   CMSIS\DSP\Source\BayesFunctions\BayesFunctionsF16.c
       Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctions.c
-      Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctions.c
-      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\CommonTables\CommonTablesF16.c
-      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctions.c
-      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\StatisticsFunctions\StatisticsFunctions.c
-      Source file:   CMSIS\DSP\Source\MatrixFunctions\MatrixFunctions.c
-      Source file:   CMSIS\DSP\Source\InterpolationFunctions\InterpolationFunctions.c
-      Source file:   CMSIS\DSP\Source\BasicMathFunctions\BasicMathFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\TransformFunctions\TransformFunctionsF16.c
       Source file:   CMSIS\DSP\Source\SVMFunctions\SVMFunctions.c
-      Source file:   CMSIS\DSP\Source\DistanceFunctions\DistanceFunctions.c
-      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\FastMathFunctions\FastMathFunctionsF16.c
-      Source file:   CMSIS\DSP\Source\FilteringFunctions\FilteringFunctions.c
+      Source file:   CMSIS\DSP\Source\ComplexMathFunctions\ComplexMathFunctionsF16.c
+      Source file:   CMSIS\DSP\Source\ControllerFunctions\ControllerFunctions.c
+      Source file:   CMSIS\DSP\Source\SupportFunctions\SupportFunctionsF16.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

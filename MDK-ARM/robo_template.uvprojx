@@ -1445,6 +1445,31 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Modules/SoundManageTask</GroupName>
+          <Files>
+            <File>
+              <FileName>SoundManageTask.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Modules\SoundManageTask\SoundManageTask.h</FilePath>
+            </File>
+            <File>
+              <FileName>PlaySound.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Modules\SoundManageTask\PlaySound.h</FilePath>
+            </File>
+            <File>
+              <FileName>PlaySound.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Modules\SoundManageTask\PlaySound.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SoundManageTask.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\Modules\SoundManageTask\SoundManageTask.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>

@@ -32,6 +32,8 @@ void Robot::init()
     );
 	// 遥控器任务初始化
 	 rc_protocol.init();
+	// 播放器初始化
+	play_sound_task_p =new PlaySoundManageTask(*this);
  
 	
 	//注册任务
@@ -48,6 +50,7 @@ void Robot::init()
 	scheduler.registerTask(srew_motor1_p);
 	scheduler.registerTask(can1_send_task_p);
 	scheduler.registerTask(can1_sync_task_0x200_p);
+	scheduler.registerTask(play_sound_task_p);
 	
 }
 

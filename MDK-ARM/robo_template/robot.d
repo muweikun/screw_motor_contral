@@ -107,9 +107,11 @@ robo_template/robot.o: ..\Vehicle\hero_test\Robot\Robot.cpp \
   ..\Modules\RoboBase\ControlBase.h \
   ..\Vehicle\hero_test\Robot\Task_Robot.h \
   ..\Vehicle\hero_test\Robot\Params.h ..\Libraries\Motor\Motor_DM.h \
-  ..\Modules\MotorTask\Motor_DM_Task.h ..\Modules\CanTask\CanSendTask.h \
-  ..\Modules\CanTask\CANSyncTask.h ..\.\Libraries\UART\UARTDriver.h \
-  ..\Core\Inc\usart.h \
+  ..\Modules\MotorTask\Motor_DM_Task.h \
+  ..\Modules\SoundManageTask\SoundManageTask.h \
+  ..\Modules\SoundManageTask\PlaySound.h \
+  ..\Modules\CanTask\CanSendTask.h ..\Modules\CanTask\CANSyncTask.h \
+  ..\.\Libraries\UART\UARTDriver.h ..\Core\Inc\usart.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdio.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h ..\Core\Inc\tim.h
